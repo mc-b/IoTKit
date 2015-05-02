@@ -23,3 +23,5 @@ Vorträge:
 Für eine Ausführliche Einführung empfehle ich die "Internet der Dinge" Kursreihe an der EB Zürich, Schweiz.
 * http://kurs.eb-zuerich.ch/is95
 
+Während des Kurses ist der IoTKit Bag https://developer.mbed.org/users/marcel1691/notebook/internet-of-things-kit-bag-iotkit-beutel/ mit zusätzlichen Sensoren und Aktoren erhältlich.
+
