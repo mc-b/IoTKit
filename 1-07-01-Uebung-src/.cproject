@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="cdt.managedbuild.config.gnu.exe.debug.184246253">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.gnu.exe.debug.184246253" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.gnu.exe.debug.184246253" name="Debug" parent="cdt.managedbuild.config.gnu.exe.debug">
+					<folderInfo id="cdt.managedbuild.config.gnu.exe.debug.184246253." name="/" resourcePath="">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.exe.debug.1140422322" name="Linux GCC" superClass="cdt.managedbuild.toolchain.gnu.exe.debug">
+							<targetPlatform id="cdt.managedbuild.target.gnu.platform.exe.debug.860743703" name="Debug Platform" superClass="cdt.managedbuild.target.gnu.platform.exe.debug"/>
+							<builder buildPath="${workspace_loc:/1-07-01-Uebung-src/Debug}" id="cdt.managedbuild.target.gnu.builder.exe.debug.966504524" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" superClass="cdt.managedbuild.target.gnu.builder.exe.debug"/>
+							<tool id="cdt.managedbuild.tool.gnu.archiver.base.576103322" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1390013580" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug">
+								<option id="gnu.cpp.compiler.exe.debug.option.optimization.level.718026981" name="Optimization Level" superClass="gnu.cpp.compiler.exe.debug.option.optimization.level" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.exe.debug.option.debugging.level.665690986" name="Debug Level" superClass="gnu.cpp.compiler.exe.debug.option.debugging.level" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.include.paths.1884534385" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/utilities&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/drivers&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/drivers/enet&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/drivers/clock&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/drivers/interrupt&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/drivers/pit&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/drivers/pit/common&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/common&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/common/phyksz8081&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/edma&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/pmc&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/sdhc&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/can&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/i2c&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/wdog&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/sai&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/sim&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/llwu&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/rtc&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/rcm&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/dmamux&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/lpuart&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/enet&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/flextimer&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/smc&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/dspi&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/pdb&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/mpu&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/mcg&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/adc&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/dac&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/gpio&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/pit&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/uart&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/lptmr&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/port&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/osc&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_MCU_K64F&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_MCU_K64F/TARGET_FRDM&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_MCU_K64F/device&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_MCU_K64F/device/device&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_MCU_K64F/device/device/MK64F12&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_MCU_K64F/device/MK64F12&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_MCU_K64F/MK64F12&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TOOLCHAIN_ARM_STD}&quot;"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.preprocessor.def.578790965" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="TARGET_K64F -DTARGET_M4 -DTARGET_CORTEX_M -DTARGET_Freescale -DTARGET_KPSDK_MCUS -DTARGET_KPSDK_CODE -DTARGET_MCU_K64F -DTARGET_FRDM -DTOOLCHAIN_GCC_ARM -DTOOLCHAIN_GCC -D__CORTEX_M4 -DARM_MATH_CM4 -D__FPU_PRESENT=1 -DMBED_BUILD_TIMESTAMP=1438437809.72 -D__MBED__=1 -DCPU_MK64FN1M0VMD12 -DFSL_RTOS_MBED -DTARGET_FF_ARDUINO"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.165924079" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.1884454970" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.debug">
+								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.exe.debug.option.optimization.level.293038960" name="Optimization Level" superClass="gnu.c.compiler.exe.debug.option.optimization.level" valueType="enumerated"/>
+								<option id="gnu.c.compiler.exe.debug.option.debugging.level.1500918272" name="Debug Level" superClass="gnu.c.compiler.exe.debug.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.include.paths.1497063205" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/utilities&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/drivers&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/drivers/enet&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/drivers/clock&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/drivers/interrupt&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/drivers/pit&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/drivers/pit/common&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/common&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/common/phyksz8081&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/edma&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/pmc&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/sdhc&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/can&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/i2c&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/wdog&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/sai&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/sim&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/llwu&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/rtc&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/rcm&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/dmamux&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/lpuart&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/enet&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/flextimer&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/smc&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/dspi&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/pdb&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/mpu&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/mcg&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/adc&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/dac&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/gpio&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/pit&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/uart&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/lptmr&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/port&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/osc&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_MCU_K64F&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_MCU_K64F/TARGET_FRDM&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_MCU_K64F/device&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_MCU_K64F/device/device&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_MCU_K64F/device/device/MK64F12&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_MCU_K64F/device/MK64F12&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_MCU_K64F/MK64F12&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TOOLCHAIN_ARM_STD}&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.126765310" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.linker.exe.debug.1990534954" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.exe.debug"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.exe.debug.905770582" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.exe.debug">
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.766772245" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.assembler.exe.debug.1751006004" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.exe.debug">
+								<option id="gnu.both.asm.option.include.paths.1901432053" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/utilities&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/drivers&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/drivers/enet&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/drivers/clock&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/drivers/interrupt&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/drivers/pit&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/drivers/pit/common&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/common&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/common/phyksz8081&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/edma&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/pmc&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/sdhc&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/can&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/i2c&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/wdog&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/sai&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/sim&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/llwu&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/rtc&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/rcm&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/dmamux&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/lpuart&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/enet&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/flextimer&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/smc&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/dspi&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/pdb&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/mpu&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/mcg&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/adc&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/dac&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/gpio&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/pit&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/uart&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/lptmr&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/port&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_KPSDK_CODE/hal/osc&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_MCU_K64F&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_MCU_K64F/TARGET_FRDM&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_MCU_K64F/device&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_MCU_K64F/device/device&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_MCU_K64F/device/device/MK64F12&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_MCU_K64F/device/MK64F12&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TARGET_Freescale/TARGET_KPSDK_MCUS/TARGET_MCU_K64F/MK64F12&#10;&#9;&#9;&#9;}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/1-07-01-Uebung-src/mbed/TARGET_K64F/TOOLCHAIN_ARM_STD}&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1592877247" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="cdt.managedbuild.config.gnu.exe.release.6379012">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.gnu.exe.release.6379012" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.gnu.exe.release.6379012" name="Release" parent="cdt.managedbuild.config.gnu.exe.release">
+					<folderInfo id="cdt.managedbuild.config.gnu.exe.release.6379012." name="/" resourcePath="">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.exe.release.908783651" name="Linux GCC" superClass="cdt.managedbuild.toolchain.gnu.exe.release">
+							<targetPlatform id="cdt.managedbuild.target.gnu.platform.exe.release.789336883" name="Debug Platform" superClass="cdt.managedbuild.target.gnu.platform.exe.release"/>
+							<builder buildPath="${workspace_loc:/1-07-01-Uebung-src/Release}" id="cdt.managedbuild.target.gnu.builder.exe.release.285452883" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" superClass="cdt.managedbuild.target.gnu.builder.exe.release"/>
+							<tool id="cdt.managedbuild.tool.gnu.archiver.base.342449234" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.544414736" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release">
+								<option id="gnu.cpp.compiler.exe.release.option.optimization.level.1576193868" name="Optimization Level" superClass="gnu.cpp.compiler.exe.release.option.optimization.level" value="gnu.cpp.compiler.optimization.level.most" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.exe.release.option.debugging.level.2102582418" name="Debug Level" superClass="gnu.cpp.compiler.exe.release.option.debugging.level" value="gnu.cpp.compiler.debugging.level.none" valueType="enumerated"/>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1964718609" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.release.1222426203" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.release">
+								<option defaultValue="gnu.c.optimization.level.most" id="gnu.c.compiler.exe.release.option.optimization.level.152755675" name="Optimization Level" superClass="gnu.c.compiler.exe.release.option.optimization.level" valueType="enumerated"/>
+								<option id="gnu.c.compiler.exe.release.option.debugging.level.1887966928" name="Debug Level" superClass="gnu.c.compiler.exe.release.option.debugging.level" value="gnu.c.debugging.level.none" valueType="enumerated"/>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.820222840" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.linker.exe.release.734322923" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.exe.release"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.exe.release.376808000" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.exe.release">
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.1333357111" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.assembler.exe.release.1407310327" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.exe.release">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.122448222" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="1-07-01-Uebung-src.cdt.managedbuild.target.gnu.exe.1663354350" name="Executable" projectType="cdt.managedbuild.target.gnu.exe"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.exe.release.6379012;cdt.managedbuild.config.gnu.exe.release.6379012.;cdt.managedbuild.tool.gnu.c.compiler.exe.release.1222426203;cdt.managedbuild.tool.gnu.c.compiler.input.820222840">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.exe.debug.184246253;cdt.managedbuild.config.gnu.exe.debug.184246253.;cdt.managedbuild.tool.gnu.c.compiler.exe.debug.1884454970;cdt.managedbuild.tool.gnu.c.compiler.input.126765310">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.exe.release.6379012;cdt.managedbuild.config.gnu.exe.release.6379012.;cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.544414736;cdt.managedbuild.tool.gnu.cpp.compiler.input.1964718609">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileCPP"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.exe.debug.184246253;cdt.managedbuild.config.gnu.exe.debug.184246253.;cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1390013580;cdt.managedbuild.tool.gnu.cpp.compiler.input.165924079">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileCPP"/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+	<storageModule moduleId="refreshScope"/>
+</cproject>
