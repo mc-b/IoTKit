@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.245726603/LPC_DEPLOY/delimiter=;
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.245726603/LPC_DEPLOY/operation=append
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.245726603/LPC_DEPLOY/value=copy PROJECT.bin F\:\\
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.245726603/append=true
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.245726603/appendContributed=true
