@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<thing:thing-descriptions bindingId="iotkit"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:thing="http://eclipse.org/smarthome/schemas/thing-description/v1.0.0"
+    xsi:schemaLocation="http://eclipse.org/smarthome/schemas/thing-description/v1.0.0 http://eclipse.org/smarthome/schemas/thing-description-1.0.0.xsd">
+
+	<bridge-type id="bridge">
+	
+		<label>IoTKit SMD Shield Ethernet gateway</label>
+		<description>This bridge represents the IoTKit SMD Shield Ethernet
+			gateway.
+		</description>
+
+		<config-description>
+			<parameter name="address" type="text" required="true">
+				<label>IP address</label>
+				<description>IP address IoTKit SMD Shield
+				</description>
+			</parameter>
+		</config-description>
+
+	</bridge-type>
+
+</thing:thing-descriptions>

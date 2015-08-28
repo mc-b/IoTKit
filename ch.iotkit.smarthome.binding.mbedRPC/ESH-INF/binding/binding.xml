@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<binding:binding id="iotkit"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:binding="http://eclipse.org/smarthome/schemas/binding/v1.0.0"
+        xsi:schemaLocation="http://eclipse.org/smarthome/schemas/binding/v1.0.0 http://eclipse.org/smarthome/schemas/binding-1.0.0.xsd">
+
+    <name>IoTKit Binding</name>
+    <description>IoTKit, see https://developer.mbed.org/users/marcel1691/notebook/internet-of-things-kit-iotkit-smd-shield/.</description>
+    <author>Marcel (mc-b) Bernet</author>
+
+</binding:binding>
