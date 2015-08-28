@@ -83,7 +83,8 @@ public class IoTKitSensorsHandler extends BaseThingHandler
             {
                 try
                 {
-                    updateState( new ChannelUID( getThing().getUID(), IoTKitConstants.CHANNEL_TEMPERATURE ), getTemperature() );
+                    updateState( new ChannelUID( getThing().getUID(), IoTKitConstants.CHANNEL_TEMP ), getTemperature() );
+                    updateState( new ChannelUID( getThing().getUID(), IoTKitConstants.CHANNEL_POTI ), getPoti() );
                     updateState( new ChannelUID( getThing().getUID(), IoTKitConstants.CHANNEL_LIGHT ), getLight() );
                     updateState( new ChannelUID( getThing().getUID(), IoTKitConstants.CHANNEL_HALL ), getHall() );
                 }
@@ -106,8 +107,11 @@ public class IoTKitSensorsHandler extends BaseThingHandler
         {
             switch (channelUID.getId())
             {
-                case IoTKitConstants.CHANNEL_TEMPERATURE:
+                case IoTKitConstants.CHANNEL_TEMP:
                     updateState( channelUID, getTemperature() );
+                    break;
+                case IoTKitConstants.CHANNEL_POTI:
+                    updateState( channelUID, getPoti() );
                     break;
                 case IoTKitConstants.CHANNEL_LIGHT:
                     updateState( channelUID, getLight() );
@@ -141,6 +145,10 @@ public class IoTKitSensorsHandler extends BaseThingHandler
     {
         return (IoTKitBridgeHandler) getBridge().getHandler();
     }
+    private State getPoti()
+    {
+        return ( new DecimalType( getIoTKitBridge().read( "poti" ) ) );
+    }
     private State getHall()
     {
         return ( new DecimalType( getIoTKitBridge().read( "hall" ) ) );
@@ -151,6 +159,6 @@ public class IoTKitSensorsHandler extends BaseThingHandler
     }
     private State getTemperature()
     {
-        return ( new DecimalType( getIoTKitBridge().read( "poti" ) ) );
+        return ( new DecimalType( getIoTKitBridge().read( "temp" ) ) );
     }
 }

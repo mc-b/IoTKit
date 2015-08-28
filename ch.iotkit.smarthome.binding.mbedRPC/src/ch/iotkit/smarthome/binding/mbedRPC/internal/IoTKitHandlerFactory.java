@@ -15,6 +15,8 @@ import org.eclipse.smarthome.core.thing.binding.ThingHandler;
 import ch.iotkit.smarthome.binding.mbedRPC.IoTKitConstants;
 import ch.iotkit.smarthome.binding.mbedRPC.handler.IoTKitActorsHandler;
 import ch.iotkit.smarthome.binding.mbedRPC.handler.IoTKitBridgeHandler;
+import ch.iotkit.smarthome.binding.mbedRPC.handler.IoTKitLEDStripHandler;
+import ch.iotkit.smarthome.binding.mbedRPC.handler.IoTKitLEDsHandler;
 import ch.iotkit.smarthome.binding.mbedRPC.handler.IoTKitSensorsHandler;
 
 /*******************************************************************************
@@ -54,6 +56,10 @@ public class IoTKitHandlerFactory extends BaseThingHandlerFactory
             return new IoTKitSensorsHandler( thing );
         if ( thingTypeUID.equals( IoTKitConstants.THING_TYPE_IOTKIT_ACTORS ) )
             return new IoTKitActorsHandler( thing );
+        if ( thingTypeUID.equals( IoTKitConstants.THING_TYPE_IOTKIT_LEDS ) )
+            return new IoTKitLEDsHandler( thing );
+        if ( thingTypeUID.equals( IoTKitConstants.THING_TYPE_IOTKIT_LEDSTRIP ) )
+            return new IoTKitLEDStripHandler( thing );
         return null;
     }
 
