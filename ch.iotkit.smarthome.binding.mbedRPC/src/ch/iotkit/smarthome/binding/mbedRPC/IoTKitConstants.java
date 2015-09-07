@@ -1,7 +1,9 @@
 /*----------------------------------------------------------------------------------------------
- * $RCSFile: $, Created on 24.08.2015
- *
- * (c) 1999 - 2012, Huerlimann Informatik AG, Zufikon, alle Rechte vorbehalten
+    Copyright (c) 2015 Marcel (mc-b) Bernet, Zurich (haftungsbeschraenkt) and others.
+    All rights reserved. This program and the accompanying materials
+    are made available under the terms of the Eclipse Public License v1.0
+    which accompanies this distribution, and is available at
+    http://www.eclipse.org/legal/epl-v10.html
  *---------------------------------------------------------------------------------------------*/
 
 package ch.iotkit.smarthome.binding.mbedRPC;
@@ -15,9 +17,6 @@ import com.google.common.collect.ImmutableSet;
 /*******************************************************************************
  * Konstanten fuer thing-types.xml
  * <p>
- *
- * @version $Revision: $ $Date: $
- * @author mbern
  *******************************************************************************/
 
 public class IoTKitConstants
@@ -48,6 +47,5 @@ public class IoTKitConstants
     // set of all Things
     public final static Set<ThingTypeUID> SUPPORTED_THING_TYPES_UIDS = ImmutableSet.of( THING_TYPE_IOTKIT_SENSORS,
                     THING_TYPE_IOTKIT_ACTORS, THING_TYPE_IOTKIT_BRIDGE, THING_TYPE_IOTKIT_LEDS, THING_TYPE_IOTKIT_LEDSTRIP );
-
 
 }

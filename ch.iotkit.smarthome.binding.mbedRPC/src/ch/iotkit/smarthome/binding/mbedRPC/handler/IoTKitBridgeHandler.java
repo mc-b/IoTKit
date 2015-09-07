@@ -1,7 +1,9 @@
 /*----------------------------------------------------------------------------------------------
- * $RCSFile: $, Created on 26.08.2015
- *
- * (c) 1999 - 2012, Huerlimann Informatik AG, Zufikon, alle Rechte vorbehalten
+    Copyright (c) 2015 Marcel (mc-b) Bernet, Zurich (haftungsbeschraenkt) and others.
+    All rights reserved. This program and the accompanying materials
+    are made available under the terms of the Eclipse Public License v1.0
+    which accompanies this distribution, and is available at
+    http://www.eclipse.org/legal/epl-v10.html
  *---------------------------------------------------------------------------------------------*/
 
 package ch.iotkit.smarthome.binding.mbedRPC.handler;
@@ -23,9 +25,6 @@ import org.slf4j.LoggerFactory;
 /*******************************************************************************
  * Bridge IoTKit SMD Shield. Stellt Verbindung via MBED RPC zum Shield her.
  * <p>
- *
- * @version $Revision: $ $Date: $
- * @author mbern
  *******************************************************************************/
 
 public class IoTKitBridgeHandler extends BaseBridgeHandler
@@ -69,16 +68,17 @@ public class IoTKitBridgeHandler extends BaseBridgeHandler
 
     /////////////////////////////////////////////////////////////////////////////////////////////////
     //
-    //  I/O Methoden
+    // I/O Methoden
     //
     /////////////////////////////////////////////////////////////////////////////////////////////////
 
     /**
      * Lesen eines Werte vom IoTKit Shield
+     *
      * @param thing Id des Things auf dem Shield
      * @return Wert
      */
-    public String read( String thing )
+    public String read(String thing)
     {
         String urlString = "http://" + addr + "/rpc/" + thing + "/read";
         String value = null;
@@ -103,10 +103,11 @@ public class IoTKitBridgeHandler extends BaseBridgeHandler
 
     /**
      * Schreiben eines Wertes
+     *
      * @param thing Thin auf dem Shield
      * @param value Wert
      */
-    public void write( String thing, String value )
+    public void write(String thing, String value)
     {
         String urlString = "http://" + addr + "/rpc/" + thing + "/write+" + value;
         try
@@ -128,10 +129,11 @@ public class IoTKitBridgeHandler extends BaseBridgeHandler
 
     /**
      * Aufruf einer Funktion z.B. up, down, stop
+     *
      * @param thing Thing auf dem Shield
      * @param func Funktion
      */
-    public void func( String thing, String func )
+    public void func(String thing, String func)
     {
         String urlString = "http://" + addr + "/rpc/" + thing + "/" + func;
         try

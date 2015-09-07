@@ -1,7 +1,9 @@
 /*----------------------------------------------------------------------------------------------
- * $RCSFile: $, Created on 24.08.2015
- *
- * (c) 1999 - 2012, Huerlimann Informatik AG, Zufikon, alle Rechte vorbehalten
+    Copyright (c) 2015 Marcel (mc-b) Bernet, Zurich (haftungsbeschraenkt) and others.
+    All rights reserved. This program and the accompanying materials
+    are made available under the terms of the Eclipse Public License v1.0
+    which accompanies this distribution, and is available at
+    http://www.eclipse.org/legal/epl-v10.html
  *---------------------------------------------------------------------------------------------*/
 
 package ch.iotkit.smarthome.binding.mbedRPC.handler;
@@ -21,9 +23,6 @@ import ch.iotkit.smarthome.binding.mbedRPC.internal.IoTKitHandlerFactory;
 /*******************************************************************************
  * IoTKit SMS Shield Actors Handler.
  * <p>
- *
- * @version $Revision: $ $Date: $
- * @author mbern
  *******************************************************************************/
 
 public class IoTKitActorsHandler extends BaseThingHandler
@@ -32,6 +31,7 @@ public class IoTKitActorsHandler extends BaseThingHandler
 
     /**
      * Default Konstruktor - wird von {@link IoTKitHandlerFactory} aufrufen
+     * 
      * @param thing
      */
     public IoTKitActorsHandler(Thing thing)
@@ -57,12 +57,12 @@ public class IoTKitActorsHandler extends BaseThingHandler
     public void handleCommand(ChannelUID channelUID, Command command)
     {
         // Prozentaler Wert, z.B. bei Servos
-        if  ( command instanceof PercentType )
+        if ( command instanceof PercentType )
         {
-            getIoTKitBridge().write( channelUID.getId(), String.valueOf( ((PercentType) command).doubleValue() / 100.0 ) );
+            getIoTKitBridge().write( channelUID.getId(), String.valueOf( ( (PercentType) command ).doubleValue() / 100.0 ) );
         }
         // Up / Down Button
-        else if  ( command instanceof UpDownType )
+        else if ( command instanceof UpDownType )
         {
             getIoTKitBridge().func( channelUID.getId(), command.toString().toLowerCase() );
         }
@@ -70,19 +70,19 @@ public class IoTKitActorsHandler extends BaseThingHandler
         else if ( command instanceof StopMoveType )
         {
             getIoTKitBridge().func( channelUID.getId(), command.toString().toLowerCase() );
-        }
-        else
+        } else
             logger.debug( "Command {} is not supported for channel: {}", command, channelUID.getId() );
     }
 
     /////////////////////////////////////////////////////////////////////////////////////////////////
     //
-    //  Getter
+    // Getter
     //
     /////////////////////////////////////////////////////////////////////////////////////////////////
 
     /**
      * Zugriff Bridge - Verbindung zum IoTKit SMD Shield
+     * 
      * @return
      */
     protected IoTKitBridgeHandler getIoTKitBridge()

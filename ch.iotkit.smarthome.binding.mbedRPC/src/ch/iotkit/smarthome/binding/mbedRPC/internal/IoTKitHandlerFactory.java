@@ -1,7 +1,9 @@
 /*----------------------------------------------------------------------------------------------
- * $RCSFile: $, Created on 24.08.2015
- *
- * (c) 1999 - 2012, Huerlimann Informatik AG, Zufikon, alle Rechte vorbehalten
+    Copyright (c) 2015 Marcel (mc-b) Bernet, Zurich (haftungsbeschraenkt) and others.
+    All rights reserved. This program and the accompanying materials
+    are made available under the terms of the Eclipse Public License v1.0
+    which accompanies this distribution, and is available at
+    http://www.eclipse.org/legal/epl-v10.html
  *---------------------------------------------------------------------------------------------*/
 
 package ch.iotkit.smarthome.binding.mbedRPC.internal;
@@ -22,16 +24,16 @@ import ch.iotkit.smarthome.binding.mbedRPC.handler.IoTKitSensorsHandler;
 /*******************************************************************************
  * Erstellt die Handler fuer Bridge und Things.
  * <p>
- *
- * @version $Revision: $ $Date: $
- * @author mbern
  *******************************************************************************/
 
 public class IoTKitHandlerFactory extends BaseThingHandlerFactory
 {
 
-    /* (non-Javadoc)
-     * @see org.eclipse.smarthome.core.thing.binding.ThingHandlerFactory#supportsThingType(org.eclipse.smarthome.core.thing.ThingTypeUID)
+    /*
+     * (non-Javadoc)
+     * @see
+     * org.eclipse.smarthome.core.thing.binding.ThingHandlerFactory#supportsThingType(org.eclipse.smarthome.core.thing.
+     * ThingTypeUID)
      */
     @Override
     public boolean supportsThingType(ThingTypeUID thingTypeUID)
@@ -39,27 +41,25 @@ public class IoTKitHandlerFactory extends BaseThingHandlerFactory
         return IoTKitConstants.SUPPORTED_THING_TYPES_UIDS.contains( thingTypeUID );
     }
 
-    /* (non-Javadoc)
-     * @see org.eclipse.smarthome.core.thing.binding.BaseThingHandlerFactory#createHandler(org.eclipse.smarthome.core.thing.Thing)
+    /*
+     * (non-Javadoc)
+     * @see
+     * org.eclipse.smarthome.core.thing.binding.BaseThingHandlerFactory#createHandler(org.eclipse.smarthome.core.thing.
+     * Thing)
      */
     @Override
-    protected ThingHandler createHandler( Thing thing )
+    protected ThingHandler createHandler(Thing thing)
     {
         ThingTypeUID thingTypeUID = thing.getThingTypeUID();
 
         // Bridge
-        if ( thingTypeUID.equals( IoTKitConstants.THING_TYPE_IOTKIT_BRIDGE ) )
-            return new IoTKitBridgeHandler( (Bridge) thing );
+        if ( thingTypeUID.equals( IoTKitConstants.THING_TYPE_IOTKIT_BRIDGE ) ) return new IoTKitBridgeHandler( (Bridge) thing );
 
         // Things
-        if ( thingTypeUID.equals( IoTKitConstants.THING_TYPE_IOTKIT_SENSORS ) )
-            return new IoTKitSensorsHandler( thing );
-        if ( thingTypeUID.equals( IoTKitConstants.THING_TYPE_IOTKIT_ACTORS ) )
-            return new IoTKitActorsHandler( thing );
-        if ( thingTypeUID.equals( IoTKitConstants.THING_TYPE_IOTKIT_LEDS ) )
-            return new IoTKitLEDsHandler( thing );
-        if ( thingTypeUID.equals( IoTKitConstants.THING_TYPE_IOTKIT_LEDSTRIP ) )
-            return new IoTKitLEDStripHandler( thing );
+        if ( thingTypeUID.equals( IoTKitConstants.THING_TYPE_IOTKIT_SENSORS ) ) return new IoTKitSensorsHandler( thing );
+        if ( thingTypeUID.equals( IoTKitConstants.THING_TYPE_IOTKIT_ACTORS ) ) return new IoTKitActorsHandler( thing );
+        if ( thingTypeUID.equals( IoTKitConstants.THING_TYPE_IOTKIT_LEDS ) ) return new IoTKitLEDsHandler( thing );
+        if ( thingTypeUID.equals( IoTKitConstants.THING_TYPE_IOTKIT_LEDSTRIP ) ) return new IoTKitLEDStripHandler( thing );
         return null;
     }
 

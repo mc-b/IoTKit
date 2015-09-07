@@ -1,7 +1,9 @@
 /*----------------------------------------------------------------------------------------------
- * $RCSFile: $, Created on 24.08.2015
- *
- * (c) 1999 - 2012, Huerlimann Informatik AG, Zufikon, alle Rechte vorbehalten
+    Copyright (c) 2015 Marcel (mc-b) Bernet, Zurich (haftungsbeschraenkt) and others.
+    All rights reserved. This program and the accompanying materials
+    are made available under the terms of the Eclipse Public License v1.0
+    which accompanies this distribution, and is available at
+    http://www.eclipse.org/legal/epl-v10.html
  *---------------------------------------------------------------------------------------------*/
 
 package ch.iotkit.smarthome.binding.mbedRPC.discovery;
@@ -14,11 +16,7 @@ import org.eclipse.smarthome.core.thing.ThingTypeUID;
 import ch.iotkit.smarthome.binding.mbedRPC.IoTKitConstants;
 
 /*******************************************************************************
- * TODO
- * <p>
- *
- * @version $Revision: $ $Date: $
- * @author mbern
+ * DiscoveryService
  *******************************************************************************/
 
 public class IoTKitDiscoveryService extends AbstractDiscoveryService
