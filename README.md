@@ -7,8 +7,8 @@ Anwendungsbeispiele, siehe
 * https://developer.mbed.org/users/marcel1691/notebook/internet-of-things-kit-anwendungen-iotkit-smd-shie/ (im Aufbau)
 
 Workshops:
-* /ch/open Workshop: https://developer.mbed.org/teams/ch-open-wstage2015/
-* OSS an Schulen: https://developer.mbed.org/users/marcel1691/notebook/oss-an-schulen/
+* 02.09.2015: /ch/open Workshop - https://developer.mbed.org/teams/ch-open-wstage2015/
+* 28.03.2015: OSS an Schulen - https://developer.mbed.org/users/marcel1691/notebook/oss-an-schulen/
 
 Vorträge:
 * 13.04.15: Kommunikation zwischen Applikationen im Internet of Things - https://developer.mbed.org/users/marcel1691/notebook/kommunikation-zwischen-applikationen-im-internet-o/
