@@ -10,7 +10,7 @@ Workshops:
 * 02.09.2015: /ch/open Workshop - https://developer.mbed.org/teams/ch-open-wstage2015/
 * 28.03.2015: OSS an Schulen - https://developer.mbed.org/users/marcel1691/notebook/oss-an-schulen/
 
-Referate:
+Referate zum Thema: 
 * 13.04.15: Kommunikation zwischen Applikationen im Internet of Things - https://developer.mbed.org/users/marcel1691/notebook/kommunikation-zwischen-applikationen-im-internet-o/
 * 02.04.15: Prototype to Product for Internet of Things in One Step - http://www.ch-open.ch/fileadmin/user_upload/events/obl/2015/150402_prototype-to-product-iot.pdf
 * 05.02.15: "Open" Internet der Dinge (IoT) im Zusammenspiel mit Fachanwendungen und Cloudservices - Aktueller Stand und Ausblick - http://www.ch-open.ch/fileadmin/user_upload/events/obl/2015/20150205_OBL_Internet_der_Dinge.pdf
