@@ -7,6 +7,7 @@ Anwendungsbeispiele, siehe
 * https://developer.mbed.org/users/marcel1691/notebook/internet-of-things-kit-anwendungen-iotkit-smd-shie/ (im Aufbau)
 
 Workshops:
+* /ch/open Workshop: https://developer.mbed.org/teams/ch-open-wstage2015/
 * OSS an Schulen: https://developer.mbed.org/users/marcel1691/notebook/oss-an-schulen/
 
 Vorträge:
