@@ -17,16 +17,16 @@ Infrastruktur
 * Optional: curl
 
 Testen mit cURL
-* GET
-** curl http://localhost/cgi-bin/rest - liefert eine hello Message
-** curl http://localhost/cgi-bin/rest/time - die Zeit
-** curl http://localhost/cgi-bin/rest/timestamp - die Zeit in Sekunden
-* POST 
-*  curl http://localhost/cgi-bin/rest -X POST -d "light=0.5&temp=1.0&hall=0.42" - speichert den Sensorwert in http://localhost/data/post.txt
-* PUT
-** curl http://localhost/cgi-bin/rest/?test.txt -X PUT -d daten - Schreibt daten in die Datei test.txt im data Verzeichnis
-* DELETE
-** curl http://localhost/cgi-bin/rest/?test.txt -X DELETE - löscht die Datei test.txt
+- GET
+ * curl http://localhost/cgi-bin/rest - liefert eine hello Message
+ * curl http://localhost/cgi-bin/rest/time - die Zeit
+ * curl http://localhost/cgi-bin/rest/timestamp - die Zeit in Sekunden
+- POST 
+ *  curl http://localhost/cgi-bin/rest -X POST -d "light=0.5&temp=1.0&hall=0.42" - speichert den Sensorwert in http://localhost/data/post.txt
+- PUT
+ * curl http://localhost/cgi-bin/rest/?test.txt -X PUT -d daten - Schreibt daten in die Datei test.txt im data Verzeichnis
+- DELETE
+ * curl http://localhost/cgi-bin/rest/?test.txt -X DELETE - löscht die Datei test.txt
 
 mbed Programme
 * https://developer.mbed.org/teams/smdiotkit2ch/code/HTTP_GET/
@@ -41,8 +41,8 @@ die Datenbank geschrieben werden.
 * curl http://localhost/cgi-bin/restsql -X POST -d "light=0.5&temp=1.0&hall=0.42"
 
 Zugriff auf die MySQL Commandline
-* docker exec -it test-apache mysql -uwww-data -pmbed
-** Ausgabe der Daten mittels: SELECT * FROM sensoren.data;
+- docker exec -it test-apache mysql -uwww-data -pmbed
+* Ausgabe der Daten mittels: SELECT * FROM sensoren.data;
 
 Für eine Ausführliche Einführung empfehle ich die "Internet der Dinge" Kursreihe an der EB Zürich, Schweiz.
 * http://kurs.eb-zuerich.ch/is95
