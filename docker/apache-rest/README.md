@@ -33,6 +33,7 @@ mbed Programme
 * https://developer.mbed.org/teams/smdiotkit2ch/code/HTTP_POST/
 * https://developer.mbed.org/teams/smdiotkit2ch/code/HTTP_PUT/
 * https://developer.mbed.org/teams/smdiotkit2ch/code/HTTP_DELETE/
+
 die http.get Aufrufe sind auf das Docker Image abzustimmen bzw. anzupassen.
 
 Standardmässig wird MySQL neben Apache installiert. Daten können mittels dem cgi-bin Script restsql in
