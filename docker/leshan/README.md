@@ -1,5 +1,5 @@
 
-== Docker Image fuer Eclipse leshan LWM2M Server ==
+Docker Image fuer Eclipse leshan LWM2M Server
 
 Builden
 * docker build -t marcel1691/leshan .
