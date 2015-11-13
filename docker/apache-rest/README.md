@@ -1,5 +1,5 @@
-
-Docker Image mit Apache Web Server und REST Umgebung.
+Docker Image mit Apache Web Server und REST Umgebung
+====================================================
 
 Demonstriert wie Daten via REST Aufrufen auf dem Server gespeichert werden können.
 
@@ -17,6 +17,7 @@ Infrastruktur
 * Optional: curl
 
 Testen mit cURL
+---------------
 - GET
  * curl http://localhost/cgi-bin/rest - liefert eine hello Message
  * curl http://localhost/cgi-bin/rest/time - die Zeit
@@ -29,6 +30,7 @@ Testen mit cURL
  * curl http://localhost/cgi-bin/rest/?test.txt -X DELETE - löscht die Datei test.txt
 
 mbed Programme
+--------------
 * https://developer.mbed.org/teams/smdiotkit2ch/code/HTTP_GET/
 * https://developer.mbed.org/teams/smdiotkit2ch/code/HTTP_POST/
 * https://developer.mbed.org/teams/smdiotkit2ch/code/HTTP_PUT/
@@ -41,9 +43,12 @@ die Datenbank geschrieben werden.
 * curl http://localhost/cgi-bin/restsql -X POST -d "light=0.5&temp=1.0&hall=0.42"
 
 Zugriff auf die MySQL Commandline
+---------------------------------
 - docker exec -it test-apache mysql -uwww-data -pmbed
 * Ausgabe der Daten mittels: SELECT * FROM sensoren.data;
 
+Weitere Informationen
+---------------------
 Für eine Ausführliche Einführung empfehle ich die "Internet der Dinge" Kursreihe an der EB Zürich, Schweiz.
 * http://kurs.eb-zuerich.ch/is95
 
