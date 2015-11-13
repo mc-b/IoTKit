@@ -1,11 +1,11 @@
-Docker Image fuer mosquitto MQTT Broker
-=======================================
+Docker Image fuer openHAB2 Smart Home Server
+============================================
 
 Builden
-* docker build -t marcel1691/msoquitto .
+* docker build -t marcel1691/openhab2 .
 
 Starten
-* docker run -d -p 1883:1883  marcel1691/mosquitto
+* docker run -d -p 8080:8080 marcel1691/openhab2
 
 Infrastruktur
 -------------
@@ -16,13 +16,10 @@ Infrastruktur
 Testen
 ------
 * Docker Image starten und Server UI auf http://localhost:8080 aufrufen
-* Programm https://developer.mbed.org/teams/smdiotkit2ch/code/MQTTPublish/ in mbed Compiler importieren
-* Variable hostname (ca. Zeile 9) anpassen auf Docker Container
+* Programm https://developer.mbed.org/teams/smdiotkit2ch/code/RPCHTTPServerSmartHome/ in mbed Compiler importieren
+* Verbindung zum Board via Serieller Schnittstelle herstellen und IP-Adresse auslesen
 * Programm compilieren und auf Board speichern
-* Das Board publiziert Licht und Poti Daten auf mbed/k64f/iotkit/#
-
-* Lokale MQTT Meldungen empfangen:
- * docker exec -t mosquitto mosquitto_sub -t "#" -v
+* Board mittels Bindings in openHAB2 Konfigurieren
 
 Weitere Informationen
 ---------------------
