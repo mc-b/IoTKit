@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+	<actions />
+	<description>mbed V3.0 Build</description>
+	<keepDependencies>false</keepDependencies>
+	<properties />
+	<scm class="hudson.scm.NullSCM" />
+	<canRoam>true</canRoam>
+	<disabled>false</disabled>
+	<blockBuildWhenDownstreamBuilding>false
+	</blockBuildWhenDownstreamBuilding>
+	<blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+	<triggers />
+	<concurrentBuild>false</concurrentBuild>
+	<builders>
+		<hudson.tasks.Shell>
+			<command><![CDATA[
+[ ! -d example-mbedos-blinky ] && { git clone https://github.com/ARMmbed/example-mbedos-blinky.git; }			
+cd example-mbedos-blinky
+git pull
+yotta target frdm-k64f-gcc
+yotta build
+]]>
+			</command>
+		</hudson.tasks.Shell>
+	</builders>
+	<publishers />
+	<buildWrappers />
+</project>
