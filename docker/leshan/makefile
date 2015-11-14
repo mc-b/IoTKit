@@ -32,8 +32,13 @@ exec:
 show:
 	chromium-browser http://localhost:$(PORT)
 	
+# Ausgabe auf stdout	
 logs:
 	docker logs $(CONTAINER)
+
+# Veraenderte Dateien	
+diff:
+	docker diff $(CONTAINER)
 	
 # Docker Container stoppen und zerstoeren
 stop:
