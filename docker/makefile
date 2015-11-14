@@ -14,12 +14,13 @@
 
 SUBDIRS=apache-rest leshan mosquitto wetty
 
-# Platzhalter macht nichts
+# Usage
 all:
 	@echo "usage:\n \
 		make build - alle Images builden\n \
 		make run - alle Images starten\n \
-		make stop - alle Images stoppen"
+		make stop - alle Images stoppen\n \
+		make clean - alle untagten Container und Images loeschen"
 
 # Docker Image builden
 build:
@@ -39,6 +40,7 @@ stop:
     	$(MAKE) -C $$dir stop; \
 	done
 	
+# Loescht alle ungetagten Container und Images	
 clean:
 	@echo "Deleting untagged images"
 	@docker rmi `docker images -q -f dangling=true`	
