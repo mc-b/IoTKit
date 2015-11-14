@@ -22,7 +22,7 @@ build:
 
 # Docker Image detached starten
 run: 
-	docker run -d -p $(PORT):3000 --name $(CONTAINER) $(IMAGE)
+	docker run -d -p $(PORT):3000 --name $(CONTAINER) --link mosquitto:mosquitto --link apache-rest:rest $(IMAGE)
 
 # Shell im laufenden Container aufrufen	
 exec:

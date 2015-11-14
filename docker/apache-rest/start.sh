@@ -3,14 +3,19 @@
 #	Startup fuer Apache mit MySQL und cgi-bin REST Scripts
 #
 
+# MySQL Port fuer alle IP Adressen oeffnen
+grep -v ^bind-address /etc/mysql/my.cnf >/tmp/x
+echo "bind-address		= 0.0.0.0" >>/tmp/x
+mv /tmp/x /etc/mysql/my.cnf
+
 service mysql start
 
 # Erstellen der Datenbank, User und Testdaten
 mysql -u root <<%EOF%
 create database if not exists sensoren;
 create user 'www-data'@'localhost' identified by 'mbed'; 
-grant usage on *.* to 'www-data'@'localhost' identified by 'mbed';
-grant all privileges on sensoren.* to 'www-data'@'localhost';
+grant usage on *.* to 'www-data'@'%' identified by 'mbed';
+grant all privileges on sensoren.* to 'www-data'@'%';
 flush privileges;
 use sensoren;
 create table data ( seq INT PRIMARY KEY AUTO_INCREMENT, poti FLOAT, light FLOAT, hall FLOAT, temp FLOAT, created TIMESTAMP DEFAULT CURRENT_TIMESTAMP );

@@ -22,7 +22,7 @@ build:
 
 # Docker Image detached starten
 run: 
-	docker run -d -p $(PORT):80 --name $(CONTAINER) $(IMAGE)
+	docker run -d -p $(PORT):80 -p 3306:3306 --name $(CONTAINER) $(IMAGE)
 
 # Shell im laufenden Container aufrufen	
 exec:

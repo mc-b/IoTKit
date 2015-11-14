@@ -25,7 +25,7 @@ RUN apt-get -q -y install mysql-server
 ADD start.sh /start.sh
 RUN chmod 755 /start.sh
 
-EXPOSE 80
+EXPOSE 80 3306
 
 CMD ["/start.sh"]
 

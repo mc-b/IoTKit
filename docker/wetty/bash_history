@@ -1,0 +1,12 @@
+mosquitto_pub -h mosquitto -t "Zuhause/Wohnzimmer/Temperatur" -m "24.0" -q 1
+mosquitto_pub -h mosquitto -t "Zuhause/Schlafzimmer/Temperatur" -m "21.0" -q 1
+mosquitto_sub -h mosquitto -t "#" -v &	
+curl http://apache-rest/cgi-bin/rest?test.txt -X PUT -d daten
+curl http://apache-rest/cgi-bin/rest?test.txt -X DELETE
+mysql -h apache-rest -uwww-data -pmbed sensoren
+curl http://apache-rest/cgi-bin/restsql -X POST -d "light=0.5&temp=1.0&hall=0.42"
+rm -f post.txt && wget http://apache-rest/data/post.txt && cat post.txt
+curl http://apache-rest/cgi-bin/rest -X POST -d "light=0.5&temp=1.0&hall=0.42"
+curl http://apache-rest/cgi-bin/rest
+curl http://apache-rest/cgi-bin/rest/time
+curl http://apache-rest/cgi-bin/rest/timestamp
