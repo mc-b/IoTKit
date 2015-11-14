@@ -14,6 +14,7 @@
 
 IMAGE=marcel1691/mosquitto
 CONTAINER=mosquitto
+HOST=mosquitto
 
 # Docker Image builden
 build:
@@ -21,7 +22,7 @@ build:
 
 # Docker Image detached starten
 run: 
-	docker run -d -p 1883:1883 -p 9001:9001 --name $(CONTAINER) $(IMAGE)
+	docker run -d -p 1883:1883 -p 9001:9001 -h $(HOST) --name $(CONTAINER) $(IMAGE)
 
 # Shell im laufenden Container aufrufen	
 exec:
