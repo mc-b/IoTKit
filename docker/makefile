@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # Docker Images - wetty muss am Schluss stehen um sich mit den anderen zu verbinden
-SUBDIRS=apache-rest leshan mosquitto openhab2 jenkins wetty
+SUBDIRS=apache-rest leshan mosquitto openhab2 fhem jenkins wetty
 
 # Usage
 all:
