@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-SUBDIRS=apache-rest leshan mosquitto wetty
+SUBDIRS=apache-rest leshan mosquitto openhab2 jenkins wetty
 
 # Usage
 all:
