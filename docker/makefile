@@ -12,6 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Docker Images - wetty muss am Schluss stehen um sich mit den anderen zu verbinden
 SUBDIRS=apache-rest leshan mosquitto openhab2 jenkins wetty
 
 # Usage
