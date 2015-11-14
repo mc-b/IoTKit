@@ -13,7 +13,8 @@
 # limitations under the License.
 
 IMAGE=marcel1691/apache-rest
-CONTAINER=test-apache
+CONTAINER=apache-rest
+PORT=32000
 
 # Docker Image builden
 build:
@@ -21,7 +22,7 @@ build:
 
 # Docker Image detached starten
 run: 
-	docker run -d -p 80:80 --name $(CONTAINER) $(IMAGE)
+	docker run -d -p $(PORT):80 --name $(CONTAINER) $(IMAGE)
 
 # Shell im laufenden Container aufrufen	
 exec:
@@ -34,7 +35,7 @@ sql:
 
 # Browser mit Daten anzeigen
 show:
-	chromium-browser http://localhost/data	
+	chromium-browser http://localhost:$(PORT)/data	
 	
 # Docker Container stoppen und zerstoeren
 stop:
@@ -44,15 +45,15 @@ stop:
 # Tests	
 test:
 	@echo "---------- HTTP GET ----------"
-	curl http://localhost/cgi-bin/rest
-	curl http://localhost/cgi-bin/rest/time
-	curl http://localhost/cgi-bin/rest/timestamp
+	curl http://localhost:$(PORT)/cgi-bin/rest
+	curl http://localhost:$(PORT)/cgi-bin/rest/time
+	curl http://localhost:$(PORT)/cgi-bin/rest/timestamp
 	@echo "---------- HTTP POST ----------"
-	curl http://localhost/cgi-bin/rest -X POST -d "light=0.5&temp=1.0&hall=0.42"
+	curl http://localhost:$(PORT)/cgi-bin/rest -X POST -d "light=0.5&temp=1.0&hall=0.42"
 	@echo "---------- HTTP PUT ----------"
-	curl http://localhost/cgi-bin/rest/?test.txt -X PUT -d daten
+	curl http://localhost:$(PORT)/cgi-bin/rest/?test.txt -X PUT -d daten
 	@echo "---------- HTTP DELETE ----------"
-	curl http://localhost/cgi-bin/rest/?test.txt -X DELETE
+	curl http://localhost:$(PORT)/cgi-bin/rest/?test.txt -X DELETE
 	@echo "---------- HTTP POST (SQL-Variante) ----------"
-	curl http://localhost/cgi-bin/restsql -X POST -d "light=0.5&temp=1.0&hall=0.42"
+	curl http://localhost:$(PORT)/cgi-bin/restsql -X POST -d "light=0.5&temp=1.0&hall=0.42"
 	

@@ -14,7 +14,7 @@
 
 IMAGE=marcel1691/jenkins
 CONTAINER=jenkins
-PORT=8080
+PORT=32200
 
 # Docker Image builden
 build:

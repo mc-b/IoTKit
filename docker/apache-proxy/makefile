@@ -12,9 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-IMAGE=marcel1691/openhab2
-CONTAINER=openhab2
-PORT=32800
+IMAGE=marcel1691/apache-proxy
+CONTAINER=apache-proxy
 
 # Docker Image builden
 build:
@@ -22,18 +21,19 @@ build:
 
 # Docker Image detached starten
 run: 
-	docker run -d -p $(PORT):8080 --name $(CONTAINER) $(IMAGE)
+	docker run -d -p 80:80 --name $(CONTAINER) $(IMAGE)
 
 # Shell im laufenden Container aufrufen	
 exec:
 	docker exec -it $(CONTAINER) bash
 	
+# Docker Container nur mit bash starten	
+debug:
+	docker run -t -i -p 80:80 --name $(CONTAINER) $(IMAGE) /bin/bash	
+	
 # Browser mit Daten anzeigen
 show:
-	chromium-browser http://localhost:$(PORT)
-	
-logs:
-	docker logs $(CONTAINER)
+	chromium-browser http://localhost	
 	
 # Docker Container stoppen und zerstoeren
 stop:

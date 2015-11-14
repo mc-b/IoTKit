@@ -14,7 +14,7 @@
 
 IMAGE=marcel1691/leshan
 CONTAINER=leshan
-PORT=8080
+PORT=32400
 
 # Docker Image builden
 build:

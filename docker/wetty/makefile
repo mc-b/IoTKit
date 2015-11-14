@@ -14,7 +14,7 @@
 
 IMAGE=marcel1691/wetty
 CONTAINER=wetty
-PORT=3000
+PORT=33000
 
 # Docker Image builden
 build:

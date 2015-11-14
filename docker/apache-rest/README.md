@@ -7,8 +7,8 @@ Builden
 * docker build -t marcel1691/apache-rest .
 
 Starten
-* docker run -d -p 80:80 --name test-apache marcel1691/apache-rest
-* docker exec -it test-apache bash
+* docker run -d -p 80:80 --name apache-rest marcel1691/apache-rest
+* docker exec -it apache-rest bash
 
 Infrastruktur
 * mbed fähiges Board, z.B. https://developer.mbed.org/platforms/FRDM-K64F/
@@ -44,7 +44,7 @@ die Datenbank geschrieben werden.
 
 Zugriff auf die MySQL Commandline
 ---------------------------------
-- docker exec -it test-apache mysql -uwww-data -pmbed
+- docker exec -it apache-rest mysql -uwww-data -pmbed
 * Ausgabe der Daten mittels: SELECT * FROM sensoren.data;
 
 Weitere Informationen
