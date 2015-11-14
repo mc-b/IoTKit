@@ -1,7 +1,9 @@
 Docker Image mit Apache Web Server Reverse Proxy
 ================================================
 
-Startet Apache als Reverse Proxy Server für die anderen Docker Images
+Apache als Reverse Proxy Server für die anderen Docker Images
+
+-> in Arbeit, nicht funktionsfaehig
 
 Builden
 * docker build -t marcel1691/apache-proxy .
