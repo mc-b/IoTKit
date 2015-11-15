@@ -3,11 +3,7 @@ MAINTAINER Marcel mc-b Bernet <marcel.bernet@ch-open.ch>
 
 RUN apt-get update
 
-RUN apt-get install -y openjdk-7-jre-headless wget
-# Fehler in Ubuntu Image - zip nicht installierbar
-# HACK: /usr/bin/unzip zuerst in openhab2 Verzeichnis kopieren
-#RUN apt-get install -y zlib1g-dev zip
-COPY unzip /usr/bin
+RUN apt-get install -y openjdk-7-jre-headless wget zip
 
 # openHAB2 
 RUN mkdir /opt/openhab2
