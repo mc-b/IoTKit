@@ -14,6 +14,9 @@
 
 IMAGE=marcel1691/apache-proxy
 CONTAINER=apache-proxy
+LINKS=--link apache-rest:rest --link fhem:fhem --link jenkins:jenkins \
+		--link leshan:leshan --link mosquitto:mosquitto \
+		--link openhab2:openhab2 --link wetty:wetty 
 
 # Docker Image builden
 build:
@@ -21,7 +24,7 @@ build:
 
 # Docker Image detached starten
 run: 
-	docker run -d -p 80:80 --name $(CONTAINER) $(IMAGE)
+	docker run -d -p 80:80 --name $(CONTAINER) $(LINKS) $(IMAGE)
 
 # Shell im laufenden Container aufrufen	
 exec:
@@ -29,7 +32,7 @@ exec:
 	
 # Docker Container nur mit bash starten	
 debug:
-	docker run -t -i -p 80:80 --name $(CONTAINER) $(IMAGE) /bin/bash	
+	docker run -t -i -p 80:80 --name $(CONTAINER) $(LINKS) $(IMAGE) /bin/bash	
 	
 # Browser mit Daten anzeigen
 show:

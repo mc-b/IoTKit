@@ -12,6 +12,7 @@ RUN mkdir -p /usr/lib/cgi-bin
 RUN a2enmod cgi
 RUN a2enmod proxy
 RUN a2enmod proxy_html
+#RUN a2enmod mod_xml2enc
 RUN a2enmod proxy_http 
 
 ADD base /var/www/html/base
