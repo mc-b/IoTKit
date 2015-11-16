@@ -38,7 +38,7 @@ diff:
 	
 # Docker Container stoppen und zerstoeren
 stop:
-	docker stop $(CONTAINER)
+	docker stop -t 0 $(CONTAINER)
 	docker rm $(CONTAINER)
 
 # Subscribe
