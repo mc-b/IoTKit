@@ -18,6 +18,9 @@ PORT=33000
 
 # Docker Image builden
 build:
+	rm -rf wetty
+	git clone --depth 1 https://github.com/krishnasrinivas/wetty.git
+	rm -rf wetty/.git
 	docker build -t $(IMAGE) .
 
 # Docker Image detached starten
