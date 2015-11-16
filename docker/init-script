@@ -6,10 +6,10 @@
 # Default-Start:     2 3 4 5
 # Default-Stop:      0 1 6
 # Short-Description: Start IoT Docker Images at startup
-# Description:       Docker Images apache-rest, leshan 
+# Description:       Docker Images apache-rest, leshan
 ### END INIT INFO
 
-dir="/home/mbern/IoTKit/docker"
+dir="/home/mbern/ws/IoTKit/docker"
 user="mbern"
 
 name=`basename $0`
@@ -22,20 +22,20 @@ case "$1" in
         echo "Starting $name"
         cd "$dir"
         sudo -u "$user" make run >> "$stdout_log" 2>> "$stderr_log" &
-	    ;;
+            ;;
     stop)
         echo "Stopping $name.."
         cd "$dir"
-        sudo -u "$user" make stop >> "$stdout_log" 2>> "$stderr_log"        
-	    ;;
+        sudo -u "$user" make stop >> "$stdout_log" 2>> "$stderr_log" &
+            ;;
     restart)
-	    $0 stop
-    	$0 start
-	    ;;
+            $0 stop
+        $0 start
+            ;;
     *)
-	    echo "Usage: $0 {start|stop|restart}"
-    	exit 1
-    	;;
+            echo "Usage: $0 {start|stop|restart}"
+        exit 1
+        ;;
 esac
 
 exit 0

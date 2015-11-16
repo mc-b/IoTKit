@@ -21,7 +21,8 @@ build:
 	docker build -t $(IMAGE) .
 
 # Docker Image detached starten
-run: 
+run:
+	$(MAKE) stop >/dev/null 2>&1
 	docker run -d -p $(PORT):80 -p 3306:3306 --name $(CONTAINER) $(IMAGE)
 
 # Shell im laufenden Container aufrufen	
