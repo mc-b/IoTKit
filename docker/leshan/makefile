@@ -22,7 +22,7 @@ build:
 
 # Docker Image detached starten
 run: 
-	$(MAKE) stop >/dev/null 2>&1
+	@ RC=$(shell docker rm -f $(CONTAINER))
 	docker run -d -p $(PORT):8080 -p 5683:5683/udp --name $(CONTAINER) $(IMAGE)
 
 # Shell im laufenden Container aufrufen	
