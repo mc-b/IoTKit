@@ -9,10 +9,7 @@ ENV APACHE_RUN_GROUP www-data
 ENV APACHE_LOG_DIR /var/log/apache2
 
 RUN mkdir -p /usr/lib/cgi-bin
-RUN a2enmod cgi
-RUN a2enmod proxy
-RUN a2enmod proxy_html
-RUN a2enmod proxy_http 
+RUN a2enmod cgi proxy proxy_html proxy_http xml2enc
 
 ADD base /var/www/html/base
 COPY index.html /var/www/html/index.html
