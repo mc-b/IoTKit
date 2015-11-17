@@ -22,6 +22,7 @@ build:
 
 # Docker Image detached starten
 run: 
+	@ RC=$(shell docker rm -f $(CONTAINER))
 	docker run -d -p 1883:1883 -p 9001:9001 -h $(HOST) --name $(CONTAINER) $(IMAGE)
 
 # Shell im laufenden Container aufrufen	
@@ -38,7 +39,7 @@ diff:
 	
 # Docker Container stoppen und zerstoeren
 stop:
-	docker stop $(CONTAINER)
+	docker stop -t 0 $(CONTAINER)
 	docker rm $(CONTAINER)
 
 # Subscribe

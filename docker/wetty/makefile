@@ -18,10 +18,14 @@ PORT=33000
 
 # Docker Image builden
 build:
+	rm -rf wetty
+	git clone --depth 1 https://github.com/krishnasrinivas/wetty.git
+	rm -rf wetty/.git
 	docker build -t $(IMAGE) .
 
 # Docker Image detached starten
 run: 
+	@ RC=$(shell docker rm -f $(CONTAINER))
 	docker run -d -p $(PORT):3000 --name $(CONTAINER) --link mosquitto:mosquitto --link apache-rest:rest $(IMAGE)
 
 # Shell im laufenden Container aufrufen	
@@ -46,7 +50,7 @@ diff:
 	
 # Docker Container stoppen und zerstoeren
 stop:
-	docker stop $(CONTAINER)
+	docker stop -t 0 $(CONTAINER)
 	docker rm $(CONTAINER)
 
 	

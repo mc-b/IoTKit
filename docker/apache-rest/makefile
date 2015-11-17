@@ -21,7 +21,8 @@ build:
 	docker build -t $(IMAGE) .
 
 # Docker Image detached starten
-run: 
+run:
+	@ RC=$(shell docker rm -f $(CONTAINER))
 	docker run -d -p $(PORT):80 -p 3306:3306 --name $(CONTAINER) $(IMAGE)
 
 # Shell im laufenden Container aufrufen	
@@ -39,7 +40,7 @@ show:
 	
 # Docker Container stoppen und zerstoeren
 stop:
-	docker stop $(CONTAINER)
+	docker stop -t 0 $(CONTAINER)
 	docker rm $(CONTAINER)
 
 # Tests	

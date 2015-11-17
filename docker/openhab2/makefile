@@ -22,6 +22,7 @@ build:
 
 # Docker Image detached starten
 run: 
+	@ RC=$(shell docker rm -f $(CONTAINER))
 	docker run -d -p $(PORT):8080 --name $(CONTAINER) $(IMAGE)
 
 # Shell im laufenden Container aufrufen	
@@ -37,7 +38,7 @@ logs:
 	
 # Docker Container stoppen und zerstoeren
 stop:
-	docker stop $(CONTAINER)
+	docker stop -t 0 $(CONTAINER)
 	docker rm $(CONTAINER)
 
 	
