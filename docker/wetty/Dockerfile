@@ -3,8 +3,7 @@ FROM ubuntu:latest
 ENV NODE_VERSION 0.10.40
 ENV NPM_VERSION 2.14.1
 
-RUN apt-get update
-RUN apt-get install -y npm curl mosquitto-clients wget mysql-client
+RUN apt-get update && apt-get install -y npm curl mosquitto-clients wget mysql-client
 
 # verify gpg and sha256: http://nodejs.org/dist/v0.10.31/SHASUMS256.txt.asc
 # gpg: aka "Timothy J Fontaine (Work) <tj.fontaine@joyent.com>"
@@ -40,4 +39,4 @@ RUN chown guest:guest /home/guest/.bash_history
 
 EXPOSE 3000
 
-ENTRYPOINT node app.js -p 3000
+ENTRYPOINT [ "node", "app.js", "-p", "3000" ]
