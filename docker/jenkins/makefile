@@ -23,16 +23,26 @@ build:
 # Docker Image detached starten
 run: 
 	@ RC=$(shell docker rm -f $(CONTAINER))
-	docker run -d -p $(PORT):8080 --name $(CONTAINER) $(IMAGE)
+	docker run -d -p $(PORT):8080 --name $(CONTAINER) -h $(CONTAINER) $(IMAGE)
 
 # Shell im laufenden Container aufrufen	
-exec:
+bash:
 	docker exec -it $(CONTAINER) bash
 	
 # Browser mit Daten anzeigen
 show:
 	chromium-browser http://localhost:$(PORT)
+
 	
+# Docker Container stoppen und zerstoeren
+stop:
+	docker stop -t 0 $(CONTAINER)
+	docker rm $(CONTAINER)
+
+# Docker Container nur mit bash starten	statt Eintrag in ENTRYPOINT
+debug:
+	docker run -t -i -p $(PORT):8080 --name $(CONTAINER) -h $(CONTAINER) --entrypoint=/bin/bash $(IMAGE)
+
 # Ausgabe auf stdout	
 logs:
 	docker logs $(CONTAINER)
@@ -40,10 +50,3 @@ logs:
 # Veraenderte Dateien	
 diff:
 	docker diff $(CONTAINER)	
-	
-# Docker Container stoppen und zerstoeren
-stop:
-	docker stop -t 0 $(CONTAINER)
-	docker rm $(CONTAINER)
-
-	
