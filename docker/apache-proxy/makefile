@@ -21,15 +21,11 @@ build:
 
 # Docker Image detached starten
 run: 
-	docker run -d -p 80:80 --name $(CONTAINER) $(IMAGE)
+	docker run -d -p 80:80 --name $(CONTAINER) -h $(CONTAINER) $(IMAGE)
 
 # Shell im laufenden Container aufrufen	
-exec:
+bash:
 	docker exec -it $(CONTAINER) bash
-	
-# Docker Container nur mit bash starten	
-debug:
-	docker run -t -i -p 80:80 --name $(CONTAINER) $(IMAGE) /bin/bash	
 	
 # Browser mit Daten anzeigen
 show:
@@ -40,4 +36,15 @@ stop:
 	docker stop -t 0 $(CONTAINER)
 	docker rm $(CONTAINER)
 
-	
+
+# Docker Container nur mit bash starten	statt Eintrag in ENTRYPOINT
+debug:
+	docker run -t -i -p 80:80 --name $(CONTAINER) -h $(CONTAINER) --entrypoint=/bin/bash $(IMAGE)
+
+# Ausgabe auf stdout	
+logs:
+	docker logs $(CONTAINER)
+
+# Veraenderte Dateien	
+diff:
+	docker diff $(CONTAINER)	
