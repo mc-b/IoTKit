@@ -25,16 +25,8 @@ run:
 	docker run -d -p 1883:1883 -p 9001:9001 -h $(CONTAINER) --name $(CONTAINER) $(IMAGE)
 
 # Shell im laufenden Container aufrufen	
-exec:
+bash:
 	docker exec -it $(CONTAINER) bash
-	
-# Ausgabe auf stdout	
-logs:
-	docker logs $(CONTAINER)
-
-# Veraenderte Dateien	
-diff:
-	docker diff $(CONTAINER)	
 	
 # Docker Container stoppen und zerstoeren
 stop:
@@ -51,4 +43,16 @@ pub:
 	@echo "Temperator an Topic Zuhause/Wohnzimmer/Temperatur/ mit Q-Level 1 senden"
 	docker exec -t $(CONTAINER) mosquitto_pub -t "Zuhause/Wohnzimmer/Temperatur" -m "24.0" -q 1  
 	docker exec -t $(CONTAINER) mosquitto_pub -t "Zuhause/Schlafzimmer/Temperatur" -m "21.0" -q 1  
+	
+# Docker Container nur mit bash starten	statt Eintrag in ENTRYPOINT
+debug:
+	docker run -t -i -p $(PORT):8080 --name $(CONTAINER) -h $(CONTAINER) --entrypoint=/bin/bash $(IMAGE)
+
+# Ausgabe auf stdout	
+logs:
+	docker logs $(CONTAINER)
+
+# Veraenderte Dateien	
+diff:
+	docker diff $(CONTAINER)	
 		
