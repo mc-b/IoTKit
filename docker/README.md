@@ -2,9 +2,9 @@ Docker Images für die Kurse "Internet der Dinge"
 ================================================
 
 Diese Verzeichnis enthält Dateien um alle Docker Images gemeinsam zu:
-* builden
-* run - zu starten
-* stop - zu stoppen
+* make build - builden
+* make run - zu starten
+* make stop - zu stoppen
 etc.
 
 Ausserdem Startup Scripts zum automatischen Starten der Images bei Systemstart
