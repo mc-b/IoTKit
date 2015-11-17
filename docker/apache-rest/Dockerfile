@@ -27,5 +27,5 @@ RUN chmod 755 /start.sh
 
 EXPOSE 80 3306
 
-CMD ["/start.sh"]
+ENTRYPOINT ["/start.sh"]
 
