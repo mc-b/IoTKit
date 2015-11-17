@@ -46,7 +46,7 @@ pub:
 	
 # Docker Container nur mit bash starten	statt Eintrag in ENTRYPOINT
 debug:
-	docker run -t -i -p $(PORT):8080 --name $(CONTAINER) -h $(CONTAINER) --entrypoint=/bin/bash $(IMAGE)
+	docker run -t -i -p 1883:1883 -p 9001:9001 --name $(CONTAINER) -h $(CONTAINER) --entrypoint=/bin/bash $(IMAGE)
 
 # Ausgabe auf stdout	
 logs:
