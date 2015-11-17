@@ -21,10 +21,5 @@ Testen
 * Programm compilieren und auf Board speichern
 * Board mittels Bindings in openHAB2 Konfigurieren
 
-Weitere Informationen
----------------------
-Für eine Ausführliche Einführung empfehle ich die "Internet der Dinge" Kursreihe an der EB Zürich, Schweiz.
-* http://kurs.eb-zuerich.ch/is95
-
 
  
