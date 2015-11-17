@@ -1,3 +1,6 @@
+curl -X GET  http://leshan:8080/api/clients	
+curl -X GET  http://leshan:8080/api/clients/mbed-k64f-1234/10/0/2 	
+curl -X GET -vvv http://leshan:8080/api/clients/mbed-k64f-1234/10/0/2 -H "Content-Type: text/plain" -d "10"
 mosquitto_pub -h mosquitto -t "Zuhause/Wohnzimmer/Temperatur" -m "24.0" -q 1
 mosquitto_pub -h mosquitto -t "Zuhause/Schlafzimmer/Temperatur" -m "21.0" -q 1
 mosquitto_sub -h mosquitto -t "#" -v &	

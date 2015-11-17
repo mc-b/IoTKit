@@ -26,7 +26,7 @@ build:
 # Docker Image detached starten
 run: 
 	@ RC=$(shell docker rm -f $(CONTAINER))
-	docker run -d -p $(PORT):3000 --name $(CONTAINER) --link mosquitto:mosquitto --link apache-rest:rest $(IMAGE)
+	docker run -d -p $(PORT):3000 --name $(CONTAINER) --link mosquitto:mosquitto --link apache-rest:rest --link leshan:leshan $(IMAGE)
 
 # Shell im laufenden Container aufrufen	
 exec:
