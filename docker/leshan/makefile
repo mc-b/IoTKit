@@ -16,6 +16,17 @@ IMAGE=marcel1691/leshan
 CONTAINER=leshan
 PORT=32400
 
+# Usage
+all:
+	@echo "usage:\n \
+		make build - Image builden\n \
+		make run - Image starten\n \
+		make stop - Image stoppen\n \
+		make bash - Bash Shell in gestarteten Container oeffnen\n \
+		make debug - Container mit Bash statt ENTRYPOINT Eintrag starten\n\
+		make logs - stdout vom Container anzeigen\n\
+		make diff - veraenderte Dateien anzeigen"
+
 # Docker Image builden
 build:
 	docker build -t $(IMAGE) .
