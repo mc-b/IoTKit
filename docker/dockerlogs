@@ -1,0 +1,13 @@
+#!/bin/bash
+# Ausgabe Docker logs
+echo "Content-type: text/plain"
+echo ""
+
+echo "Console Output from ${QUERY_STRING}:"
+for c in `docker ps --format='{{.Names}}'`
+do
+	[ ${c} = ${QUERY_STRING} ] && { docker logs ${c}; exit 0; }
+done
+
+echo "Docker ${QUERY_STRING} not exists!"
+
