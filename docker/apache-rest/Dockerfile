@@ -20,6 +20,8 @@ RUN a2enmod cgi
 RUN export DEBIAN_FRONTEND=noninteractive
 RUN apt-get -q -y install mysql-server
 # RUN mysqladmin -u root password admin 
+# mysql config - Port fuer alle Hosts oeffnen
+RUN sed -i -e"s/^bind-address\s*=\s*127.0.0.1/bind-address = 0.0.0.0/" /etc/mysql/my.cnf
 
 # Initialization Startup Script
 ADD start.sh /start.sh

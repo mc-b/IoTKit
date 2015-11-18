@@ -2,12 +2,6 @@
 #
 #	Startup fuer Apache mit MySQL und cgi-bin REST Scripts
 #
-
-# MySQL Port fuer alle IP Adressen oeffnen
-grep -v ^bind-address /etc/mysql/my.cnf >/tmp/x
-echo "bind-address		= 0.0.0.0" >>/tmp/x
-mv /tmp/x /etc/mysql/my.cnf
-
 service mysql start
 
 # Erstellen der Datenbank, User und Testdaten
