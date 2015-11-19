@@ -33,6 +33,8 @@ RUN wget http://fhem.de/fhem-5.6.deb -O /opt/fhem.deb
 RUN dpkg -i /opt/fhem.deb
 
 RUN echo 'attr global nofork 1\n' >> /opt/fhem/fhem.cfg
+COPY fhem.cfg /tmp/fhem.cfg
+RUN cat /tmp/fhem.cfg >>/opt/fhem/fhem.cfg
 
 VOLUME ["/opt/fhem"]
 EXPOSE 8083
