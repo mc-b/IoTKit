@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # Docker Images - wetty muss am Schluss stehen um sich mit den anderen zu verbinden
-SUBDIRS=apache-rest leshan mosquitto openhab2 fhem jenkins wetty
+SUBDIRS=apache-rest leshan mosquitto openhab2 fhem jenkins thingspeak wetty
 
 # Usage
 all:
@@ -41,9 +41,12 @@ stop:
     	$(MAKE) -C $$dir stop; \
 	done
 	
-# Loescht alle ungetagten Container und Images	
+# Loescht alle ungetagten Container 
 clean:
-	@echo "Deleting untagged images"
-	@docker rmi `docker images -q -f dangling=true`	
 	@echo "Deleting stopped containers"
 	@docker rm `docker ps -a -q`
+	
+# Loescht alle ungetagten Images	
+cleani:
+	@echo "Deleting untagged images"
+	@docker rmi `docker images -q -f dangling=true`	
