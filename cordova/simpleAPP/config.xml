@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="io.cordova.hellocordova" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>SimpleApp</name>
+    <description>
+		Simple App (c) Marcel Bernet, Zuerich
+	</description>
+    <author email="marcel.bernet@ch-open.ch" href="http://www.mc-b.ch">
+    Marcel Bernet
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <engine name="android" version="4.0.2" />
+</widget>
