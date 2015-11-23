@@ -1,12 +1,17 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.cordova.hellocordova" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>HelloCordova</name>
+<widget id="ch.admin.hermes" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+
+    <preference name="HERMES5mobile" value="2.0.0" />
+    <name>HERMES 5 mobile</name>
+
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+    HERMES 5 mobile (c) Marcel mc-b Bernet, Zuerich
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+
+    <author href="http://www.hermes.admin.ch" email="info@isb.admin.ch">
+    Marcel Bernet, Zuerich im Auftrag vom Informatikstrategieorgan Bund ISB
     </author>
+    
     <content src="index.html" />
     <access origin="*" />
 </widget>
