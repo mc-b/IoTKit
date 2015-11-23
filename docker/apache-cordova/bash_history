@@ -1,3 +1,6 @@
 cordova build
-cordova platform add android
+android create project --target 1 --name MyFirstApp --path MyFirstApp --activity MyActivity --package com.example.myfirstapp
+cordova platform add android@3.5.0
+rm -rf platforms/* plugins/*
+cd simpleAPP
 ${ANDROID_HOME}/tools/android list targets

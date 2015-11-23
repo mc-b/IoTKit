@@ -18,6 +18,7 @@ RUN useradd -d "$JENKINS_HOME" -u 1000 -m -s /bin/bash jenkins
 RUN chown jenkins:jenkins /opt
 USER jenkins
 
+# Android with Android 5.x SDK
 RUN cd /opt && curl -O http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz 
 RUN cd /opt && tar xzf android-sdk_r24.4.1-linux.tgz 
 RUN cd /opt && rm -f android-sdk_r24.4.1-linux.tgz 
@@ -36,19 +37,19 @@ RUN ["/opt/sdk-tools/android-accept-licenses.sh", "android update sdk --filter p
 RUN ["/opt/sdk-tools/android-accept-licenses.sh", "android update sdk --filter \"build-tools-23.0.1\" --no-ui --force -a"]
 RUN ["/opt/sdk-tools/android-accept-licenses.sh", "android update sdk --filter \"extra-android-support\" --no-ui --force -a"]
 RUN ["/opt/sdk-tools/android-accept-licenses.sh", "android update sdk --filter \"android-21\" --no-ui --force -a"]
-RUN ["/opt/sdk-tools/android-accept-licenses.sh", "android update sdk --filter \"android-20\" --no-ui --force -a"]
-RUN ["/opt/sdk-tools/android-accept-licenses.sh", "android update sdk --filter \"sys-img-armeabi-v7a-android-21\" --no-ui --force -a"] 
-RUN ["/opt/sdk-tools/android-accept-licenses.sh", "android update sdk --filter \"sys-img-armeabi-v7a-android-20\" --no-ui --force -a"] 
 RUN ["/opt/sdk-tools/android-accept-licenses.sh", "android update sdk --filter \"extra-android-m2repository\" --no-ui --force -a"]
 RUN ["/opt/sdk-tools/android-accept-licenses.sh", "android update sdk --filter \"extra-google-m2repository\" --no-ui --force -a"]
 RUN ["/opt/sdk-tools/android-accept-licenses.sh", "android update sdk --filter \"extra-google-google_play_services\" --no-ui --force -a"]
+
+# Android 4.4 SDK
+RUN ["/opt/sdk-tools/android-accept-licenses.sh", "android update sdk --filter \"android-19\" --no-ui --force -a"]
 
 RUN mkdir /opt/jenkins
 RUN wget http://mirrors.jenkins-ci.org/war/latest/jenkins.war -O /opt/jenkins/jenkins.war
 
 USER jenkins
-RUN mkdir -p $JENKINS_HOME/jobs/example-mbedos-blinky
-RUN mkdir -p $JENKINS_HOME/workspace/example-mbedos-blinky
+#RUN mkdir -p $JENKINS_HOME/jobs/example-mbedos-blinky
+#RUN mkdir -p $JENKINS_HOME/workspace/example-mbedos-blinky
 #COPY example-mbedos-blinky.xml $JENKINS_HOME/jobs/example-mbedos-blinky/config.xml
 
 # Arbeitsverzeichnis
