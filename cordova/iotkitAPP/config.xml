@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="io.iotkit.iotkitAPP" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+
+    <preference name="IoTKit App" value="1.0.0" />
+
+    <name>IoTKit App</name>
+
+    <description>
+    IoTKit App (c) Marcel mc-b Bernet, Zuerich
+    </description>
+
+    <author href="http://www.mc-b.ch" email="marcel.bernet@ch-open.ch">
+    Marcel Bernet
+    </author>
+    
+    
+    <content src="index.html" />
+    <access origin="*" />
+</widget>
