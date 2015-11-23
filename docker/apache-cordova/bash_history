@@ -1,0 +1,3 @@
+cordova build
+cordova platform add android
+${ANDROID_HOME}/tools/android list targets
