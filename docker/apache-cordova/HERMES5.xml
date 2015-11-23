@@ -19,7 +19,7 @@ cd IoTKit/cordova/HERMES5/
 git pull
 rm -rf platforms/* plugins/*
 cordova platform add android@3.5.0
-cordova build --release
+cordova build
 cp platforms/android/ant-build/*.apk ../../../
 ]]>	
 </command>
