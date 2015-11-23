@@ -11,7 +11,7 @@ ENV JENKINS_HOME /var/jenkins
 RUN useradd -d "$JENKINS_HOME" -u 1000 -m -s /bin/bash jenkins
 
 RUN mkdir /opt/jenkins
-RUN wget http://mirrors.jenkins-ci.org/war-stable/1.625.2/jenkins.war -O /opt/jenkins/jenkins.war
+RUN wget http://mirrors.jenkins-ci.org/war/latest/jenkins.war -O /opt/jenkins/jenkins.war
 
 USER jenkins
 
