@@ -34,7 +34,9 @@ build:
 # Docker Image detached starten
 run: 
 	@ RC=$(shell docker rm -f $(CONTAINER))
-	docker run -d -p $(PORT):8080 --name $(CONTAINER) -h $(CONTAINER) $(IMAGE)
+	docker run -d -p $(PORT):8080 --name $(CONTAINER) -h $(CONTAINER) \
+		-v $(HOME)/ws/IoTKit/cordova:/var/cordova \
+		$(IMAGE)
 
 # Shell im laufenden Container aufrufen	
 bash:

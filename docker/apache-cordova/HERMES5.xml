@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description></description>
+  <description>Umfangreiche, auf jQueryMobile basierende, App mit dem HERMES 5 Handbuch</description>
   <keepDependencies>false</keepDependencies>
   <properties/>
   <scm class="hudson.scm.NullSCM"/>
@@ -19,7 +19,7 @@ cd IoTKit/cordova/HERMES5/
 git pull
 rm -rf platforms/* plugins/*
 cordova platform add android@3.5.0
-cordova build
+cordova build --release
 cp platforms/android/ant-build/*.apk ../../../
 ]]>	
 </command>
