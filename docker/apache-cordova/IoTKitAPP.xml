@@ -15,7 +15,7 @@
     <hudson.tasks.Shell>
       <command><![CDATA[
 [ ! -d IoTKit ] && { git clone https://github.com/mc-b/IoTKit.git; }
-cd IoTKit/cordova/IoTKitAPP/
+cd IoTKit/cordova/iotkitAPP/
 git pull
 rm -rf platforms/* plugins/*
 cordova platform add android@3.5.0
