@@ -10,7 +10,7 @@ RUN sudo apt-get -y install cordova-cli
 # Android SDK
 RUN dpkg --add-architecture i386
 RUN apt-get update -qq
-RUN apt-get install -y --no-install-recommends openjdk-7-jdk libncurses5:i386 libstdc++6:i386 zlib1g:i386 maven ant
+RUN apt-get install -y --no-install-recommends openjdk-7-jdk libncurses5:i386 libstdc++6:i386 zlib1g:i386 maven ant git mercurial
 
 # Jenkins is run with user `jenkins`, uid = 1000
 ENV JENKINS_HOME /var/jenkins
@@ -48,9 +48,17 @@ RUN mkdir /opt/jenkins
 RUN wget http://mirrors.jenkins-ci.org/war/latest/jenkins.war -O /opt/jenkins/jenkins.war
 
 USER jenkins
-#RUN mkdir -p $JENKINS_HOME/jobs/example-mbedos-blinky
-#RUN mkdir -p $JENKINS_HOME/workspace/example-mbedos-blinky
-#COPY example-mbedos-blinky.xml $JENKINS_HOME/jobs/example-mbedos-blinky/config.xml
+RUN mkdir -p $JENKINS_HOME/jobs/simpleAPP
+RUN mkdir -p $JENKINS_HOME/workspace/simpleAPP
+COPY simpleAPP.xml $JENKINS_HOME/jobs/simpleAPP/config.xml
+
+RUN mkdir -p $JENKINS_HOME/jobs/HERMES5
+RUN mkdir -p $JENKINS_HOME/workspace/HERMES5
+COPY HERMES5.xml $JENKINS_HOME/jobs/HERMES5/config.xml
+
+RUN mkdir -p $JENKINS_HOME/jobs/IoTKitAPP
+RUN mkdir -p $JENKINS_HOME/workspace/IoTKitAPP
+COPY IoTKitAPP.xml $JENKINS_HOME/jobs/IoTKitAPP/config.xml
 
 # Arbeitsverzeichnis
 USER root
