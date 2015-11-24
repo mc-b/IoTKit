@@ -32,6 +32,14 @@ RUN mkdir -p $JENKINS_HOME/jobs/DigitalOut
 RUN mkdir -p $JENKINS_HOME/workspace/DigitalOut
 COPY DigitalOut.xml $JENKINS_HOME/jobs/DigitalOut/config.xml
 
+# Arbeitsverzeichnis
+USER root
+VOLUME [ "/var/workspace" ]
+RUN chown -R jenkins:jenkins /var/workspace
+
+USER jenkins
+WORKDIR /var/workspace
+
 EXPOSE 8080
 
 ENTRYPOINT cd /opt/jenkins && java -jar ./jenkins.war

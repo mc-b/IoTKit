@@ -34,7 +34,9 @@ build:
 # Docker Image detached starten
 run: 
 	@ RC=$(shell docker rm -f $(CONTAINER))
-	docker run -d -p $(PORT):8080 --name $(CONTAINER) -h $(CONTAINER) $(IMAGE)
+	docker run -d -p $(PORT):8080 --name $(CONTAINER) -h $(CONTAINER) \
+		-v $(HOME)/ws/mbed:/var/workspace \
+	 	$(IMAGE)
 
 # Shell im laufenden Container aufrufen	
 bash:
@@ -52,7 +54,9 @@ stop:
 
 # Docker Container nur mit bash starten	statt Eintrag in ENTRYPOINT
 debug:
-	docker run -t -i -p $(PORT):8080 --name $(CONTAINER) -h $(CONTAINER) --entrypoint=/bin/bash $(IMAGE)
+	docker run -t -i -p $(PORT):8080 --name $(CONTAINER) -h $(CONTAINER) --entrypoint=/bin/bash \
+		-v $(HOME)/ws/mbed:/var/workspace \
+		$(IMAGE)
 
 # Ausgabe auf stdout	
 logs:
