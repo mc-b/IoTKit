@@ -36,6 +36,7 @@ run:
 	@ RC=$(shell docker rm -f $(CONTAINER))
 	docker run -d -p $(PORT):8080 --name $(CONTAINER) -h $(CONTAINER) \
 		-v $(HOME)/ws/IoTKit/cordova:/var/cordova \
+		-v /var/www/html/download:/var/www/html/download \
 		$(IMAGE)
 
 # Shell im laufenden Container aufrufen	
@@ -56,6 +57,7 @@ stop:
 debug:
 	docker run -t -i -p $(PORT):8080 --name $(CONTAINER) -h $(CONTAINER) \
 	-v $(HOME)/ws/IoTKit/cordova:/var/cordova \
+	-v /var/www/html/download:/var/www/html/download \
 	--entrypoint=/bin/bash $(IMAGE)
 
 # Ausgabe auf stdout	

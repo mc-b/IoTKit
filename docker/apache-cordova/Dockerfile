@@ -47,6 +47,7 @@ RUN ["/opt/sdk-tools/android-accept-licenses.sh", "android update sdk --filter \
 RUN mkdir /opt/jenkins
 RUN wget http://mirrors.jenkins-ci.org/war/latest/jenkins.war -O /opt/jenkins/jenkins.war
 
+# Jenkins Jobs
 USER jenkins
 RUN mkdir -p $JENKINS_HOME/jobs/simpleAPP
 RUN mkdir -p $JENKINS_HOME/workspace/simpleAPP
@@ -60,10 +61,19 @@ RUN mkdir -p $JENKINS_HOME/jobs/IoTKitAPP
 RUN mkdir -p $JENKINS_HOME/workspace/IoTKitAPP
 COPY IoTKitAPP.xml $JENKINS_HOME/jobs/IoTKitAPP/config.xml
 
+RUN mkdir -p $JENKINS_HOME/jobs/leshan
+RUN mkdir -p $JENKINS_HOME/workspace/leshan
+COPY leshan.xml $JENKINS_HOME/jobs/leshan/config.xml
+
+RUN mkdir -p $JENKINS_HOME/jobs/openhab2
+RUN mkdir -p $JENKINS_HOME/workspace/openhab2
+COPY openhab2.xml $JENKINS_HOME/jobs/openhab2/config.xml
+
 # Arbeitsverzeichnis
 USER root
-VOLUME [ "/var/cordova" ]
-RUN chown -R jenkins:jenkins /var/cordova
+VOLUME [ "/var/cordova", "/var/www/html/download" ]
+RUN chown -R jenkins:jenkins /var/cordova /var/www/html/download
+ENV DEPLOY_DIR=/var/www/html/download/
 
 USER jenkins
 WORKDIR /var/cordova

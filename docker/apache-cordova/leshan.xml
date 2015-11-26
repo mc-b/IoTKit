@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>App, basierend auf jQueryMobile, zur Steuerungs des IoTKit SMD Shields.</description>
+  <description>Eclipse leshan LWM2M Server.</description>
   <keepDependencies>false</keepDependencies>
   <properties/>
   <scm class="hudson.scm.NullSCM"/>
@@ -14,14 +14,11 @@
   <builders>
     <hudson.tasks.Shell>
       <command><![CDATA[
-[ ! -d IoTKit ] && { git clone https://github.com/mc-b/IoTKit.git; }
-cd IoTKit/cordova/iotkitAPP/
+[ ! -d leshan ] && { git clone https://github.com/eclipse/leshan.git; }
+cd leshan
 git pull
-sed -i -e"s;http://192\.168\.178\.24;http://192\.168\.178\.24;" www/index.html
-rm -rf platforms/* plugins/*
-cordova platform add android@3.5.0
-cordova build
-cp platforms/android/ant-build/*.apk ${DEPLOY_DIR}
+mvn clean package 
+cp leshan-standalone/target/*.jar leshan-client-example/target/*.jar ${DEPLOY_DIR}
 ]]>	
 </command>
     </hudson.tasks.Shell>

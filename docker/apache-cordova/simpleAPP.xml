@@ -21,7 +21,7 @@ sed -i -e"s;http://192\.168\.178\.24;http://192\.168\.178\.24;" www/index.html
 rm -rf platforms/* plugins/*
 cordova platform add android@3.5.0
 cordova build
-cp platforms/android/ant-build/*.apk ../../../
+cp platforms/android/ant-build/*.apk ${DEPLOY_DIR}
 ]]>	
 </command>
     </hudson.tasks.Shell>

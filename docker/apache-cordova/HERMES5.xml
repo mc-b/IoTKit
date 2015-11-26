@@ -20,7 +20,7 @@ git pull
 rm -rf platforms/* plugins/*
 cordova platform add android@3.5.0
 cordova build
-cp platforms/android/ant-build/*.apk ../../../
+cp platforms/android/ant-build/*.apk ${DEPLOY_DIR}
 ]]>	
 </command>
     </hudson.tasks.Shell>
