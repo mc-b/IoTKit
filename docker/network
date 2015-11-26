@@ -1,0 +1,13 @@
+#!/bin/bash
+# Ausgabe Netzwerk Geraete inkl. Ports
+NET=`hostname -I | cut -d. -f1-3`
+
+# HTTP Header
+echo "Content-type: text/plain"
+echo ""
+
+# Nachrichtenrumpf
+echo "nmap -F -T4 ${NET}.* ..."
+echo "-------------------------"
+nmap -F -T4 "${NET}.*"
+
