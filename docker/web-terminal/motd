@@ -1,0 +1,41 @@
+	HTTP REST
+	---------
+	GET:
+		curl http://apache-rest/cgi-bin/rest
+		curl http://apache-rest/cgi-bin/rest/time
+		curl http://apache-rest/cgi-bin/rest/timestamp
+		rm -f post.txt && wget http://apache-rest/data/post.txt && cat post.txt
+	POST:
+		curl http://apache-rest/cgi-bin/rest -X POST -d "light=0.5&temp=1.0&hall=0.42"
+	PUT:
+		curl http://apache-rest/cgi-bin/rest?test.txt -X PUT -d daten
+	DELETE:
+		curl http://apache-rest/cgi-bin/rest?test.txt -X DELETE
+	POST (SQL-Variante):
+		curl http://apache-rest/cgi-bin/restsql -X POST -d "light=0.5&temp=1.0&hall=0.42"
+		
+	MQTT (Mosquitto)
+	----------------
+	Subscribe:
+		mosquitto_sub -h mosquitto -t "#" -v &	
+	Publish:
+		mosquitto_pub -h mosquitto -t "Zuhause/Wohnzimmer/Temperatur" -m "24.0" -q 1
+		mosquitto_pub -h mosquitto -t "Zuhause/Schlafzimmer/Temperatur" -m "21.0" -q 1
+		
+	CoAP (leshan)
+	-------------
+	Alle Clients abfragen (Antwort im JSON Format)
+		curl -X GET  http://leshan:8080/api/clients	
+	Wert von LED2 abfragen (Antwort im text/plain Format)                      
+		curl -X GET  http://leshan:8080/api/clients/mbed-k64f-1234/10/0/2 					
+	Wert für LED2 setzen
+		curl -X GET -vvv http://leshan:8080/api/clients/mbed-k64f-1234/10/0/2 -H "Content-Type: text/plain" -d "10"
+
+	SQL (MySQL)
+	-----------
+	MySQL Monitor starten:
+		mysql -h apache-rest -uwww-data -pmbed sensoren
+	Auf MySQL Monitor prompt:
+		SELECT * FROM data;
+		
+			
