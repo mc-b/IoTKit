@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # Docker Images - wetty muss am Schluss stehen um sich mit den anderen zu verbinden
-SUBDIRS=apache-rest leshan mosquitto openhab2 fhem jenkins thingspeak wetty
+SUBDIRS=apache-cordova apache-rest fhem jenkins leshan maven mosquitto openhab2 thingspeak wetty
 
 # Usage
 all:

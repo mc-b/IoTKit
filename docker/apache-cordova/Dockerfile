@@ -61,14 +61,6 @@ RUN mkdir -p $JENKINS_HOME/jobs/IoTKitAPP
 RUN mkdir -p $JENKINS_HOME/workspace/IoTKitAPP
 COPY IoTKitAPP.xml $JENKINS_HOME/jobs/IoTKitAPP/config.xml
 
-RUN mkdir -p $JENKINS_HOME/jobs/leshan
-RUN mkdir -p $JENKINS_HOME/workspace/leshan
-COPY leshan.xml $JENKINS_HOME/jobs/leshan/config.xml
-
-RUN mkdir -p $JENKINS_HOME/jobs/openhab2
-RUN mkdir -p $JENKINS_HOME/workspace/openhab2
-COPY openhab2.xml $JENKINS_HOME/jobs/openhab2/config.xml
-
 # Arbeitsverzeichnis
 USER root
 VOLUME [ "/var/cordova", "/var/www/html/download" ]
