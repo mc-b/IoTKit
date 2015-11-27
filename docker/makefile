@@ -14,6 +14,8 @@
 
 # Docker Images - wetty muss am Schluss stehen um sich mit den anderen zu verbinden
 SUBDIRS=apache-cordova apache-rest fhem jenkins leshan maven mosquitto openhab2 thingspeak wetty
+# Raspberry Pi Images (die fehlenden haben Abhaengigkeiten zu i386 Images)
+SUBDIRS_RPI=apache-rest fhem leshan maven mosquitto openhab2 web-terminal
 
 # Usage
 all:
@@ -26,6 +28,14 @@ all:
 # Docker Image builden
 build:
 	for dir in $(SUBDIRS); do \
+    	$(MAKE) -C $$dir build; \
+	done
+
+# Docker Images auf Raspberry Pi 2! builden. TRICK: Raspi Image als ubuntu:latest tagen.
+buildrpi:
+	docker pull resin/armv7hf-debian
+	docker tag resin/armv7hf-debian ubuntu:latest
+	for dir in $(SUBDIRS_RPI); do \
     	$(MAKE) -C $$dir build; \
 	done
 

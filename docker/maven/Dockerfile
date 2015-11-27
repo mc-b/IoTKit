@@ -20,11 +20,15 @@ RUN mkdir -p $JENKINS_HOME/jobs/openhab2
 RUN mkdir -p $JENKINS_HOME/workspace/openhab2
 COPY openhab2.xml $JENKINS_HOME/jobs/openhab2/config.xml
 
+RUN mkdir -p $JENKINS_HOME/jobs/kura
+RUN mkdir -p $JENKINS_HOME/workspace/kura
+COPY kura.xml $JENKINS_HOME/jobs/kura/config.xml
+
 # Arbeitsverzeichnis
 USER root
 VOLUME [ "/var/workspace", "/var/www/html/download" ]
 RUN chown -R jenkins:jenkins /var/workspace /var/www/html/download
-ENV DEPLOY_DIR=/var/www/html/download/
+ENV DEPLOY_DIR /var/www/html/download/
 
 USER jenkins
 WORKDIR /var/workspace

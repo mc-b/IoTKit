@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description>Kura - Application Framework for M2M Service Gateways.</description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command><![CDATA[
+[ ! -d kura ] && { git clone -b develop https://github.com/eclipse/kura.git; }
+
+cd kura
+git pull
+
+cd target-platform
+mvn clean install
+
+cd ../kura
+#Build without CAN support
+mvn -Dmaven.test.skip=true -f manifest_pom.xml clean install
+# Build with web UI
+mvn -Dmaven.test.skip=true -f pom_pom.xml -Pweb clean install
+ 
+# cp ... ${DEPLOY_DIR}
+]]>	
+</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>
