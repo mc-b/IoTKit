@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=mbed Console
+Comment=mbed Console 
+Exec=lxterminal -e "picocom --imap lfcrlf /dev/ttyACM0"\n
+Icon=xfce4-splash
+Path=
+Terminal=false
+StartupNotify=true

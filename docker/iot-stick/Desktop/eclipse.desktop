@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Eclipse
+Comment=Eclipse Integrated Development Environment
+Icon=/home/pi/eclipseCPP/icon.xpm
+Exec=/home/pi/eclipseCPP/eclipse
+Terminal=false
+Categories=Development;IDE;Java;
+Path=/home/pi/ws
+StartupNotify=false

@@ -1,0 +1,53 @@
+
+# Standardumgebung
+sudo apt-get -y install chromium-browser lxterminal arduino fritzing libreoffice libreoffice-l10n-de git mercurial dos2unix picocom gparted gpart vncviewer curl build-essential
+sudo apt-get -y remove firefox thunderbird abiword gnumeric pidgin gimp ristretto xchat orage
+sudo apt-get -y autoremove
+sudo apt-get update && sudo apt-get -y upgrade
+
+# FreeCAD
+sudo add-apt-repository ppa:freecad-maintainers/freecad-stable
+sudo apt-get update
+sudo apt-get install -y freecad
+
+# Yotta
+sudo apt-get -y install python-setuptools cmake ninja-build python-dev libffi-dev libssl-dev && sudo easy_install pip
+sudo -H pip install yotta
+
+# ARM Crosscompiler
+sudo add-apt-repository ppa:terry.guo/gcc-arm-embedded
+sudo apt-get update
+sudo apt-get install -y gcc-arm-none-eabi=4.9.3.2015q3-1trusty1
+
+# C Umgebung fuer Linux
+sudo apt-get install -y clang-3.5
+
+# Docker
+apt-key adv --keyserver hkp://pgp.mit.edu:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
+echo "deb https://apt.dockerproject.org/repo ubuntu-trusty main" >/etc/apt/sources.list.d/docker.list
+apt-get update
+apt-cache policy docker-engine
+apt-get install docker-engine
+
+
+# Download Java8 von java.sun.com
+
+# Java8 als Standard
+sudo update-alternatives --install "/usr/bin/java" "java" "/opt/java/bin/java" 1
+sudo update-alternatives --install "/usr/bin/javac" "javac" "/opt/java/bin/javac" 1
+sudo update-alternatives --install "/usr/bin/javaws" "javaws" "/opt/java/bin/javaws" 1
+sudo update-alternatives --install "/usr/bin/jar" "jar" "/opt/java/bin/jar" 1 
+
+sudo update-alternatives --set "java" "/opt/java/bin/java"
+sudo update-alternatives --set "javac" "/opt/java/bin/javac"
+sudo update-alternatives --set "javaws" "/opt/java/bin/javaws"
+sudo update-alternatives --set "jar" "/opt/java/bin/jar" 
+
+# IMAGE nach VirtualBox HD
+VBoxManage convertfromraw --format VDI 2015-11-01-xubuntu-all.img xubuntu-all.vdi
+# VirtualHD nach IMAGE
+VBoxManage clonehd iot-mbern.vdi x.img --format RAW
+# Image vergroessern
+
+
+
