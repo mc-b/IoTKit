@@ -72,8 +72,8 @@ install.docker:
 
 # Docker auf Raspberry Pi installieren
 install.docker.rpi:
-	sudo cd /tmp && wget http://downloads.hypriot.com/docker-hypriot_1.9.1-1_armhf.deb
-	sudo cd /tmp && dpkg -i docker-hypriot_1.9.1-1_armhf.deb
+	sudo wget http://downloads.hypriot.com/docker-hypriot_1.9.1-1_armhf.deb
+	sudo dpkg -i docker-hypriot_1.9.1-1_armhf.deb
 	sudo usermod -a -G docker pi
 	sudo update-rc.d docker defaults
 
@@ -119,3 +119,9 @@ push.rpi:
 	done
 
 	
+# Images von Registry holen  (Raspberry Pi)
+pull.rpi:
+	$(MAKE) tunnel
+	for dir in $(SUBDIRS); do \
+    	$(MAKE) -C $$dir pull.rpi; \
+	done	
