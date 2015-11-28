@@ -59,4 +59,39 @@ clean:
 # Loescht alle ungetagten Images	
 cleani:
 	@echo "Deleting untagged images"
-	@docker rmi `docker images -q -f dangling=true`	
+	@docker rmi `docker images -q -f dangling=true`
+	
+# Docker auf Ubuntu Installieren	
+install.docker:
+	sudo apt-key adv --keyserver hkp://pgp.mit.edu:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
+	sudo echo "deb https://apt.dockerproject.org/repo ubuntu-trusty main" >/etc/apt/sources.list.d/docker.list
+	sudo apt-get update
+	sudo apt-cache policy docker-engine
+	sudo apt-get install -y docker-engine	
+	sudo usermod -a -G docker 1000	
+
+# Docker auf Raspberry Pi installieren
+install.docker.rpi
+	sudo cd /tmp && wget http://downloads.hypriot.com/docker-hypriot_1.9.1-1_armhf.deb
+	sudo cd /tmp && dpkg -i docker-hypriot_1.9.1-1_armhf.deb
+	sudo usermod -a -G docker pi
+
+# Installiert die benoetige Host Software (docker muss installiert sein)	
+install:
+	sudo apt-get install -y apache2 nmap
+	sudo a2enmod cgi proxy proxy_html proxy_http xml2enc
+	sudo cp ../apache-proxy/001-default.conf /etc/apache2/sites-enabled/001-default.conf
+	sudo cp ../apache-proxy/network /usr/lib/cgi-bin/
+	sudo cp ../apache-proxy/dockerlogs /usr/lib/cgi-bin/
+	sudo usermod -a -G docker www-data
+	sudo mkdir -p /var/www/html/download
+	sudo chown 1000:100 /var/www/html/download
+	sudo service apache2 restart
+	$(MAKE) deploy
+
+# nur neue index.html veroeffentlichen
+deploy:
+	sudo cp ../apache-proxy/index.html /var/www/html
+	sudo cp -r ../apache-proxy/base /var/www/html
+		
+	
