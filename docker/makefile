@@ -80,9 +80,9 @@ install.docker.rpi:
 install:
 	sudo apt-get install -y apache2 nmap
 	sudo a2enmod cgi proxy proxy_html proxy_http xml2enc
-	sudo cp ../apache-proxy/001-default.conf /etc/apache2/sites-enabled/001-default.conf
-	sudo cp ../apache-proxy/network /usr/lib/cgi-bin/
-	sudo cp ../apache-proxy/dockerlogs /usr/lib/cgi-bin/
+	sudo cp apache-proxy/001-default.conf /etc/apache2/sites-enabled/001-default.conf
+	sudo cp apache-proxy/network /usr/lib/cgi-bin/
+	sudo cp apache-proxy/dockerlogs /usr/lib/cgi-bin/
 	sudo usermod -a -G docker www-data
 	sudo mkdir -p /var/www/html/download
 	sudo chown 1000:100 /var/www/html/download
@@ -91,7 +91,7 @@ install:
 
 # nur neue index.html veroeffentlichen
 deploy:
-	sudo cp ../apache-proxy/index.html /var/www/html
-	sudo cp -r ../apache-proxy/base /var/www/html
+	sudo cp apache-proxy/index.html /var/www/html
+	sudo cp -r apache-proxy/base /var/www/html
 		
 	
