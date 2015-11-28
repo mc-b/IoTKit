@@ -67,3 +67,30 @@ logs:
 # Veraenderte Dateien	
 diff:
 	docker diff $(CONTAINER)	
+	
+# Image pushen
+push:
+	docker tag $(IMAGE) localhost:5000/$(CONTAINER)
+	docker push localhost:5000/$(CONTAINER)
+	docker rmi localhost:5000/$(CONTAINER)
+	
+# Image pushen (Raspberry Pi)
+push.rpi:
+	docker tag $(IMAGE) localhost:5000/$(CONTAINER).rpi
+	docker push localhost:5000/$(CONTAINER).rpi
+	docker rmi localhost:5000/$(CONTAINER).rpi	
+	
+# Image von localhost holen	
+pull:
+	docker pull localhost:5000/$(CONTAINER)
+	docker tag localhost:5000/$(CONTAINER) $(IMAGE)
+	docker rmi localhost:5000/$(CONTAINER)
+	
+# Image von localhost holen (Raspberry Pi)
+pull.rpi:
+	docker pull localhost:5000/$(CONTAINER).rpi
+	docker tag localhost:5000/$(CONTAINER).rpi $(IMAGE)
+	docker rmi localhost:5000/$(CONTAINER).rpi	
+
+	
+	

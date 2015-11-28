@@ -95,4 +95,27 @@ deploy:
 	sudo cp apache-proxy/index.html /var/www/html
 	sudo cp -r apache-proxy/base /var/www/html
 		
+# Start Docker registry - muss nur einmal ausgefuehrt werden
+registry:
+	mkdir -p /var/docker/registry/data
+	docker run -d -p 5000:5000 --restart=always --name registry \
+  	-v /var/docker/registry/data:/var/lib/registry \
+  	registry:2
+
+# SSH Tunnel um ohne https: auf die Registry zu pushen
+tunnel:
+	ssh -N -L 5000:localhost:5000 mbern@iot	
+	
+# Images taggen um sie anschliessend zu pushen	
+push:
+	for dir in $(SUBDIRS); do \
+    	$(MAKE) -C $$dir push; \
+	done		
+	
+# Images taggen um sie anschliessend zu pushen (Raspberry Pi)
+push.rpi:
+	for dir in $(SUBDIRS); do \
+    	$(MAKE) -C $$dir push.rpi; \
+	done
+
 	
