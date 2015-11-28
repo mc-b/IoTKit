@@ -71,7 +71,7 @@ install.docker:
 	sudo usermod -a -G docker 1000	
 
 # Docker auf Raspberry Pi installieren
-install.docker.rpi
+install.docker.rpi:
 	sudo cd /tmp && wget http://downloads.hypriot.com/docker-hypriot_1.9.1-1_armhf.deb
 	sudo cd /tmp && dpkg -i docker-hypriot_1.9.1-1_armhf.deb
 	sudo usermod -a -G docker pi
