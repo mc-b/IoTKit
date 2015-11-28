@@ -114,7 +114,7 @@ push:
 	
 # Images taggen um sie anschliessend zu pushen (Raspberry Pi)
 push.rpi:
-	for dir in $(SUBDIRS); do \
+	for dir in $(SUBDIRS_RPI); do \
     	$(MAKE) -C $$dir push.rpi; \
 	done
 
@@ -122,6 +122,6 @@ push.rpi:
 # Images von Registry holen  (Raspberry Pi)
 pull.rpi:
 	$(MAKE) tunnel
-	for dir in $(SUBDIRS); do \
+	for dir in $(SUBDIRS_RPI); do \
     	$(MAKE) -C $$dir pull.rpi; \
 	done	
