@@ -33,8 +33,7 @@ build:
 
 # Docker Image detached starten
 run: 
-	@ RC=$(shell docker rm -f $(CONTAINER))
-	docker run -d -p $(PORT):8080 --name $(CONTAINER) -h $(CONTAINER) \
+	docker run -d -p $(PORT):8080 --restart=always --name $(CONTAINER) -h $(CONTAINER) \
 		-v /var/www/html/download:/var/www/html/download \
 		$(IMAGE)
 

@@ -33,8 +33,7 @@ build:
 
 # Docker Image detached starten
 run:
-	@ RC=$(shell docker rm -f $(CONTAINER))
-	docker run -d -p $(PORT):80 -p 3306:3306 --name $(CONTAINER) $(IMAGE)
+	docker run -d -p $(PORT):80 -p 3306:3306 --restart=always --name $(CONTAINER) $(IMAGE)
 
 # Shell im laufenden Container aufrufen	
 bash:
