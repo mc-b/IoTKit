@@ -73,5 +73,5 @@ COPY bash_history /var/jenkins/.bash_history
 
 EXPOSE 8080
 
-ENTRYPOINT cd /opt/jenkins && java -jar ./jenkins.war
+ENTRYPOINT cd /opt/jenkins && java -jar ./jenkins.war --prefix=/cordova
 
