@@ -61,6 +61,29 @@ RUN mkdir -p $JENKINS_HOME/jobs/RTC
 RUN mkdir -p $JENKINS_HOME/workspace/RTC
 COPY RTC.xml $JENKINS_HOME/jobs/RTC/config.xml
 
+# Jenkins Jobs (smd.iotkit1.ch)
+RUN mkdir -p $JENKINS_HOME/jobs/SDCardFS
+RUN mkdir -p $JENKINS_HOME/workspace/SDCardFS
+COPY SDCardFS.xml $JENKINS_HOME/jobs/SDCardFS/config.xml
+RUN mkdir -p $JENKINS_HOME/jobs/Polling
+RUN mkdir -p $JENKINS_HOME/workspace/Polling
+COPY Polling.xml $JENKINS_HOME/jobs/Polling/config.xml
+RUN mkdir -p $JENKINS_HOME/jobs/ThreadSignal
+RUN mkdir -p $JENKINS_HOME/workspace/ThreadSignal
+COPY ThreadSignal.xml $JENKINS_HOME/jobs/ThreadSignal/config.xml
+RUN mkdir -p $JENKINS_HOME/jobs/RGBLEDStripSPI
+RUN mkdir -p $JENKINS_HOME/workspace/RGBLEDStripSPI
+COPY RGBLEDStripSPI.xml $JENKINS_HOME/jobs/RGBLEDStripSPI/config.xml
+RUN mkdir -p $JENKINS_HOME/jobs/SDCardIO
+RUN mkdir -p $JENKINS_HOME/workspace/SDCardIO
+COPY SDCardIO.xml $JENKINS_HOME/jobs/SDCardIO/config.xml
+RUN mkdir -p $JENKINS_HOME/jobs/Schrittmotor
+RUN mkdir -p $JENKINS_HOME/workspace/Schrittmotor
+COPY Schrittmotor.xml $JENKINS_HOME/jobs/Schrittmotor/config.xml
+RUN mkdir -p $JENKINS_HOME/jobs/RGBLEDStrip
+RUN mkdir -p $JENKINS_HOME/workspace/RGBLEDStrip
+COPY RGBLEDStrip.xml $JENKINS_HOME/jobs/RGBLEDStrip/config.xml
+
 # Jenkins Konfiguration (nur 1 Build Prozessor gleichzeitig)
 COPY config.xml /var/jenkins
 
