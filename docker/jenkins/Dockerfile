@@ -84,6 +84,11 @@ RUN mkdir -p $JENKINS_HOME/jobs/RGBLEDStrip
 RUN mkdir -p $JENKINS_HOME/workspace/RGBLEDStrip
 COPY RGBLEDStrip.xml $JENKINS_HOME/jobs/RGBLEDStrip/config.xml
 
+# Jenkins Jobs (smd.iotkit2.ch)
+RUN mkdir -p $JENKINS_HOME/jobs/JSONParser
+RUN mkdir -p $JENKINS_HOME/workspace/JSONParser
+COPY JSONParser.xml $JENKINS_HOME/jobs/JSONParser/config.xml
+
 # Jenkins Konfiguration (nur 1 Build Prozessor gleichzeitig)
 COPY config.xml /var/jenkins
 

@@ -65,15 +65,12 @@
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator"/>
-        <string>Motor</string>
         <string>Polling</string>
-        <string>PollingTimer</string>
         <string>RGBLEDStrip</string>
         <string>RGBLEDStripSPI</string>
         <string>SDCardFS</string>
         <string>SDCardIO</string>
         <string>Schrittmotor</string>
-        <string>Servo</string>
       </jobNames>
       <jobFilters/>
       <columns>
@@ -95,7 +92,7 @@
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator"/>
-        <string>LichtSensor</string>
+        <string>JSONParser</string>
       </jobNames>
       <jobFilters/>
       <columns>
