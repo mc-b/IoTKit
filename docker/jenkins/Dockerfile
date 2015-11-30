@@ -61,6 +61,9 @@ RUN mkdir -p $JENKINS_HOME/jobs/RTC
 RUN mkdir -p $JENKINS_HOME/workspace/RTC
 COPY RTC.xml $JENKINS_HOME/jobs/RTC/config.xml
 
+# Jenkins Konfiguration (nur 1 Build Prozessor gleichzeitig)
+COPY config.xml /var/jenkins
+
 # Arbeitsverzeichnis
 USER root
 VOLUME [ "/var/workspace" ]
