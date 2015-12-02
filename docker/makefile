@@ -68,7 +68,7 @@ install.docker:
 	sudo apt-get update
 	sudo apt-cache policy docker-engine
 	sudo apt-get install -y docker-engine	
-	sudo usermod -a -G docker 1000	
+	sudo usermod -a -G docker $(LOGNAME)	
 
 # Docker auf Raspberry Pi installieren
 install.docker.rpi:
@@ -86,7 +86,7 @@ install:
 	sudo cp apache-proxy/dockerlogs /usr/lib/cgi-bin/
 	sudo usermod -a -G docker www-data
 	sudo mkdir -p /var/www/html/download
-	sudo chown 1000:100 /var/www/html/download
+	sudo chown $(LOGNAME) /var/www/html/download
 	sudo service apache2 restart
 	$(MAKE) deploy
 
