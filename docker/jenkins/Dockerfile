@@ -102,5 +102,5 @@ WORKDIR /var/workspace
 
 EXPOSE 8080
 
-ENTRYPOINT cd /opt/jenkins && java -jar ./jenkins.war --prefix=/jenkins
+ENTRYPOINT cd /opt/jenkins && java -jar ./jenkins.war --prefix=/mbed
 

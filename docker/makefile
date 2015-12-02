@@ -94,6 +94,8 @@ install:
 deploy:
 	sudo cp apache-proxy/index.html /var/www/html
 	sudo cp -r apache-proxy/base /var/www/html
+	sudo cp apache-proxy/001-default.conf /etc/apache2/sites-enabled/001-default.conf
+	sudo service apache2 restart
 		
 # Start Docker registry - muss nur einmal ausgefuehrt werden
 registry:
