@@ -15,7 +15,7 @@
     <hudson.tasks.Shell>
       <command><![CDATA[
 [ ! -d IoTKit ] && { git clone https://github.com/mc-b/IoTKit.git; }
-cd IoTKit/cordova/HERMES5/
+cd IoTKit/Web-App/HERMES5/
 git pull
 rm -rf platforms/* plugins/*
 cordova platform add android@3.5.0

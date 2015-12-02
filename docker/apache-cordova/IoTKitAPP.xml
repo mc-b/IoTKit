@@ -15,7 +15,7 @@
     <hudson.tasks.Shell>
       <command><![CDATA[
 [ ! -d IoTKit ] && { git clone https://github.com/mc-b/IoTKit.git; }
-cd IoTKit/cordova/iotkitAPP/
+cd IoTKit/Web-App/iotkitAPP/
 git pull
 sed -i -e"s;http://192\.168\.178\.24;http://192\.168\.178\.24;" www/index.html
 rm -rf platforms/* plugins/*
