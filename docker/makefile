@@ -32,9 +32,9 @@ build:
 	done
 
 # Docker Images auf Raspberry Pi 2! builden. TRICK: Raspi Image als ubuntu:latest tagen.
-buildrpi:
+build.rpi:
 	docker pull resin/armv7hf-debian
-	docker tag resin/armv7hf-debian ubuntu:latest
+	docker tag -f resin/armv7hf-debian ubuntu:latest
 	for dir in $(SUBDIRS_RPI); do \
     	$(MAKE) -C $$dir build; \
 	done
