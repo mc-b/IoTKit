@@ -32,6 +32,15 @@ Soll bei jedem Systemstart die Daten zurückgesetzt werden, können folgende Sta
  * upstart.conf nach /etc/init/iot.conf kopieren/umbenennen.
  * Anschliessend muss der Ordner wo sich die makefiles befinden angepasst werden.
 
+Swapfile in Cloud einrichten
+----------------------------
+In der Cloud werden die Virtuellen Maschinen oft ohne Swap eingerichtet, dass kann
+zu einem Memory Overflow führen.
 
-
+Swapfile einrichten:
+* sudo dd if=/dev/zero of=/swapfile bs=1024 count=512k
+* sudo mkswap /swapfile
+* sudo swapon /swapfile
+* Swapfile in /etc/fstab eintragen durch anfügen folgender Zeile:
+ - /swapfile       none    swap    sw      0       0 
  
