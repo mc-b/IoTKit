@@ -15,11 +15,12 @@ Installation
  - git clone https://github.com/mc-b/IoTKit.git
  - cd IoTKit/docker && make install.docker 
  - Ausloggen und wieder anmelden!
-* Hauptseite und Apache als Reverse Proxy
+* Übersichtsseite und Apache (Reverse Proxy)
  - cd IoTKit/docker && make install
 * Docker Container 
  - makefile editieren und nicht benötigte Docker Images entfernen, Variable: SUBDIRS
  - make run
+* Übersichtsseite mittels Browser aufrufen http://<mein Server/
 
 Die Docker Images starten automatisch beim Systemstart. Die Daten bleiben dabei erhalten.
 
