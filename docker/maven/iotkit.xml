@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>Open Home Automation Bus (openHAB2)</description>
+  <description>IoTKit SMD Shield Binding for openHAB2</description>
   <keepDependencies>false</keepDependencies>
   <properties/>
   <scm class="hudson.scm.NullSCM"/>
@@ -14,11 +14,10 @@
   <builders>
     <hudson.tasks.Shell>
       <command><![CDATA[
-[ ! -d openhab2 ] && { git clone https://github.com/openhab/openhab2.git; }
-cd openhab2
-git pull
+[ ! -d IoTKit ] && { git clone https://github.com/mc-b/IoTKit.git; }
+cd IoTKit/smarthome/org.openhab.binding.iotkit
 mvn clean install
-cp distribution/target/*.zip ${DEPLOY_DIR}
+cp target/*.jar ${DEPLOY_DIR}
 ]]>	
 </command>
     </hudson.tasks.Shell>

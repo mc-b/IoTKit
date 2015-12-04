@@ -24,6 +24,10 @@ RUN mkdir -p $JENKINS_HOME/jobs/kura
 RUN mkdir -p $JENKINS_HOME/workspace/kura
 COPY kura.xml $JENKINS_HOME/jobs/kura/config.xml
 
+RUN mkdir -p $JENKINS_HOME/jobs/iotkit
+RUN mkdir -p $JENKINS_HOME/workspace/iotkit
+COPY iotkit.xml $JENKINS_HOME/jobs/iotkit/config.xml
+
 # Arbeitsverzeichnis
 USER root
 VOLUME [ "/var/workspace", "/var/www/html/download" ]
