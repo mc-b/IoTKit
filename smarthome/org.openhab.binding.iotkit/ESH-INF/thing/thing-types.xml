@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<thing:thing-descriptions bindingId="iotkit"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:thing="http://eclipse.org/smarthome/schemas/thing-description/v1.0.0"
+	xsi:schemaLocation="http://eclipse.org/smarthome/schemas/thing-description/v1.0.0 http://eclipse.org/smarthome/schemas/thing-description-1.0.0.xsd">
+
+    <!--  
+        Sensoren
+     -->
+     
+    <thing-type id="sensors">
+        <supported-bridge-type-refs>
+            <bridge-type-ref id="bridge" />
+        </supported-bridge-type-refs>
+            
+        <label>IoTKit SMD Shield Sensors</label>
+        <description>Sensors on IoTKit Shield</description>
+
+        <channels>
+            <channel id="temp" typeId="temp" />
+            <channel id="poti" typeId="poti" />
+            <channel id="light" typeId="light" />
+            <channel id="hall" typeId="hall" />
+        </channels>
+        
+        <config-description>
+            <parameter name="refresh" type="integer">
+                <label>Refresh interval</label>
+                <description>Specifies the refresh interval in seconds.
+                </description>
+                <default>60</default>
+            </parameter>
+        </config-description>       
+    </thing-type>   
+      
+	<channel-type id="temp">
+		<item-type>Number</item-type>
+		<label>Temperature</label>
+		<description>Current temperature in degrees celsius</description>
+		<category>Temperature</category>
+		<state readOnly="true" pattern="%.1f °C">
+		</state>
+	</channel-type>
+    
+    <channel-type id="poti">
+        <item-type>Number</item-type>
+        <label>Poti</label>
+        <description>Current pressure in millibar</description>
+        <category>Pressure</category>
+        <state readOnly="true" pattern="%.4f %%">
+        </state>
+    </channel-type> 	
+
+	<channel-type id="light">
+		<item-type>Number</item-type>
+		<label>Hall Sensor</label>
+		<description>Current humidity in %</description>
+		<category>Humidity</category>
+		<state readOnly="true" pattern="%.4f %%">
+		</state>
+	</channel-type>
+
+	<channel-type id="hall">
+		<item-type>Number</item-type>
+		<label>Lichtintensität</label>
+		<description>Current pressure in millibar</description>
+		<category>Pressure</category>
+		<state readOnly="true" pattern="%.4f %%">
+		</state>
+	</channel-type>
+
+	
+    <!--  
+        Aktoren
+     -->
+     
+    <thing-type id="actors">
+        <supported-bridge-type-refs>
+            <bridge-type-ref id="bridge" />
+        </supported-bridge-type-refs>
+            
+        <label>IoTKit SMD Shield Actors</label>
+        <description>Actors on IoTKit Shield</description>
+
+        <channels>
+            <channel id="motor1" typeId="motor" />
+            <channel id="servo1" typeId="servo" />
+            <channel id="stepper1" typeId="stepper" />
+        </channels>
+    </thing-type>
+         	
+    <channel-type id="motor">
+        <item-type>Rollershutter</item-type>
+        <label>Motor</label>
+        <description>Motor Speed</description>
+        <category>Blinds</category>
+        <state readOnly="false" pattern="%.2f">
+        </state>
+    </channel-type>	
+
+    <channel-type id="servo">
+        <item-type>Dimmer</item-type>
+        <label>Servo</label>
+        <description>Servo position</description>
+        <category>DimmableLight</category>
+        <state readOnly="false" pattern="%.2f">
+        </state>
+    </channel-type> 
+    
+    <channel-type id="stepper">
+        <item-type>Rollershutter</item-type>
+        <label>Stepper</label>
+        <description>Stepper move</description>
+        <category>Blinds</category>
+        <state readOnly="false" pattern="%.0f">
+        </state>
+    </channel-type>         
+
+    <!--  
+        LED
+     -->
+     
+    <thing-type id="leds">
+        <supported-bridge-type-refs>
+            <bridge-type-ref id="bridge" />
+        </supported-bridge-type-refs>
+            
+        <label>IoTKit SMD Shield LED's</label>
+        <description>LED's on IoTKit Shield</description>
+
+        <channels>
+            <channel id="led1" typeId="led" />
+            <channel id="led2" typeId="led" />
+            <channel id="led3" typeId="led" />
+            <channel id="led4" typeId="led" />
+        </channels>
+    </thing-type>    
+     
+    <channel-type id="led">
+        <item-type>Dimmer</item-type>
+        <label>LED</label>
+        <description>LED 1 - 4</description>
+        <category>DimmableLight</category>
+        <state readOnly="false" pattern="%.0f">
+        </state>
+    </channel-type>      
+    
+    <!--  
+        RGB LED Strip
+     -->
+     
+    <thing-type id="ledstrip">
+        <supported-bridge-type-refs>
+            <bridge-type-ref id="bridge" />
+        </supported-bridge-type-refs>
+            
+        <label>IoTKit SMD Shield LED Strip</label>
+        <description>LED RGB Strip (12V) on IoTKit Shield</description>
+
+        <channels>
+            <channel id="ledstrip" typeId="color" />
+        </channels>
+    </thing-type>    
+     
+    <channel-type id="color">
+        <item-type>Color</item-type>
+        <label>Strip</label>
+        <description>LED Strip</description>
+        <category>ColorLight</category>
+        <state readOnly="false">
+        </state>
+    </channel-type>       
+     
+</thing:thing-descriptions>
