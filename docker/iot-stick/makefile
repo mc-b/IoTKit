@@ -18,6 +18,7 @@ install:
 	sudo apt-get -y remove firefox thunderbird abiword gnumeric pidgin gimp ristretto xchat orage
 	sudo apt-get -y autoremove
 	sudo apt-get update && sudo apt-get -y upgrade
+	sudo sudo sh -c "echo $(LOGNAME) ALL=(ALL) NOPASSWD: ALL | tee --append >/etc/sudoers" 
 	
 # Neue Version FreeCAD	
 install.freecad:
