@@ -25,7 +25,8 @@ Testen
 ------
 - Docker Image starten 
  * Jenkins UI auf http://localhost:8080 oder via Hauptseite öffnen
- * Codebox IDE UI auf http://localhost:8000 oder via Hauptseite öffnen, einloggen mittels codebox/password
+ * Codebox IDE UI auf http://localhost:8000 oder via Hauptseite öffnen, einloggen mittels guest/guest-
+ * Terminalfenster aus der IDE starten
 - mbed OS V2.x in Jenkins
  * Beispiele auf den Kurs in Gruppen smd.iotkit?.ch "Build planen"
  * Programm wird compiliert und kann aus dem Arbeitsbereich auf das Board downgeloadet werden. 
