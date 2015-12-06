@@ -33,9 +33,9 @@ build:
 
 # Docker Image detached starten
 run: 
-	docker run -d -p $(PORT):8080 --restart=always --name $(CONTAINER) -h $(CONTAINER) \
-		-v $(HOME)/ws/mbed:/var/workspace \
-	 	$(IMAGE)
+#	docker run -d -p $(PORT):8080 --restart=always --name $(CONTAINER) -h $(CONTAINER) \
+#		-v $(HOME)/ws/mbed:/var/workspace \
+#	 	$(IMAGE)
 
 # Shell im laufenden Container aufrufen	
 bash:

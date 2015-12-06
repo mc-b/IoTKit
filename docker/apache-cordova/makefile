@@ -33,10 +33,10 @@ build:
 
 # Docker Image detached starten
 run: 
-	docker run -d -p $(PORT):8080 --restart=always --name $(CONTAINER) -h $(CONTAINER) \
-		-v $(HOME)/ws/IoTKit/Web-App:/var/cordova \
-		-v /var/www/html/download:/var/www/html/download \
-		$(IMAGE)
+#	docker run -d -p $(PORT):8080 --restart=always --name $(CONTAINER) -h $(CONTAINER) \
+#		-v $(HOME)/ws/IoTKit/Web-App:/var/cordova \
+#		-v /var/www/html/download:/var/www/html/download \
+#		$(IMAGE)
 
 # Shell im laufenden Container aufrufen	
 bash:
