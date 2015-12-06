@@ -30,8 +30,8 @@ COPY iotkit.xml $JENKINS_HOME/jobs/iotkit/config.xml
 
 # Arbeitsverzeichnis
 USER root
-VOLUME [ "/var/workspace", "/var/www/html/download" ]
-RUN chown -R jenkins:jenkins /var/workspace /var/www/html/download
+VOLUME [ "/var/www/html/download" ]
+RUN mkdir -p /var/workspace && chown -R jenkins:jenkins /var/workspace /var/www/html/download
 ENV DEPLOY_DIR /var/www/html/download/
 
 USER jenkins

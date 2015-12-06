@@ -54,7 +54,6 @@ stop:
 # Docker Container nur mit bash starten	statt Eintrag in ENTRYPOINT
 debug:
 	docker run -t -i -p $(PORT):8080 --name $(CONTAINER) -h $(CONTAINER) \
-	-v $(HOME)/ws:/var/maven \
 	-v /var/www/html/download:/var/www/html/download \
 	--entrypoint=/bin/bash $(IMAGE)
 
