@@ -35,15 +35,11 @@
         <comparator class="hudson.util.CaseInsensitiveComparator"/>
         <string>AnalogIn</string>
         <string>DigitalOut</string>
-        <string>DotLEDMatrix</string>
         <string>Ethernet</string>
-        <string>HallSensor</string>
-        <string>LEDUI</string>
         <string>LichtSensor</string>
         <string>PIRSensor</string>
         <string>PwmOut</string>
         <string>PwmOutPeriod</string>
-        <string>RTC</string>
       </jobNames>
       <jobFilters/>
       <columns>
