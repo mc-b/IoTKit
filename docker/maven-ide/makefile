@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-IMAGE=marcel1691/maven
+IMAGE=marcel1691/maven-ide
 CONTAINER=maven
 PORT=32700
 PORT2=32710

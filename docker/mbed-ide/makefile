@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-IMAGE=marcel1691/jenkins
+IMAGE=marcel1691/mbed-ide
 CONTAINER=jenkins
 PORT=32200
 PORT2=32210
