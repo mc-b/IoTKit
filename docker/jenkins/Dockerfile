@@ -65,8 +65,7 @@ COPY config.xml /var/jenkins
 
 # Arbeitsverzeichnis
 USER root
-VOLUME [ "/var/workspace" ]
-RUN chown -R jenkins:jenkins /var/workspace
+RUN mkdir -p /var/workspace && chown -R jenkins:jenkins /var/workspace
 
 USER jenkins
 WORKDIR /var/workspace

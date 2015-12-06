@@ -35,7 +35,6 @@ build:
 # Docker Image detached starten
 run: 
 	docker run -d -p $(PORT):8080 -p $(PORT2):8000 --restart=on-failure:5 --name $(CONTAINER) -h $(CONTAINER) \
-		-v $(HOME)/ws/mbed:/var/workspace \
 	 	$(IMAGE)
 
 # Shell im laufenden Container aufrufen	
@@ -55,7 +54,6 @@ stop:
 # Docker Container nur mit bash starten	statt Eintrag in ENTRYPOINT
 debug:
 	docker run -t -i -p $(PORT):8080 -p $(PORT2):8000 --name $(CONTAINER) -h $(CONTAINER) --entrypoint=/bin/bash \
-		-v $(HOME)/ws/mbed:/var/workspace \
 		$(IMAGE)
 
 # Ausgabe auf stdout	

@@ -14,4 +14,10 @@ ENV CODEBOX_PASSWORD guest-
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 EXPOSE 8000 8080
 
+# Projekt in workspace
+WORKDIR /var/workspace
+RUN git clone https://github.com/ARMmbed/example-mbedos-blinky.git
+RUN hg clone https://developer.mbed.org/teams/smdiotkitch/code/AnalogIn/
+RUN hg clone https://developer.mbed.org/teams/smdiotkitch/code/DigitalOut/
+
 ENTRYPOINT ["/usr/bin/supervisord"]
