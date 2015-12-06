@@ -63,7 +63,8 @@ COPY IoTKitAPP.xml $JENKINS_HOME/jobs/IoTKitAPP/config.xml
 
 # Arbeitsverzeichnis
 USER root
-VOLUME [ "/var/cordova", "/var/www/html/download" ]
+VOLUME [ "/var/www/html/download" ]
+RUN mkdir -p /var/cordova
 RUN chown -R jenkins:jenkins /var/cordova /var/www/html/download
 ENV DEPLOY_DIR=/var/www/html/download/
 

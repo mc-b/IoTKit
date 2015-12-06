@@ -15,4 +15,8 @@ ENV CODEBOX_PASSWORD guest-
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 EXPOSE 8000 8080
 
+# Projekt in workspace
+WORKDIR /var/cordova
+RUN git clone https://github.com/mc-b/IoTKit.git
+
 ENTRYPOINT ["/usr/bin/supervisord"]

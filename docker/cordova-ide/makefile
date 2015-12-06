@@ -35,7 +35,6 @@ build:
 # Docker Image detached starten
 run: 
 	docker run -d -p $(PORT):8080 -p $(PORT2):8000 --restart=on-failure:5 --name $(CONTAINER) -h $(CONTAINER) \
-		-v $(HOME)/ws/IoTKit/Web-App:/var/cordova \
 		-v /var/www/html/download:/var/www/html/download \
 		$(IMAGE)
 
@@ -56,7 +55,6 @@ stop:
 # Docker Container nur mit bash starten	statt Eintrag in ENTRYPOINT
 debug:
 	docker run -t -i -p $(PORT):8080 --name $(CONTAINER) -h $(CONTAINER) \
-	-v $(HOME)/ws/IoTKit/cordova:/var/cordova \
 	-v /var/www/html/download:/var/www/html/download \
 	--entrypoint=/bin/bash $(IMAGE)
 
