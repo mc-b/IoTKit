@@ -22,6 +22,8 @@ RUN git clone https://github.com/ARMmbed/example-mbedos-blinky.git
 RUN hg clone https://developer.mbed.org/teams/smdiotkitch/code/AnalogIn/
 RUN hg clone https://developer.mbed.org/teams/smdiotkitch/code/DigitalOut/
 
+COPY bash_history ${JENKINS_HOME}/.bash_history
+
 EXPOSE 8000 8080
 
 ENTRYPOINT ["/start.sh"]
