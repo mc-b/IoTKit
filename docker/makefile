@@ -15,7 +15,7 @@
 # Docker Images - mbed-ide und wetty muss am Schluss stehen um sich mit den anderen zu verbinden
 SUBDIRS=apache-cordova cordova-ide apache-rest fhem jenkins leshan maven maven-ide mosquitto openhab2 thingspeak mbed-ide wetty
 # Raspberry Pi Images (die fehlenden haben Abhaengigkeiten zu i386 Images)
-SUBDIRS_RPI=apache-rest fhem leshan maven mosquitto openhab2 web-terminal
+SUBDIRS_RPI=apache-rest fhem leshan maven-ide mosquitto openhab2 web-terminal
 
 # Usage
 all:
