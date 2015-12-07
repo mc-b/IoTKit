@@ -4,4 +4,4 @@
 #
 java -jar /opt/jenkins/jenkins.war --prefix=/maven &
 
-/usr/bin/codebox run -t "mbed IDE" -u ${CODEBOX_USERNAME}:${CODEBOX_PASSWORD} /var/workspace
+/usr/bin/codebox run -t "Java IDE" -u ${CODEBOX_USERNAME}:${CODEBOX_PASSWORD} /var/workspace
