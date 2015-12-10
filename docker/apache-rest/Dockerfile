@@ -49,13 +49,13 @@ RUN apt-get install -y -f
 
 WORKDIR /var/www/html
 RUN git clone --bare https://github.com/mc-b/IoTKit.git
-WORKDIR /var/www/html/iotkit.git
+WORKDIR /var/www/html/IoTKit.git
 RUN mv hooks/post-update.sample hooks/post-update
 RUN chmod a+x hooks/post-update
 RUN git update-server-info && \
 	touch git-daemon-export-ok
 WORKDIR /var/www/html
-RUN chown -R www-data:www-data iotkit.git
+RUN chown -R www-data:www-data IoTKit.git
 
 # cgit Repositories Konfiguration
 COPY cgitrc.etc /etc/cgitrc
