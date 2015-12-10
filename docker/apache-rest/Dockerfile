@@ -40,6 +40,26 @@ RUN hg clone https://developer.mbed.org/teams/smdiotkit2ch/code/RPCHTTPServerHan
 ADD start.sh /start.sh
 RUN chmod 755 /start.sh
 
+# cgit
+WORKDIR /opt
+RUN apt-get install -y liblua5.1-0
+RUN wget http://de.archive.ubuntu.com/ubuntu/pool/universe/c/cgit/cgit_0.11.2.git2.3.2-1_amd64.deb
+RUN dpkg -i cgit_0.11.2.git2.3.2-1_amd64.deb
+RUN apt-get install -y -f
+
+WORKDIR /var/www/html
+RUN git clone --bare https://github.com/mc-b/IoTKit.git
+WORKDIR /var/www/html/iotkit.git
+RUN mv hooks/post-update.sample hooks/post-update
+RUN chmod a+x hooks/post-update
+RUN git update-server-info && \
+	touch git-daemon-export-ok
+WORKDIR /var/www/html
+RUN chown -R www-data:www-data iotkit.git
+
+# cgit Repositories Konfiguration
+COPY cgitrc.etc /etc/cgitrc
+
 EXPOSE 80 3306
 
 ENTRYPOINT ["/start.sh"]

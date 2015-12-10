@@ -7,192 +7,229 @@
 <link rel="stylesheet" href="base/css/content.css" type="text/css">
 </head>
 <body>
-	<div id="outer">
-		<div id="main">
+    <div id="outer">
+        <div id="main">
 
-			<div id="nodeDecoration">
-				<p id="nodeTitle">Allgemeines</p>
-			</div>
-			<div class="preknowledgeIdevice">
-				<div class="iDevice emphasis1">
-					<img alt="IDevice Icon" class="iDevice_icon" src="base/images/icon_reading.gif" /> <span class="iDeviceTitle">IoTKit
-						USB Stick</span>
-					<div class="iDevice_inner">
-						<div class="block" style="display: block"></div>
-						<p>
-							Der IoTKit USB Stick fasst Server und Tools für die Kursreihe <a href="http://kurs.eb-zuerich.ch/is95" target="_blank">Internet
-								der Dinge</a> zusammen. Der IoTKit USB Stick baut dabei auf <a href="http://xubuntu.org/" target="_blank">XUbuntu</a> und <a
-								href="https://www.docker.com/" target="_blank">Docker</a> auf. Zusätzlich wird ein Account auf der <a
-								href="https://developer.mbed.org/" target="_blank">mbed Developer Site</a> und ein <a
-								href="https://developer.mbed.org/platforms/FRDM-K64F/" target="_blank">Freescale FRDM-K64F Board</a> benötigt. Ein <a
-								href="https://developer.mbed.org/users/marcel1691/notebook/internet-of-things-kit-iotkit-smd-shield/" target="_blank">IoTKit
-								SMD Shield</a> ist von Vorteil, aber nicht Bedingung.
-						</p>
-						<table border="0" width="100%">
-							<tr>
-								<th width="50%">Server und Tools</th>
-								<th width="50%">Weitere Informationen</th>
-							</tr>
-							<tr>
-								<td>
-									<h3>IoT Server</h3>
-									<ul>
-										<li><a href="/rest/"
-											title="Einfacher IoT Server basierend auf Apache, HTML5, JavaScript, CGI-BIN Scripts und einer MySQL Datenbank. Zu Demozwecken sind die Web-Apps integriert"
-											target="_blank">AdHoc Server (Apache, MySQL - HTTP, REST)</a> - <a href="/cgi-bin/dockerlogs?apache-rest" target="_blank"
-											title="Meldungen des Docker Containers">Logs</a>, <a
-											href="https://developer.mbed.org/teams/smdiotkit2ch/code/2-07-04-Uebung/" target="_blank"
-											title="Beispielprogramm für FRDM-K64F Board">mbed</a>, <a href="/download" target="_blank"
-											title="Download Ordner mit den von den Build Servern erstellten Artefakten">Downloads</a> <a
-											href="https://github.com/mc-b/IoTKit/tree/master/docker/apache-rest" target="_blank" title="Hilfe"><img
-												src="base/images/icon_help.png" width=16 height=16 /></a></li>
+            <div id="nodeDecoration">
+                <p id="nodeTitle">Allgemeines</p>
+            </div>
+            <div class="preknowledgeIdevice">
+                <div class="iDevice emphasis1">
+                    <img alt="IDevice Icon" class="iDevice_icon" src="base/images/icon_reading.gif" /> <span
+                        class="iDeviceTitle">IoTKit USB Stick</span>
+                    <div class="iDevice_inner">
+                        <div class="block" style="display: block"></div>
+                        <p>
+                            Der IoTKit USB Stick fasst Server und Tools für die Kursreihe <a
+                                href="http://kurs.eb-zuerich.ch/is95" target="_blank">Internet der Dinge</a> zusammen. Der
+                            IoTKit USB Stick baut dabei auf <a href="http://xubuntu.org/" target="_blank">XUbuntu</a> und <a
+                                href="https://www.docker.com/" target="_blank">Docker</a> auf. Zusätzlich wird ein Account auf
+                            der <a href="https://developer.mbed.org/" target="_blank">mbed Developer Site</a> und ein <a
+                                href="https://developer.mbed.org/platforms/FRDM-K64F/" target="_blank">Freescale FRDM-K64F
+                                Board</a> benötigt. Ein <a
+                                href="https://developer.mbed.org/users/marcel1691/notebook/internet-of-things-kit-iotkit-smd-shield/"
+                                target="_blank">IoTKit SMD Shield</a> ist von Vorteil, aber nicht Bedingung.
+                        </p>
+                        <table border="0" width="100%">
+                            <tr>
+                                <th width="50%">Server und Tools</th>
+                                <th width="50%">Weitere Informationen</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h3>IoT Server</h3>
+                                    <ul>
+                                        <li><a href="/rest/"
+                                            title="Einfacher IoT Server basierend auf Apache, HTML5, JavaScript, CGI-BIN Scripts und einer MySQL Datenbank. Zu Demozwecken sind die Web-Apps integriert"
+                                            target="_blank">AdHoc Server (Apache, MySQL - HTTP, REST)</a> - <a
+                                            href="/cgi-bin/dockerlogs?apache-rest" target="_blank"
+                                            title="Meldungen des Docker Containers">Logs</a>, <a
+                                            href="https://developer.mbed.org/teams/smdiotkit2ch/code/2-07-04-Uebung/"
+                                            target="_blank" title="Beispielprogramm für FRDM-K64F Board">mbed</a>, <a
+                                            href="/download" target="_blank"
+                                            title="Download Ordner mit den von den Build Servern erstellten Artefakten">Downloads</a>,
+                                            <a href="/cgit" target="_blank" title="Zentrales GIT Repository">Repository</a> <a
+                                            href="https://github.com/mc-b/IoTKit/tree/master/docker/apache-rest" target="_blank"
+                                            title="Hilfe"><img src="base/images/icon_help.png" width=16 height=16 /></a></li>
 
-										<li><a href="#" onclick="javascript:window.location.port=32800" target="_blank"
-											title="Smart Home Server basierend auf Eclipse Smart Home und openHAB2. Das integrierte SMD IoTKit Plug-In stehlt die Verbindung zum SMD Shield her">Smart
-												Home (openHAB2 - HTTP, REST)</a> - <a href="/cgi-bin/dockerlogs?openhab2" target="_blank"
-											title="Meldungen des Docker Containers">Logs</a>, <a
-											href="https://developer.mbed.org/teams/smdiotkit2ch/code/RPCHTTPServerSmartHome/" target="_blank"
-											title="Beispielprogramm für FRDM-K64F Board">mbed</a>, <a
-											href="https://github.com/mc-b/IoTKit/tree/master/smarthome/org.openhab.binding.iotkit" target="_blank"
-											title="Sourcecode zum SMD IoTKit Plug-In">Java Binding</a> <a
-											href="https://github.com/mc-b/IoTKit/tree/master/docker/openhab2" target="_blank" title="Hilfe"><img
-												src="base/images/icon_help.png" width=16 height=16 /></a></li>
+                                        <li><a href="#" onclick="javascript:window.location.port=32800" target="_blank"
+                                            title="Smart Home Server basierend auf Eclipse Smart Home und openHAB2. Das integrierte SMD IoTKit Plug-In stehlt die Verbindung zum SMD Shield her">Smart
+                                                Home (openHAB2 - HTTP, REST)</a> - <a href="/cgi-bin/dockerlogs?openhab2"
+                                            target="_blank" title="Meldungen des Docker Containers">Logs</a>, <a
+                                            href="https://developer.mbed.org/teams/smdiotkit2ch/code/RPCHTTPServerSmartHome/"
+                                            target="_blank" title="Beispielprogramm für FRDM-K64F Board">mbed</a>, <a
+                                            href="https://github.com/mc-b/IoTKit/tree/master/smarthome/org.openhab.binding.iotkit"
+                                            target="_blank" title="Sourcecode zum SMD IoTKit Plug-In">Java Binding</a> <a
+                                            href="https://github.com/mc-b/IoTKit/tree/master/docker/openhab2" target="_blank"
+                                            title="Hilfe"><img src="base/images/icon_help.png" width=16 height=16 /></a></li>
 
-										<li><a href="/fhem" target="_blank"
-											title="Einfacher in perl geschriebener Smart Home Server, welcher sehr wenig Resourcen braucht">Heimautomatisierung
-												(FHEM - HTTP)</a> - <a href="/cgi-bin/dockerlogs?fhem" target="_blank" title="Meldungen des Docker Containers">Logs</a>, <a
-											href="http://developer.mbed.org/teams/thiotkit2ch/code/RPCHTTPServerVariable/" target="_blank"
-											title="Beispielprogramm für FRDM-K64F Board">mbed</a> <a href="https://github.com/mc-b/IoTKit/tree/master/docker/fhem"
-											target="_blank" title="Hilfe"><img src="base/images/icon_help.png" width=16 height=16 /></a></li>
+                                        <li><a href="/fhem" target="_blank"
+                                            title="Einfacher in perl geschriebener Smart Home Server, welcher sehr wenig Resourcen braucht">Heimautomatisierung
+                                                (FHEM - HTTP)</a> - <a href="/cgi-bin/dockerlogs?fhem" target="_blank"
+                                            title="Meldungen des Docker Containers">Logs</a>, <a
+                                            href="http://developer.mbed.org/teams/thiotkit2ch/code/RPCHTTPServerVariable/"
+                                            target="_blank" title="Beispielprogramm für FRDM-K64F Board">mbed</a> <a
+                                            href="https://github.com/mc-b/IoTKit/tree/master/docker/fhem" target="_blank"
+                                            title="Hilfe"><img src="base/images/icon_help.png" width=16 height=16 /></a></li>
 
-										<li>MQTT Broker (Mosquitto) - <a href="/cgi-bin/dockerlogs?mosquitto" target="_blank"
-											title="Meldungen des Docker Containers">Logs</a>, <a
-											href="https://developer.mbed.org/teams/smdiotkit2ch/code/MQTTPublish/" target="_blank"
-											title="Beispielprogramm für FRDM-K64F Board">mbed</a> <a
-											href="https://github.com/mc-b/IoTKit/tree/master/docker/mosquitto" target="_blank" title="Hilfe"><img
-												src="base/images/icon_help.png" width=16 height=16 /></a></li>
-										<li><a href="/leshan/" target="_blank"
-											title="Leichtgewichtiger M2M Server auf Basis von Eclipse OSGI. Der Server unterstützt das CoAP Protokoll">LWM2M
-												Server (Eclipse leshan - CoAP, REST)</a> - <a href="/cgi-bin/dockerlogs?leshan" target="_blank"
-											title="Meldungen des Docker Containers">Logs</a>, <a
-											href="https://developer.mbed.org/teams/smdiotkit2ch/code/COAPleshan/" target="_blank"
-											title="Beispielprogramm für FRDM-K64F Board">mbed</a> <a href="https://github.com/mc-b/IoTKit/tree/master/docker/leshan"
-											target="_blank" title="Hilfe"><img src="base/images/icon_help.png" width=16 height=16 /></a></li>
+                                        <li>MQTT Broker (Mosquitto) - <a href="/cgi-bin/dockerlogs?mosquitto"
+                                            target="_blank" title="Meldungen des Docker Containers">Logs</a>, <a
+                                            href="https://developer.mbed.org/teams/smdiotkit2ch/code/MQTTPublish/"
+                                            target="_blank" title="Beispielprogramm für FRDM-K64F Board">mbed</a> <a
+                                            href="https://github.com/mc-b/IoTKit/tree/master/docker/mosquitto" target="_blank"
+                                            title="Hilfe"><img src="base/images/icon_help.png" width=16 height=16 /></a></li>
+                                        <li><a href="/leshan/" target="_blank"
+                                            title="Leichtgewichtiger M2M Server auf Basis von Eclipse OSGI. Der Server unterstützt das CoAP Protokoll">LWM2M
+                                                Server (Eclipse leshan - CoAP, REST)</a> - <a href="/cgi-bin/dockerlogs?leshan"
+                                            target="_blank" title="Meldungen des Docker Containers">Logs</a>, <a
+                                            href="https://developer.mbed.org/teams/smdiotkit2ch/code/COAPleshan/"
+                                            target="_blank" title="Beispielprogramm für FRDM-K64F Board">mbed</a> <a
+                                            href="https://github.com/mc-b/IoTKit/tree/master/docker/leshan" target="_blank"
+                                            title="Hilfe"><img src="base/images/icon_help.png" width=16 height=16 /></a></li>
 
-										<li><a href="#" onclick="javascript:window.location.port=32600" target="_blank"
-											title="IoT Data Plattform, welches die Graphische Ausgabe von Sensordaten ermöglicht.">IoT Data Plattform
-												(ThingSpeak, - HTTP, REST)</a> - <a href="/cgi-bin/dockerlogs?thingspeak" target="_blank"
-											title="Meldungen des Docker Containers">Logs</a>, <a
-											href="https://developer.mbed.org/teams/smdiotkit2ch/code/HTTP_POST_ThinkSpeak/" target="_blank"
-											title="Beispielprogramm für FRDM-K64F Board">mbed</a> <a
-											href="https://github.com/mc-b/IoTKit/tree/master/docker/thingspeak" target="_blank" title="Hilfe"><img
-												src="base/images/icon_help.png" width=16 height=16 /></a></li>
-									</ul>
-									<h3>Tools</h3>
-									<ul>
-										<li><a href="https://developer.mbed.org/" target="_blank"
-											title="Hauptseite für die Entwickler zur Programmierung vom FRDM-K64F und anderen mbed kompatiblen Boards">ARM mbed
-												Developer Site</a> (<a href="https://developer.mbed.org/platforms/FRDM-K64F/" target="_blank">FRMD K64F Board</a>, <a
-											href="https://developer.mbed.org/users/marcel1691/notebook/internet-of-things-kit-iotkit-smd-shield/" target="_blank">IoTKit
-												SMD Shield</a>)</li>
-										<li>mbed <a href="/mbedide/" target="_blank"
-											title="Einfache Web IDE - Programme ausschecken mittels hg oder git">IDE </a>und <a href="/mbed/" target="_blank"
-											title="Build Server mit mbed V2 und V3 kompatiblen Beispielen">Build Server (jenkins, yotta, gcc4arm)</a> - <a
-											href="/cgi-bin/dockerlogs?jenkins" target="_blank" title="Meldungen des Docker Containers">Logs</a> <a
-											href="https://github.com/mc-b/IoTKit/tree/master/docker/mbed-ide" target="_blank" title="Hilfe"><img
-												src="base/images/icon_help.png" width=16 height=16 /></a></li>
-												
-										<li>Web-App <a href="/cordovaide/" target="_blank"
-											title="Einfache Web IDE - Programme ausschecken mittels hg oder git">IDE </a>und 
-										<a href="/cordova/" target="_blank" title="Build Server für das erstellen von lauffähigen Smartphone Apps.">
-												Build Server (jenkins, Apache Cordova)</a> - <a href="/cgi-bin/dockerlogs?cordova" target="_blank"
-											title="Meldungen des Docker Containers">Logs</a> <a href="https://github.com/mc-b/IoTKit/tree/master/docker/cordova-ide"
-											target="_blank" title="Hilfe"><img src="base/images/icon_help.png" width=16 height=16 /></a></li>
+                                        <li><a href="#" onclick="javascript:window.location.port=32600" target="_blank"
+                                            title="IoT Data Plattform, welches die Graphische Ausgabe von Sensordaten ermöglicht.">IoT
+                                                Data Plattform (ThingSpeak, - HTTP, REST)</a> - <a
+                                            href="/cgi-bin/dockerlogs?thingspeak" target="_blank"
+                                            title="Meldungen des Docker Containers">Logs</a>, <a
+                                            href="https://developer.mbed.org/teams/smdiotkit2ch/code/HTTP_POST_ThinkSpeak/"
+                                            target="_blank" title="Beispielprogramm für FRDM-K64F Board">mbed</a> <a
+                                            href="https://github.com/mc-b/IoTKit/tree/master/docker/thingspeak" target="_blank"
+                                            title="Hilfe"><img src="base/images/icon_help.png" width=16 height=16 /></a></li>
+                                    </ul>
+                                    <h3>Tools</h3>
+                                    <ul>
+                                        <li><a href="https://developer.mbed.org/" target="_blank"
+                                            title="Hauptseite für die Entwickler zur Programmierung vom FRDM-K64F und anderen mbed kompatiblen Boards">ARM
+                                                mbed Developer Site</a> (<a href="https://developer.mbed.org/platforms/FRDM-K64F/"
+                                            target="_blank">FRMD K64F Board</a>, <a
+                                            href="https://developer.mbed.org/users/marcel1691/notebook/internet-of-things-kit-iotkit-smd-shield/"
+                                            target="_blank">IoTKit SMD Shield</a>)</li>
+                                        <li>mbed <a href="/mbedide/" target="_blank"
+                                            title="Einfache Web IDE - Programme ausschecken mittels hg oder git">IDE </a>und <a
+                                            href="/mbed/" target="_blank"
+                                            title="Build Server mit mbed V2 und V3 kompatiblen Beispielen">Build Server
+                                                (jenkins, yotta, gcc4arm)</a> - <a href="/cgi-bin/dockerlogs?jenkins"
+                                            target="_blank" title="Meldungen des Docker Containers">Logs</a> <a
+                                            href="https://github.com/mc-b/IoTKit/tree/master/docker/mbed-ide" target="_blank"
+                                            title="Hilfe"><img src="base/images/icon_help.png" width=16 height=16 /></a></li>
 
-										<li>Java <a href="/mavenide/" target="_blank"
-											title="Einfache Web IDE - Programme ausschecken mittels hg oder git">IDE </a>und 
-										<a href="/maven/" target="_blank" title="Build Server zum Erstellen der IoT Server">Build Server
-												(jenkins, maven)</a> - <a href="/cgi-bin/dockerlogs?maven" target="_blank" title="Meldungen des Docker Containers">Logs</a>
-											<a href="https://github.com/mc-b/IoTKit/tree/master/docker/maven-ide" target="_blank" title="Hilfe"><img
-												src="base/images/icon_help.png" width=16 height=16 /></a></li>
+                                        <li>Web-App <a href="/cordovaide/" target="_blank"
+                                            title="Einfache Web IDE - Programme ausschecken mittels hg oder git">IDE </a>und <a
+                                            href="/cordova/" target="_blank"
+                                            title="Build Server für das erstellen von lauffähigen Smartphone Apps."> Build
+                                                Server (jenkins, Apache Cordova)</a> - <a href="/cgi-bin/dockerlogs?cordova"
+                                            target="_blank" title="Meldungen des Docker Containers">Logs</a> <a
+                                            href="https://github.com/mc-b/IoTKit/tree/master/docker/cordova-ide" target="_blank"
+                                            title="Hilfe"><img src="base/images/icon_help.png" width=16 height=16 /></a></li>
 
-										<li><a href="#" onclick="javascript:window.location.port=33000" target="_blank"
-											title="Einfache, via Browser ansprechbare Linux Shell. Username: guest, Password: guest-">Linux Shell (wetty,
-												web-terminal)</a> - <a href="/cgi-bin/dockerlogs?wetty" target="_blank" title="Meldungen des Docker Containers">Logs</a> <a
-											href="https://github.com/mc-b/IoTKit/tree/master/docker/wetty" target="_blank" title="Hilfe"><img
-												src="base/images/icon_help.png" width=16 height=16 /></a></li>
+                                        <li>Java <a href="/mavenide/" target="_blank"
+                                            title="Einfache Web IDE - Programme ausschecken mittels hg oder git">IDE </a>und <a
+                                            href="/maven/" target="_blank" title="Build Server zum Erstellen der IoT Server">Build
+                                                Server (jenkins, maven)</a> - <a href="/cgi-bin/dockerlogs?maven" target="_blank"
+                                            title="Meldungen des Docker Containers">Logs</a> <a
+                                            href="https://github.com/mc-b/IoTKit/tree/master/docker/maven-ide" target="_blank"
+                                            title="Hilfe"><img src="base/images/icon_help.png" width=16 height=16 /></a></li>
 
-										<li><a href="/cgi-bin/network" target="_blank"
-											title="Zeigt die vorhandenen Server mit den offenen Ports im lokalen Netzwerk">Netzwerk Übersicht</a>
-									</ul>
-									<h3>Kursunterlagen</h3>
-									<ul>
-										<li><a href="https://moodle.eb-zuerich.ch/course/view.php?id=1544" target="_blank">Internet der Dinge: Grundlagen</a>
-											(<a href="http://kurs.eb-zuerich.ch/is95" target="_blank" title="Die Anmeldung befindet sich unten bei den Terminen">Anmelden</a>)</li>
-										<li><a href="https://moodle.eb-zuerich.ch/course/view.php?id=1548" target="_blank">Internet der Dinge: Aufbau 1 -
-												Komplexe Anwendungen</a> (<a href="http://kurs.eb-zuerich.ch/is96" target="_blank"
-											title="Die Anmeldung befindet sich unten bei den Terminen">Anmelden</a>)</li>
-										<li><a href="https://moodle.eb-zuerich.ch/course/view.php?id=1549" target="_blank">Internet der Dinge: Aufbau 2 -
-												«Dinge» und die Cloud</a> (<a href="http://kurs.eb-zuerich.ch/is97" target="_blank"
-											title="Die Anmeldung befindet sich unten bei den Terminen">Anmelden</a>)</li>
-										<li><a href="https://moodle.eb-zuerich.ch/course/view.php?id=1550" target="_blank">Internet der Dinge: Aufbau 3 -
-												Raspberry Pi und Co. als Server</a> (<a href="http://kurs.eb-zuerich.ch/is98" target="_blank"
-											title="Die Anmeldung befindet sich unten bei den Terminen">Anmelden</a>)</li>
-										<p></p>
-										<li><a href="" target="_blank">Internet der Dinge: Kompakt für Entwickler/innen</a> (<a
-											href="http://kurs.eb-zuerich.ch/is99" target="_blank" title="Die Anmeldung befindet sich unten bei den Terminen">Anmelden</a>)</li>
-									</ul>
+                                        <li><a href="#" onclick="javascript:window.location.port=33000" target="_blank"
+                                            title="Einfache, via Browser ansprechbare Linux Shell. Username: guest, Password: guest-">Linux
+                                                Shell (wetty, web-terminal)</a> - <a href="/cgi-bin/dockerlogs?wetty"
+                                            target="_blank" title="Meldungen des Docker Containers">Logs</a> <a
+                                            href="https://github.com/mc-b/IoTKit/tree/master/docker/wetty" target="_blank"
+                                            title="Hilfe"><img src="base/images/icon_help.png" width=16 height=16 /></a></li>
 
-								</td>
-								<td>
-									<h3>Cloud</h3>
-									<ul>
-										<li><a href="https://weather.yahoo.com/" target="_blank"
-											title="Yahoo Wetter Dienst um z.B. auf Wetterwarnungen zu reagieren">Yahoo Weather (REST, XML)</a> - <a
-											href="https://developer.mbed.org/teams/smdiotkit2ch/code/YahooWeather/" target="_blank"
-											title="Beispielprogramm für FRDM-K64F Board">mbed</a></li>
-										<li><a href="http://sunrise-sunset.org/" target="_blank" title="Sonnenauf- und Untergang via Cloud abfragen">Sunrise
-												Sunset (REST, JSON)</a> - <a href="https://developer.mbed.org/teams/smdiotkit2ch/code/YahooWeather/" target="_blank"
-											title="Beispielprogramm für FRDM-K64F Board">mbed</a></li>
-										<li><a href="https://thingspeak.com/" target="_blank">ThingSpeak (HTTP, REST)</a>, <a
-											href="https://developer.mbed.org/teams/smdiotkit2ch/code/SunriseSunset/" target="_blank"
-											title="Beispielprogramm für FRDM-K64F Board">mbed</a></li>
-										<li><a href="https://connector.mbed.com/" target="_blank">mbed Device Connector (CoAP, REST)</a></li>
-										<li><a href="http://leshan.eclipse.org/" target="_blank">Eclipse Leshan LWM2M Server (CoAP, REST)</a></li>
-										<li><a href="http://test.mosquitto.org/" target="_blank">Mosquitto (MQTT, WebSockets)</a></li>
-										<li><a href="https://internetofthings.ibmcloud.com/" target="_blank">IBM (MQTT)</a></li>
-										<li><a href="https://aws.amazon.com/de/iot/how-it-works/" target="_blank">Amazon (MQTT)</a></li>
-									</ul>
-									<h3>Tools</h3>
-									<ul>
-										<li><a href="https://developer.mbed.org/" target="_blank">ARM mbed Developer Site (mbed OS V2)</a></li>
-										<li><a href="https://www.mbed.com/en/" target="_blank">ARM® mbed™ IoT Device Platform (mbed OS V3)</a></li>
-										<li><a href="https://developer.mbed.org/cookbook/eclipse-for-building-and-debugging" target="_blank">Eclipse
-												GCC4ARM</a> - <a href="https://developer.mbed.org/users/marcel1691/notebook/eclipse-als-ide/" target="_blank">(FRDM-K64F
-												Patch)</a></li>
-										<li><a href="https://jenkins-ci.org/" target="_blank">Build Server (jenkins)</a></li>
-										<li><a href="https://cordova.apache.org/" target="_blank">WebApp Build Server (Apache Cordova)</a></li>
-									</ul>
-									<h3>Links</h3>
-									<ul>
-										<li><a href="https://github.com/mc-b/IoTKit" target="_blank">Internet der Dinge Kit auf github.com</a></li>
-										<li><a href="https://httpd.apache.org/docs/2.2/howto/cgi.html" target="_blank">Apache REST (CGI-BIN)</a></li>
-										<li><a href="https://www.mysql.de/" target="_blank">SQL Datenbank (MySQL)</a></li>
-										<li><a href="https://jquerymobile.com/" target="_blank">WebApp (jQueryMobile)</a></li>
-										<li><a href="http://phonegap.com/" target="_blank">WebApp Cloud Build Server (PhoneGap)</a></li>
-										<li><a href="http://iot.eclipse.org/" target="_blank">Eclipse IoT Projekte (Smart Home, Leshan, Mosquitto etc.)</a></li>
-										<li><a href="http://www.fhem.de/" target="_blank">Heimautomatisierung (FHEM)</a></li>
+                                        <li><a href="/cgi-bin/network" target="_blank"
+                                            title="Zeigt die vorhandenen Server mit den offenen Ports im lokalen Netzwerk">Netzwerk
+                                                Übersicht</a>
+                                    </ul>
+                                    <h3>Kursunterlagen</h3>
+                                    <ul>
+                                        <li><a href="https://moodle.eb-zuerich.ch/course/view.php?id=1544" target="_blank">Internet
+                                                der Dinge: Grundlagen</a> (<a href="http://kurs.eb-zuerich.ch/is95" target="_blank"
+                                            title="Die Anmeldung befindet sich unten bei den Terminen">Anmelden</a>)</li>
+                                        <li><a href="https://moodle.eb-zuerich.ch/course/view.php?id=1548" target="_blank">Internet
+                                                der Dinge: Aufbau 1 - Komplexe Anwendungen</a> (<a
+                                            href="http://kurs.eb-zuerich.ch/is96" target="_blank"
+                                            title="Die Anmeldung befindet sich unten bei den Terminen">Anmelden</a>)</li>
+                                        <li><a href="https://moodle.eb-zuerich.ch/course/view.php?id=1549" target="_blank">Internet
+                                                der Dinge: Aufbau 2 - «Dinge» und die Cloud</a> (<a
+                                            href="http://kurs.eb-zuerich.ch/is97" target="_blank"
+                                            title="Die Anmeldung befindet sich unten bei den Terminen">Anmelden</a>)</li>
+                                        <li><a href="https://moodle.eb-zuerich.ch/course/view.php?id=1550" target="_blank">Internet
+                                                der Dinge: Aufbau 3 - Raspberry Pi und Co. als Server</a> (<a
+                                            href="http://kurs.eb-zuerich.ch/is98" target="_blank"
+                                            title="Die Anmeldung befindet sich unten bei den Terminen">Anmelden</a>)</li>
+                                        <p></p>
+                                        <li><a href="" target="_blank">Internet der Dinge: Kompakt für Entwickler/innen</a>
+                                            (<a href="http://kurs.eb-zuerich.ch/is99" target="_blank"
+                                            title="Die Anmeldung befindet sich unten bei den Terminen">Anmelden</a>)</li>
+                                    </ul>
 
-									</ul>
+                                </td>
+                                <td>
+                                    <h3>Cloud</h3>
+                                    <ul>
+                                        <li><a href="https://weather.yahoo.com/" target="_blank"
+                                            title="Yahoo Wetter Dienst um z.B. auf Wetterwarnungen zu reagieren">Yahoo
+                                                Weather (REST, XML)</a> - <a
+                                            href="https://developer.mbed.org/teams/smdiotkit2ch/code/YahooWeather/"
+                                            target="_blank" title="Beispielprogramm für FRDM-K64F Board">mbed</a></li>
+                                        <li><a href="http://sunrise-sunset.org/" target="_blank"
+                                            title="Sonnenauf- und Untergang via Cloud abfragen">Sunrise Sunset (REST, JSON)</a>
+                                            - <a href="https://developer.mbed.org/teams/smdiotkit2ch/code/YahooWeather/"
+                                            target="_blank" title="Beispielprogramm für FRDM-K64F Board">mbed</a></li>
+                                        <li><a href="https://thingspeak.com/" target="_blank">ThingSpeak (HTTP, REST)</a>,
+                                            <a href="https://developer.mbed.org/teams/smdiotkit2ch/code/SunriseSunset/"
+                                            target="_blank" title="Beispielprogramm für FRDM-K64F Board">mbed</a></li>
+                                        <li><a href="https://connector.mbed.com/" target="_blank">mbed Device Connector
+                                                (CoAP, REST)</a></li>
+                                        <li><a href="http://leshan.eclipse.org/" target="_blank">Eclipse Leshan LWM2M
+                                                Server (CoAP, REST)</a></li>
+                                        <li><a href="http://test.mosquitto.org/" target="_blank">Mosquitto (MQTT,
+                                                WebSockets)</a></li>
+                                        <li><a href="https://internetofthings.ibmcloud.com/" target="_blank">IBM (MQTT)</a></li>
+                                        <li><a href="https://aws.amazon.com/de/iot/how-it-works/" target="_blank">Amazon
+                                                (MQTT)</a></li>
+                                    </ul>
+                                    <h3>Tools</h3>
+                                    <ul>
+                                        <li><a href="https://developer.mbed.org/" target="_blank">ARM mbed Developer
+                                                Site (mbed OS V2)</a></li>
+                                        <li><a href="https://www.mbed.com/en/" target="_blank">ARM® mbed™ IoT Device
+                                                Platform (mbed OS V3)</a></li>
+                                        <li><a
+                                            href="https://developer.mbed.org/cookbook/eclipse-for-building-and-debugging"
+                                            target="_blank">Eclipse GCC4ARM</a> - <a
+                                            href="https://developer.mbed.org/users/marcel1691/notebook/eclipse-als-ide/"
+                                            target="_blank">(FRDM-K64F Patch)</a></li>
+                                        <li><a href="https://jenkins-ci.org/" target="_blank">Build Server (jenkins)</a></li>
+                                        <li><a href="https://cordova.apache.org/" target="_blank">WebApp Build Server
+                                                (Apache Cordova)</a></li>
+                                    </ul>
+                                    <h3>Links</h3>
+                                    <ul>
+                                        <li><a href="https://github.com/mc-b/IoTKit" target="_blank">Internet der Dinge
+                                                Kit auf github.com</a></li>
+                                        <li><a href="https://httpd.apache.org/docs/2.2/howto/cgi.html" target="_blank">Apache
+                                                REST (CGI-BIN)</a></li>
+                                        <li><a href="https://www.mysql.de/" target="_blank">SQL Datenbank (MySQL)</a></li>
+                                        <li><a href="https://jquerymobile.com/" target="_blank">WebApp (jQueryMobile)</a></li>
+                                        <li><a href="http://phonegap.com/" target="_blank">WebApp Cloud Build Server
+                                                (PhoneGap)</a></li>
+                                        <li><a href="http://iot.eclipse.org/" target="_blank">Eclipse IoT Projekte
+                                                (Smart Home, Leshan, Mosquitto etc.)</a></li>
+                                        <li><a href="http://www.fhem.de/" target="_blank">Heimautomatisierung (FHEM)</a></li>
 
-								</td>
-							</tr>
-						</table>
-						<p>Copyright (c) 2015, Marcel mc-b Bernet, marcel.bernet(at)ch-open.ch</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+                                    </ul>
+
+                                </td>
+                            </tr>
+                        </table>
+                        <p>Copyright (c) 2015, Marcel mc-b Bernet, marcel.bernet(at)ch-open.ch</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

@@ -1,0 +1,14 @@
+css=/cgit-css/cgit.css
+logo=/cgit-css/cgit.png
+
+#virtual-root=/cgit/
+enable-index-links=1
+enable-log-filecount=1
+enable-log-linecount=1
+snapshots=tar.gz tar.bz zip
+
+# List of repositories
+repo.url=IoTKit
+repo.path=/var/www/html/IoTKit.git
+repo.desc=IoT Kit
+repo.owner=Marcel Bernet
