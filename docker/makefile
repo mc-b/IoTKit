@@ -36,7 +36,8 @@ build.rpi:
 	docker pull resin/armv7hf-debian
 	docker tag -f resin/armv7hf-debian ubuntu:latest
 	for dir in $(SUBDIRS_RPI); do \
-    	$(MAKE) -C $$dir build; \
+		docker pull marcel1691/$$dir.raspberrypi
+		docker tag -f marcel1691/$$dir.raspberrypi marcel1691/$$dir
 	done
 
 # Docker Image detached starten
