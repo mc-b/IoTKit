@@ -50,6 +50,8 @@ Vagrant.configure(2) do |config|
   config.vm.provider "virtualbox" do |vb|
   #   # Display the VirtualBox GUI when booting the machine
      vb.gui = true
+     # Video memory
+     #vb.customize ["modifyvm", :id, "--vram", "64MB"]
   #
   #   # Customize the amount of memory on the VM:
      vb.memory = "1536"
@@ -86,13 +88,12 @@ Vagrant.configure(2) do |config|
     sudo apt-get update
     sudo apt-get install -y freecad
     
-    # Yotta
+    # Yotta (install also gnu-gcc-4-arm)
     sudo apt-get -y install python-setuptools cmake ninja-build python-dev libffi-dev libssl-dev && sudo easy_install pip
     sudo -H pip install yotta
     cd /home/vagrant/ws
     sudo -u vagrant git clone https://github.com/ARMmbed/example-mbedos-blinky.git
-    sudo -u vagrant hg clone https://developer.mbed.org/teams/smdiotkitch/code/AnalogIn/
-    sudo -u vagrant hg clone https://developer.mbed.org/teams/smdiotkitch/code/DigitalOut/
+    # cd example-mbedos-blinky.git && yotta make target frdm-k64f && cd -
     
     # ARM Crosscompiler
     sudo add-apt-repository ppa:terry.guo/gcc-arm-embedded
@@ -108,6 +109,28 @@ Vagrant.configure(2) do |config|
     sudo -u vagrant wget http://ftp.fau.de/eclipse/technology/epp/downloads/release/mars/1/eclipse-cpp-mars-1-linux-gtk-x86_64.tar.gz
     sudo -u vagrant tar xvzf eclipse-cpp-mars-1-linux-gtk-x86_64.tar.gz
     rm -f eclipse-cpp-mars-1-linux-gtk-x86_64.tar.gz
+    # GCC4ARM Plug-ins
+    cd /tmp
+    wget http://heanet.dl.sourceforge.net/project/gnuarmeclipse/Current%20Releases/2.x/ilg.gnuarmeclipse.repository-2.11.1-201512141335.zip
+    unzip ilg.gnuarmeclipse.repository-2.11.1-201512141335.zip
+    sudo -u vagrant cp features/* /home/vagrant/eclipse/features/
+    sudo -u vagrant cp plugins/*  /home/vagrant/eclipse/plugins
+    # GCC4ARM 
+    cd /home/vagrant/ws
+    sudo -u vagrant git clone https://github.com/adamgreen/gcc4mbed.git
+    export GCC4MBED_DIR=/home/vagrant/ws/gcc4mbed
+    export GCC4MBED_TOOLPATH=/usr/bin
+    export DEVICES=MCU_K64F 
+    cp /vagrant/MCU_K64F-device.mk ${GCC4MBED_DIR}/build
+    # cd ${GCC4MBED_DIR} && make    
+    cd /home/vagrant
+    echo "export GCC4MBED_DIR=/home/vagrant/ws/gcc4mbed" >>.bashrc
+    echo "export GCC4MBED_TOOLPATH=/usr/bin" >>.bashrc
+    echo "export DEVICES=MCU_K64F" >>.bashrc 
+    # Samples
+    cd /home/vagrant/ws
+    sudo -u vagrant hg clone https://developer.mbed.org/teams/smdiotkitch/code/AnalogIn/
+    sudo -u vagrant hg clone https://developer.mbed.org/teams/smdiotkitch/code/DigitalOut/
     
     # Desktop Icons
     cd /home/vagrant
