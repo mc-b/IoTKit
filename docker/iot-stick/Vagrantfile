@@ -23,7 +23,7 @@ Vagrant.configure(2) do |config|
   # within the machine from a port on the host machine. In the example below,
   # accessing "localhost:8080" will access port 80 on the guest machine.
   # config.vm.network "forwarded_port", guest: 80, host: 8080
-  config.vm.network "forwarded_port", guest:80, host:80, auto_correct: true
+  config.vm.network "forwarded_port", guest:80, host:8000, auto_correct: true
   config.vm.network "forwarded_port", guest:3389, host:3389, auto_correct: true
   config.vm.network "forwarded_port", guest:32800, host:32800, auto_correct: false
   config.vm.network "forwarded_port", guest:32600, host:32600, auto_correct: false
@@ -71,71 +71,10 @@ Vagrant.configure(2) do |config|
   # Enable provisioning with a shell script. Additional provisioners such as
   # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
   # documentation for more information about their specific syntax and use.
-  config.vm.provision "shell", inline: <<-SHELL
-  
-    # Sources
-    cd /home/vagrant
-    sudo -u vagrant mkdir ws
-    cd ws
-    sudo -u vagrant git clone https://github.com/mc-b/IoTKit.git
-    
-    # install and start Apache & Docker Container  
-    cd /home/vagrant/ws/IoTKit/docker
-    make install
-    make run
-    
-    # FreeCAD
-    sudo add-apt-repository ppa:freecad-maintainers/freecad-stable
-    sudo apt-get update
-    sudo apt-get install -y freecad
-    
-    # Yotta (install also gnu-gcc-4-arm)
-    sudo apt-get -y install python-setuptools cmake ninja-build python-dev libffi-dev libssl-dev && sudo easy_install pip
-    sudo -H pip install yotta
-    cd /home/vagrant/ws
-    sudo -u vagrant git clone https://github.com/ARMmbed/example-mbedos-blinky.git
-    # cd example-mbedos-blinky.git && yotta make target frdm-k64f && cd -
-    
-    # ARM Crosscompiler
-    sudo add-apt-repository ppa:terry.guo/gcc-arm-embedded
-    sudo apt-get update
-    sudo apt-get install -y gcc-arm-none-eabi=4.9.3.2015q3-1trusty1
-    
-    # C Umgebung fuer Linux
-    sudo apt-get install -y clang-3.5 
-     
-    # Eclipse, Arduino, Fritzing
-    sudo apt-get install -y arduino fritzing
-    cd /home/vagrant
-    sudo -u vagrant wget http://ftp.fau.de/eclipse/technology/epp/downloads/release/mars/1/eclipse-cpp-mars-1-linux-gtk-x86_64.tar.gz
-    sudo -u vagrant tar xvzf eclipse-cpp-mars-1-linux-gtk-x86_64.tar.gz
-    rm -f eclipse-cpp-mars-1-linux-gtk-x86_64.tar.gz
-    # GCC4ARM Plug-ins
-    cd /tmp
-    wget http://heanet.dl.sourceforge.net/project/gnuarmeclipse/Current%20Releases/2.x/ilg.gnuarmeclipse.repository-2.11.1-201512141335.zip
-    unzip ilg.gnuarmeclipse.repository-2.11.1-201512141335.zip
-    sudo -u vagrant cp features/* /home/vagrant/eclipse/features/
-    sudo -u vagrant cp plugins/*  /home/vagrant/eclipse/plugins
-    # GCC4ARM 
-    cd /home/vagrant/ws
-    sudo -u vagrant git clone https://github.com/adamgreen/gcc4mbed.git
-    export GCC4MBED_DIR=/home/vagrant/ws/gcc4mbed
-    export GCC4MBED_TOOLPATH=/usr/bin
-    export DEVICES=MCU_K64F 
-    cp /vagrant/MCU_K64F-device.mk ${GCC4MBED_DIR}/build
-    # cd ${GCC4MBED_DIR} && make    
-    cd /home/vagrant
-    echo "export GCC4MBED_DIR=/home/vagrant/ws/gcc4mbed" >>.bashrc
-    echo "export GCC4MBED_TOOLPATH=/usr/bin" >>.bashrc
-    echo "export DEVICES=MCU_K64F" >>.bashrc 
-    # Samples
-    cd /home/vagrant/ws
-    sudo -u vagrant hg clone https://developer.mbed.org/teams/smdiotkitch/code/AnalogIn/
-    sudo -u vagrant hg clone https://developer.mbed.org/teams/smdiotkitch/code/DigitalOut/
-    
-    # Desktop Icons
-    cd /home/vagrant
-    sudo -u vagrant cp /vagrant/Desktop/*.desktop Schreibtisch/
-    
-  SHELL
+  config.vm.provision "shell", path: "scripts/container.sh"
+  config.vm.provision "shell", path: "scripts/freecad.sh"
+  config.vm.provision "shell", path: "scripts/cpparm.sh"
+  config.vm.provision "shell", path: "scripts/eclipse.sh"
+  config.vm.provision "shell", path: "scripts/samples.sh"
+  config.vm.provision "shell", path: "scripts/desktop.sh"
 end
