@@ -15,16 +15,18 @@ sudo apt-get install -y gcc-arm-none-eabi=4.9.3.2015q3-1trusty1
 # GCC4ARM 
 cd /home/vagrant/ws
 sudo -u vagrant git clone https://github.com/adamgreen/gcc4mbed.git
-export GCC4MBED_DIR=/home/vagrant/ws/gcc4mbed
-export GCC4MBED_TOOLPATH=/usr/bin
-export DEVICES=MCU_K64F 
 cp /vagrant/MCU_K64F-device.mk ${GCC4MBED_DIR}/build
 
-# cd ${GCC4MBED_DIR} && make    
-cd /home/vagrant
-echo "export GCC4MBED_DIR=/home/vagrant/ws/gcc4mbed" >>.bashrc
-echo "export GCC4MBED_TOOLPATH=/usr/bin" >>.bashrc
-echo "export DEVICES=MCU_K64F" >>.bashrc 
+cat <<%EOF% | sudo tee /etc/profile.d/gcc4arm.sh
+#!/bin/bash
+#
+#	GCC4ARM Environment
+#  
+export GCC4MBED_DIR=/home/vagrant/ws/gcc4mbed
+export GCC4MBED_TOOLPATH=/usr/bin
+export DEVICES=MCU_K64F
+
+%EOF%
 
 # C Umgebung fuer Linux
 sudo apt-get install -y clang-3.5 
