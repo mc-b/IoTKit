@@ -1,0 +1,7 @@
+packer_cache/
+*.box
+*~
+*.swp
+*.iso
+.vagrant/
+/output-virtualbox-iso/

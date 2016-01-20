@@ -1,0 +1,76 @@
+{
+  "builders": [
+    {
+      "type": "virtualbox-iso",
+      "boot_command": [
+        "<esc><enter><esc><enter><wait>",
+        "/casper/vmlinuz.efi noprompt <wait>",
+        "url=http://{{ .HTTPIP }}:{{ .HTTPPort }}/xubuntu-preseed.cfg <wait>",
+        "hostname={{ .Name }} <wait>",
+        "automatic-ubiquity <wait>",
+		    "boot=casper initrd=/casper/initrd.lz -- <enter>"
+      ],
+      "boot_wait": "6s",
+      "disk_size": 30720,
+      "guest_additions_path": "VBoxGuestAdditions_{{.Version}}.iso",
+      "guest_os_type": "Ubuntu_64",
+      "http_directory": "http",
+      "iso_checksum": "846cd87c718b0233c27a8ce20eef0923",
+      "iso_checksum_type": "md5",
+      "iso_url": "file:///./xubuntu-14.04.3-desktop-amd64.iso",      
+      "output_directory": "xubuntu-desktop-amd64-virtualbox",
+      "shutdown_command": "echo 'vagrant'|sudo -S shutdown -P now",
+      "ssh_password": "vagrant",
+      "ssh_port": 22,
+      "ssh_username": "vagrant",
+      "ssh_wait_timeout": "10000s",
+      "vboxmanage": [
+        [
+          "modifyvm",
+          "{{.Name}}",
+          "--memory",
+          "2048"
+        ],
+        [
+          "modifyvm",
+          "{{.Name}}",
+          "--cpus",
+          "2"
+        ]
+      ],
+      "virtualbox_version_file": ".vbox_version",
+      "vm_name": "xubuntu-desktop-amd64"
+    }
+  ],
+  "post-processors": [
+    {
+      "type": "vagrant",
+      "override": {
+        "virtualbox": {
+          "output": "xubuntu-desktop-amd64-virtualbox.box"
+        }
+      }
+    }
+  ],
+  "provisioners": [
+    {
+      "execute_command": "echo 'vagrant'|sudo -S {{.Path}}",
+      "override": {
+        "virtualbox-iso": {
+          "scripts": [
+            "scripts/desktop/init.sh",
+            "scripts/desktop/base.sh",
+            "scripts/vagrant.sh",
+        	"scripts/virtualbox.sh",            
+            "scripts/desktop/appl.sh",
+            "scripts/docker.sh",
+            "scripts/desktop/xrdp.sh",
+            "scripts/cleanup.sh",
+            "scripts/zerodisk.sh"
+          ]
+        }
+      },
+      "type": "shell"
+    }
+  ]
+}
