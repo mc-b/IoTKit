@@ -1,0 +1,24 @@
+{
+  "variables": {
+    "aws_access_key": "",
+    "aws_secret_key": ""
+  },
+  "builders": [{
+    "type": "amazon-ebs",
+    "access_key": "{{user `aws_access_key`}}",
+    "secret_key": "{{user `aws_secret_key`}}",
+    "region": "us-east-1",
+    "source_ami": "ami-d05e75b8",
+    "instance_type": "t2.micro",
+    "ssh_username": "ubuntu",
+    "ami_name": "iot-server {{timestamp}}"
+  }],
+  "provisioners": [{
+    "type": "shell",
+    "scripts": [
+	    "scripts/appl.sh",
+	    "scripts/docker.sh"
+    ]
+  }],
+ "post-processors": ["vagrant"]
+}

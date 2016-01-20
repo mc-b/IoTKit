@@ -61,7 +61,7 @@
             "scripts/desktop/init.sh",
             "scripts/desktop/base.sh",
             "scripts/vagrant.sh",
-        	"scripts/virtualbox.sh",            
+        	"scripts/desktop/virtualbox.sh",            
             "scripts/desktop/appl.sh",
             "scripts/docker.sh",
             "scripts/desktop/xrdp.sh",
