@@ -17,7 +17,7 @@
       "http_directory": "http",
       "iso_checksum": "846cd87c718b0233c27a8ce20eef0923",
       "iso_checksum_type": "md5",
-      "iso_url": "file:///./xubuntu-14.04.3-desktop-amd64.iso",      
+      "iso_url": "http://cdimage.ubuntu.com/xubuntu/releases/14.04.3/release/xubuntu-14.04.3-desktop-amd64.iso",      
       "output_directory": "xubuntu-desktop-amd64-virtualbox",
       "shutdown_command": "echo 'vagrant'|sudo -S shutdown -P now",
       "ssh_password": "vagrant",
