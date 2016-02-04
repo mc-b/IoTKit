@@ -1,9 +1,8 @@
 Internet der Dinge Kit
 ----------------------
 
-###[Beschreibung der Funktionen und Testprogramme](https://developer.mbed.org/users/marcel1691/notebook/internet-of-things-kit-iotkit-smd-shield/)
- 
-###[Anwendungsbeispiele](https://developer.mbed.org/users/marcel1691/notebook/internet-of-things-kit-anwendungen-iotkit-smd-shie/) (im Aufbau)
+- [Beschreibung der Funktionen und Testprogramme](https://developer.mbed.org/users/marcel1691/notebook/internet-of-things-kit-iotkit-smd-shield/)
+- [Anwendungsbeispiele](https://developer.mbed.org/users/marcel1691/notebook/internet-of-things-kit-anwendungen-iotkit-smd-shie/) (im Aufbau)
 
 ###Referate: 
 * 04.02.16: [ Infrastructure as Code (Docker, Vagrant und Co. im Einsatz)](http://www.ch-open.ch/events/obl/lunchzh/obl-04022016/)
