@@ -19,7 +19,7 @@ Internet der Dinge Kit
 * 03.11.11: [MakerBot as an example of Open Source Hardware](http://www.ch-open.ch/events/obl/obl-2011/)
 
 ###Kurse:
-"Internet der Dinge" Kursreihe an der EB Zürich, Schweiz.
+Kursreihe: "Internet der Dinge" für Implementierer
 * [Grundlagen](http://kurs.eb-zuerich.ch/is95)
 * [Aufbau 1 – Komplexe Anwendungen](http://kurs.eb-zuerich.ch/is96)
 * [Aufbau 2 - «Dinge» und die Cloud](http://kurs.eb-zuerich.ch/is97)
