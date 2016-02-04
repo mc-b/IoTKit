@@ -12,7 +12,7 @@ Internet der Dinge Kit
 ###Referate zum Thema: 
 * 13.04.15: [Kommunikation zwischen Applikationen im Internet of Things](https://developer.mbed.org/users/marcel1691/notebook/kommunikation-zwischen-applikationen-im-internet-o/)
 * 02.04.15: [Prototype to Product for Internet of Things in One Step](http://www.ch-open.ch/fileadmin/user_upload/events/obl/2015/150402_prototype-to-product-iot.pdf)
-* 05.02.15: ["Open" Internet der Dinge (IoT) im Zusammenspiel mit Fachanwendungen und Cloudservices - Aktueller Stand und Ausblick](http://www.ch-open.ch/fileadmin/user_upload/events/obl/2015/20150205_OBL_Internet_der_Dinge.pdf)
+* 05.02.15: ["Open" Internet der Dinge (IoT) im Zusammenspiel mit Fachanwendungen und Cloudservices](http://www.ch-open.ch/fileadmin/user_upload/events/obl/2015/20150205_OBL_Internet_der_Dinge.pdf)
 * 08.05.14: [FabLab Zürich 2.0](http://www.ch-open.ch/fileadmin/user_upload/events/obl/2014/140508_FabLabVersion2.pdf)
 * 06.02.14: [Bottom-up Innovation und Open Source Internet of Things](http://www.ch-open.ch/fileadmin/user_upload/events/obl/2014/140206_OpenSourceIoT.pdf)
 * 03.10.13: [Raspberry Pi – erste Erfahrungen und Projekte](http://www.ch-open.ch/fileadmin/user_upload/events/obl/2013/131002_RaspberryPi_Erste_Erfahrungen.pdf)
