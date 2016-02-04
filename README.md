@@ -5,7 +5,7 @@ Internet der Dinge Kit
  
 ###[Anwendungsbeispiele](https://developer.mbed.org/users/marcel1691/notebook/internet-of-things-kit-anwendungen-iotkit-smd-shie/) (im Aufbau)
 
-###Referate zum Thema: 
+###Referate: 
 * 04.02.16: [ Infrastructure as Code (Docker, Vagrant und Co. im Einsatz)](http://www.ch-open.ch/events/obl/lunchzh/obl-04022016/)
 * 02.02.16: [Internet der Dinge (IoT) für Integratoren](http://news.digicomp.ch/de/2016/02/03/opentuesday-slides-internet-der-dinge-iot-fur-integratoren/)
 * 13.04.15: [Kommunikation zwischen Applikationen im Internet of Things](https://developer.mbed.org/users/marcel1691/notebook/kommunikation-zwischen-applikationen-im-internet-o/)
