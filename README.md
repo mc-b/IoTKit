@@ -18,7 +18,7 @@ Internet der Dinge Kit
 * 07.02.13: [FabLab Zürich - Open Software meets Open Hardware](http://www.ch-open.ch/fileadmin/user_upload/events/obl/2013/130207_FabLab_Zuerich_OBL.pdf)
 * 03.11.11: [MakerBot as an example of Open Source Hardware](http://www.ch-open.ch/events/obl/obl-2011/)
 
-###Kurse
+###Kurse:
 Für eine Ausführliche Einführung empfehle ich die "Internet der Dinge" Kursreihe an der EB Zürich, Schweiz.
 * [Grundlagen](http://kurs.eb-zuerich.ch/is95)
 * [Aufbau 1 – Komplexe Anwendungen](http://kurs.eb-zuerich.ch/is96)
