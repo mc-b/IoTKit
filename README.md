@@ -5,10 +5,6 @@ Internet der Dinge Kit
  
 ###[Anwendungsbeispiele](https://developer.mbed.org/users/marcel1691/notebook/internet-of-things-kit-anwendungen-iotkit-smd-shie/) (im Aufbau)
 
-###Workshops:
-- 02.09.2015: [/ch/open Workshop](https://developer.mbed.org/teams/ch-open-wstage2015/)
-- 28.03.2015: [OSS an Schulen](https://developer.mbed.org/users/marcel1691/notebook/oss-an-schulen/)
-
 ###Referate zum Thema: 
 * 04.02.16: [ Infrastructure as Code (Docker, Vagrant und Co. im Einsatz)](http://www.ch-open.ch/events/obl/lunchzh/obl-04022016/)
 * 02.02.16: [Internet der Dinge (IoT) für Integratoren](http://news.digicomp.ch/de/2016/02/03/opentuesday-slides-internet-der-dinge-iot-fur-integratoren/)
@@ -31,3 +27,6 @@ Für eine Ausführliche Einführung empfehle ich die "Internet der Dinge" Kursre
 
 Während den Kursen ist der [IoTKit Bag](https://developer.mbed.org/users/marcel1691/notebook/internet-of-things-kit-bag-iotkit-beutel/) mit zusätzlichen Sensoren und Aktoren erhältlich.
 
+###Workshops:
+- 02.09.2015: [/ch/open Workshop](https://developer.mbed.org/teams/ch-open-wstage2015/)
+- 28.03.2015: [OSS an Schulen](https://developer.mbed.org/users/marcel1691/notebook/oss-an-schulen/)
