@@ -19,9 +19,9 @@ Internet der Dinge Kit
 
 ###Kurse:
 
-- Internet of Things (IoT) 
- * [Übersicht und Fallbeispiele](https://www.digicomp.ch/trends/internet-of-things-iot-trainings/internet-of-things-iot-uebersicht-und-fallbeispiele)
- * [Für IT- und Software-Architekten](https://www.digicomp.ch/trends/internet-of-things-iot-trainings/internet-of-things-iot-fuer-it-und-software-architekten)
+Internet of Things (IoT) 
+* [Übersicht und Fallbeispiele](https://www.digicomp.ch/trends/internet-of-things-iot-trainings/internet-of-things-iot-uebersicht-und-fallbeispiele)
+* [Für IT- und Software-Architekten](https://www.digicomp.ch/trends/internet-of-things-iot-trainings/internet-of-things-iot-fuer-it-und-software-architekten)
 
 Kursreihe: "Internet der Dinge" für Implementierer
 * [Grundlagen](http://kurs.eb-zuerich.ch/is95)
