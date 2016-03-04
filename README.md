@@ -18,6 +18,11 @@ Internet der Dinge Kit
 * 03.11.11: [MakerBot as an example of Open Source Hardware](http://www.ch-open.ch/events/obl/obl-2011/)
 
 ###Kurse:
+
+Internet of Things (IoT) 
+* [Übersicht und Fallbeispiele](https://www.digicomp.ch/trends/internet-of-things-iot-trainings/internet-of-things-iot-uebersicht-und-fallbeispiele)
+* [Für IT- und Software-Architekten](https://www.digicomp.ch/trends/internet-of-things-iot-trainings/internet-of-things-iot-fuer-it-und-software-architekten)
+
 Kursreihe: "Internet der Dinge" für Implementierer
 * [Grundlagen](http://kurs.eb-zuerich.ch/is95)
 * [Aufbau 1 – Komplexe Anwendungen](http://kurs.eb-zuerich.ch/is96)
