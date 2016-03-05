@@ -8,9 +8,9 @@ sudo -u vagrant git clone https://github.com/ARMmbed/example-mbedos-blinky.git
 # cd example-mbedos-blinky.git && yotta make target frdm-k64f && cd -
 
 # ARM Crosscompiler
-sudo add-apt-repository ppa:terry.guo/gcc-arm-embedded
+sudo add-apt-repository ppa:team-gcc-arm-embedded/ppa
 sudo apt-get update
-sudo apt-get install -y gcc-arm-none-eabi=4.9.3.2015q3-1trusty1
+sudo apt-get -y install gcc-arm-embedded
 
 # GCC4ARM 
 cd /home/vagrant/ws
