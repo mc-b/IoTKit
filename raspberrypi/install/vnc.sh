@@ -5,7 +5,7 @@
 
 # Remote Desktop via VNC console
 apt-get install -y xrdp x11vnc
-echo "x11vnc -bg -nevershared -forever -tightfilexfer -nopw -display :0" >>/home/raspberrypi/.xsessionrc
+echo "x11vnc -bg -nevershared -forever -tightfilexfer -nopw -display :0" >>/home/pi/.xsessionrc
 
 # swiss german keyboard
 #sudo cp /raspberrypi/km-0807.ini /etc/xrdp 
