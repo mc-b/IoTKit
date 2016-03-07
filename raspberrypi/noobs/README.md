@@ -26,7 +26,7 @@ Einloggen und folgende Befehle eingeben
 	mkdir -p /settings/boot /settings/root 
 
 	mount /dev/mmcblk0p6 /settings/boot
-	mount /dev/mmcblk0p5 /settings/root 
+	mount /dev/mmcblk0p7 /settings/root 
 	mkdir -p /settings/root/os
 
 	cd /settings/boot
