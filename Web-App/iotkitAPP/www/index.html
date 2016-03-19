@@ -21,6 +21,11 @@
  
             <div data-role="content">
  
+                 <div class="ui-field-contain">
+                    <label for="addr">IP-Adresse</label> 
+                    <input type="text" name="addr" id="addr" value="http://192.168.178.35/rpc/"></input>
+                </div>
+ 
                 <div class="ui-field-contain">
                     <label for="led-1">LED 1</label> 
                     <select name="led1" id="led1" data-role="slider">
@@ -41,10 +46,9 @@
             </div>
         </div>
         <script type="text/javascript">
-var server="http://192.168.178.24/rpc/";
- 
 $('select#led1').change(function() 
 {
+    var server = document.getElementById("addr").value;
     var myswitch = $(this);
     var name     = myswitch[0].name;
     var url      = myswitch[0].selectedIndex == 1 ? server + name + '/write 1' : server + name + '/write 0';
@@ -52,6 +56,7 @@ $('select#led1').change(function()
 }); 
 $('select#led2').change(function() 
 {
+    var server = document.getElementById("addr").value;
     var myswitch = $(this);
     var name     = myswitch[0].name;
     var url      = myswitch[0].selectedIndex == 1 ? server + name + '/write 1' : server + name + '/write 0';
@@ -59,6 +64,7 @@ $('select#led2').change(function()
 }); 
 $("#servo1f").on("slidestop", "#servo1", function(event) 
 {
+    var server = document.getElementById("addr").value;
     var val = $(this).val() / 100.0;
     $.get( server + 'servo1/write ' + val );
     console.log( server + 'servo1/write ' + val );
