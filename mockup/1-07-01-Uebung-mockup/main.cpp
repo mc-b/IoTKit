@@ -17,6 +17,7 @@ int main()
     INFO( "Loop" ); 
     while   ( 1 )
     {
+    	// FIXME Implementierung
         DEBUG( "In Loop" ); 
         wait    ( 1.0 );
     }

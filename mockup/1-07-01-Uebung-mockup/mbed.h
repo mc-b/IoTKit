@@ -18,4 +18,6 @@
 
 #define wait( x )	sleep( x )
 
+// TODO DigitalIn etc nachbilden
+
 #endif /* MBED_H_ */
