@@ -28,6 +28,6 @@ export DEVICES=MCU_K64F
 
 %EOF%
 
-# C Umgebung fuer Linux
-sudo apt-get install -y clang-3.5 
+# C Umgebung fuer Linux und C++ static analysis tool
+sudo apt-get install -y clang-3.5 cppcheck
 
