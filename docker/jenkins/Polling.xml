@@ -19,7 +19,7 @@
 cd Polling
 hg pull
 make
-cppcheck --xml *.cpp 2&gt;cppcheck-result.xml
+cppcheck --xml *.cpp 2>cppcheck-result.xml
 cp MCU_K64F/*.bin ..
 ]]>
 			</command>
