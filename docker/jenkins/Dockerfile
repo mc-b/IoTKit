@@ -61,7 +61,7 @@ RUN mkdir -p $JENKINS_HOME/jobs/JSONParser $JENKINS_HOME/workspace/JSONParser
 COPY JSONParser.xml $JENKINS_HOME/jobs/JSONParser/config.xml
 
 # Jenkins Konfiguration (nur 1 Build Prozessor gleichzeitig)
-#COPY config.xml /var/jenkins
+COPY config.xml /var/jenkins
 
 # Arbeitsverzeichnis
 USER root
@@ -75,7 +75,7 @@ RUN chmod +x /usr/local/bin/plugins.sh
 COPY plugins.txt /usr/share/jenkins/plugins.txt
 RUN /usr/local/bin/plugins.sh /usr/share/jenkins/plugins.txt
 RUN chown jenkins:jenkins /usr/share/jenkins/ref
-RUN mkdir -p $JENKINS_HOME/plugins && cp /usr/share/jenkins/ref/* $JENKINS_HOME/plugins/ && chown jenkins:jenkins $JENKINS_HOME/plugins
+RUN mkdir -p $JENKINS_HOME/plugins && cp /usr/share/jenkins/ref/plugins/* $JENKINS_HOME/plugins/ && chown jenkins:jenkins $JENKINS_HOME/plugins
 
 USER jenkins
 WORKDIR /var/workspace

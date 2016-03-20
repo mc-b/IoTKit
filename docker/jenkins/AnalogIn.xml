@@ -19,11 +19,87 @@
 cd AnalogIn
 hg pull
 make
+cppcheck --xml *.cpp 2&gt;cppcheck-result.xml
 cp MCU_K64F/*.bin ..
 ]]>
 			</command>
 		</hudson.tasks.Shell>
 	</builders>
-	<publishers />
+  <publishers>
+    <hudson.plugins.tasks.TasksPublisher plugin="tasks@4.48">
+      <healthy></healthy>
+      <unHealthy></unHealthy>
+      <thresholdLimit>low</thresholdLimit>
+      <pluginName>[TASKS] </pluginName>
+      <defaultEncoding></defaultEncoding>
+      <canRunOnFailed>false</canRunOnFailed>
+      <usePreviousBuildAsReference>false</usePreviousBuildAsReference>
+      <useStableBuildAsReference>false</useStableBuildAsReference>
+      <useDeltaValues>false</useDeltaValues>
+      <thresholds plugin="analysis-core@1.76">
+        <unstableTotalAll></unstableTotalAll>
+        <unstableTotalHigh></unstableTotalHigh>
+        <unstableTotalNormal></unstableTotalNormal>
+        <unstableTotalLow></unstableTotalLow>
+        <unstableNewAll></unstableNewAll>
+        <unstableNewHigh></unstableNewHigh>
+        <unstableNewNormal></unstableNewNormal>
+        <unstableNewLow></unstableNewLow>
+        <failedTotalAll></failedTotalAll>
+        <failedTotalHigh></failedTotalHigh>
+        <failedTotalNormal></failedTotalNormal>
+        <failedTotalLow></failedTotalLow>
+        <failedNewAll></failedNewAll>
+        <failedNewHigh></failedNewHigh>
+        <failedNewNormal></failedNewNormal>
+        <failedNewLow></failedNewLow>
+      </thresholds>
+      <shouldDetectModules>false</shouldDetectModules>
+      <dontComputeNew>true</dontComputeNew>
+      <doNotResolveRelativePaths>false</doNotResolveRelativePaths>
+      <high>FIXME</high>
+      <normal>TODO</normal>
+      <low>led</low>
+      <ignoreCase>false</ignoreCase>
+      <asRegexp>false</asRegexp>
+      <pattern>**/*.cpp,**/*.h</pattern>
+      <excludePattern></excludePattern>
+    </hudson.plugins.tasks.TasksPublisher>
+    <org.jenkinsci.plugins.cppcheck.CppcheckPublisher plugin="cppcheck@1.21">
+      <cppcheckConfig>
+        <pattern></pattern>
+        <ignoreBlankFiles>false</ignoreBlankFiles>
+        <allowNoReport>false</allowNoReport>
+        <configSeverityEvaluation>
+          <threshold></threshold>
+          <newThreshold></newThreshold>
+          <failureThreshold></failureThreshold>
+          <newFailureThreshold></newFailureThreshold>
+          <healthy></healthy>
+          <unHealthy></unHealthy>
+          <severityError>true</severityError>
+          <severityWarning>true</severityWarning>
+          <severityStyle>true</severityStyle>
+          <severityPerformance>true</severityPerformance>
+          <severityInformation>true</severityInformation>
+          <severityNoCategory>true</severityNoCategory>
+          <severityPortability>true</severityPortability>
+        </configSeverityEvaluation>
+        <configGraph>
+          <xSize>500</xSize>
+          <ySize>200</ySize>
+          <numBuildsInGraph>0</numBuildsInGraph>
+          <displayAllErrors>true</displayAllErrors>
+          <displayErrorSeverity>false</displayErrorSeverity>
+          <displayWarningSeverity>false</displayWarningSeverity>
+          <displayStyleSeverity>false</displayStyleSeverity>
+          <displayPerformanceSeverity>false</displayPerformanceSeverity>
+          <displayInformationSeverity>false</displayInformationSeverity>
+          <displayNoCategorySeverity>false</displayNoCategorySeverity>
+          <displayPortabilitySeverity>false</displayPortabilitySeverity>
+        </configGraph>
+      </cppcheckConfig>
+    </org.jenkinsci.plugins.cppcheck.CppcheckPublisher>
+  </publishers>
 	<buildWrappers />
 </project>
