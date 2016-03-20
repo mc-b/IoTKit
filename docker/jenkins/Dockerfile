@@ -75,6 +75,7 @@ EXPOSE 8080
 ENTRYPOINT cd /opt/jenkins && java -jar ./jenkins.war --prefix=/mbed
 
 # Jenkins Plug-Ins
+ENV JENKINS_UC https://updates.jenkins-ci.org
 COPY plugins.sh /usr/local/bin/plugins.sh
 RUN chmod +x /usr/local/bin/plugins.sh
 COPY plugins.txt /usr/share/jenkins/plugins.txt
