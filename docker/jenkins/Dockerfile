@@ -2,7 +2,7 @@ FROM mbed/yotta
 MAINTAINER Marcel mc-b Bernet <marcel.bernet@ch-open.ch>
 
 RUN apt-get update
-RUN apt-get install -y openjdk-7-jre-headless wget mercurial git cppcheck
+RUN apt-get install -y openjdk-7-jre-headless wget mercurial git cppcheck unzip
 
 # Jenkins is run with user `jenkins`, uid = 1000
 ENV JENKINS_HOME /var/jenkins
@@ -67,6 +67,15 @@ COPY config.xml /var/jenkins
 USER root
 RUN mkdir -p /var/workspace && chown -R jenkins:jenkins /var/workspace
 
+# Jenkins Plug-Ins
+USER root
+ENV JENKINS_UC https://updates.jenkins-ci.org
+COPY plugins.sh /usr/local/bin/plugins.sh
+RUN chmod +x /usr/local/bin/plugins.sh
+COPY plugins.txt /usr/share/jenkins/plugins.txt
+RUN /usr/local/bin/plugins.sh /usr/share/jenkins/plugins.txt
+RUN chown jenkins:jenkins /usr/share/jenkins/ref
+
 USER jenkins
 WORKDIR /var/workspace
 
@@ -74,10 +83,4 @@ EXPOSE 8080
 
 ENTRYPOINT cd /opt/jenkins && java -jar ./jenkins.war --prefix=/mbed
 
-# Jenkins Plug-Ins
-ENV JENKINS_UC https://updates.jenkins-ci.org
-COPY plugins.sh /usr/local/bin/plugins.sh
-RUN chmod +x /usr/local/bin/plugins.sh
-COPY plugins.txt /usr/share/jenkins/plugins.txt
-RUN /usr/local/bin/plugins.sh /usr/share/jenkins/plugins.txt
 
