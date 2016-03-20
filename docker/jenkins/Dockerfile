@@ -2,7 +2,7 @@ FROM mbed/yotta
 MAINTAINER Marcel mc-b Bernet <marcel.bernet@ch-open.ch>
 
 RUN apt-get update
-RUN apt-get install -y openjdk-7-jre-headless wget mercurial git
+RUN apt-get install -y openjdk-7-jre-headless wget mercurial git cppcheck
 
 # Jenkins is run with user `jenkins`, uid = 1000
 ENV JENKINS_HOME /var/jenkins
@@ -73,4 +73,10 @@ WORKDIR /var/workspace
 EXPOSE 8080
 
 ENTRYPOINT cd /opt/jenkins && java -jar ./jenkins.war --prefix=/mbed
+
+# Jenkins Plug-Ins
+COPY plugins.sh /usr/local/bin/plugins.sh
+RUN chmod +x /usr/local/bin/plugins.sh
+COPY plugins.txt /usr/share/jenkins/plugins.txt
+RUN /usr/local/bin/plugins.sh /usr/share/jenkins/plugins.txt
 
