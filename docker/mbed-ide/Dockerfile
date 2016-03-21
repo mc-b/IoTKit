@@ -20,18 +20,18 @@ USER jenkins
 WORKDIR /var/workspace
 RUN git clone https://github.com/ARMmbed/example-mbedos-blinky.git
 RUN hg clone https://developer.mbed.org/teams/smdiotkitch/code/AnalogIn/ && \
-	hg clone https://developer.mbed.org/teams/smdiotkitch/code/DigitalOut/
-RUN hg clone https://developer.mbed.org/teams/smdiotkitch/code/LichtSensor/
-RUN hg clone https://developer.mbed.org/teams/smdiotkitch/code/PIRSensor/
-RUN hg clone https://developer.mbed.org/teams/smdiotkit1ch/code/Polling/
-RUN hg clone https://developer.mbed.org/teams/smdiotkitch/code/PwmOut/
-RUN hg clone https://developer.mbed.org/teams/smdiotkitch/code/PwmOutPeriod/
-RUN hg clone https://developer.mbed.org/teams/smdiotkit1ch/code/RGBLEDStrip/
-RUN hg clone https://developer.mbed.org/teams/smdiotkit1ch/code/RGBLEDStripSPI/
-RUN hg clone https://developer.mbed.org/teams/smdiotkit1ch/code/Schrittmotor/
-RUN hg clone https://developer.mbed.org/teams/smdiotkit1ch/code/SDCardFS/
-RUN hg clone https://developer.mbed.org/teams/smdiotkit1ch/code/SDCardIO/
-RUN hg clone https://developer.mbed.org/teams/smdiotkitch/code/Ethernet/
+	hg clone https://developer.mbed.org/teams/smdiotkitch/code/DigitalOut/ && \
+	hg clone https://developer.mbed.org/teams/smdiotkitch/code/LichtSensor/ && \
+	hg clone https://developer.mbed.org/teams/smdiotkitch/code/PIRSensor/ && \
+	hg clone https://developer.mbed.org/teams/smdiotkit1ch/code/Polling/ && \
+	hg clone https://developer.mbed.org/teams/smdiotkitch/code/PwmOut/ && \
+	hg clone https://developer.mbed.org/teams/smdiotkitch/code/PwmOutPeriod/ && \
+	hg clone https://developer.mbed.org/teams/smdiotkit1ch/code/RGBLEDStrip/ && \
+	hg clone https://developer.mbed.org/teams/smdiotkit1ch/code/RGBLEDStripSPI/ && \
+	hg clone https://developer.mbed.org/teams/smdiotkit1ch/code/Schrittmotor/ && \
+	hg clone https://developer.mbed.org/teams/smdiotkit1ch/code/SDCardFS/ && \
+	hg clone https://developer.mbed.org/teams/smdiotkit1ch/code/SDCardIO/ && \
+	hg clone https://developer.mbed.org/teams/smdiotkitch/code/Ethernet/
 COPY makefile.codebox /var/workspace/Makefile
 
 COPY bash_history ${JENKINS_HOME}/.bash_history
