@@ -8,11 +8,10 @@ all:
 	for dir in $(PROJECTS); do \
     	$(MAKE) -C $$dir all; \
 	done
+	echo "*.bin Dateien aus Verzeichnis/MCU_K64F mittels rechter Maustaste auf Board downloaden"
 	
 clean: 
 	for dir in $(PROJECTS); do \
     	$(MAKE) -C $$dir clean; \
 	done
 	
-run:
-	echo "*.bin Dateien aus Verzeichnis/MCU_K64F mittels rechter Maustaste auf Board downloaden"
