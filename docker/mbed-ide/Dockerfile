@@ -19,8 +19,8 @@ RUN chmod 755 /start.sh
 USER jenkins
 WORKDIR /var/workspace
 RUN git clone https://github.com/ARMmbed/example-mbedos-blinky.git
-RUN hg clone https://developer.mbed.org/teams/smdiotkitch/code/AnalogIn/
-RUN hg clone https://developer.mbed.org/teams/smdiotkitch/code/DigitalOut/
+RUN hg clone https://developer.mbed.org/teams/smdiotkitch/code/AnalogIn/ && \
+	hg clone https://developer.mbed.org/teams/smdiotkitch/code/DigitalOut/
 RUN hg clone https://developer.mbed.org/teams/smdiotkitch/code/LichtSensor/
 RUN hg clone https://developer.mbed.org/teams/smdiotkitch/code/PIRSensor/
 RUN hg clone https://developer.mbed.org/teams/smdiotkit1ch/code/Polling/
