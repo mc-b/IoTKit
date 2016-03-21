@@ -8,8 +8,8 @@ RUN curl -sL https://deb.nodesource.com/setup | sudo bash - && apt-get install -
 RUN	npm -g install node-gyp codebox
 RUN cd /usr/lib/node_modules/codebox/node_modules/shux/node_modules/pty.js && make clean && make
 
-ENV CODEBOX_USERNAME guest
-ENV CODEBOX_PASSWORD guest-
+#ENV CODEBOX_USERNAME guest
+#ENV CODEBOX_PASSWORD guest-
 
 # Initialization Startup Script
 ADD start.sh /start.sh
@@ -21,6 +21,7 @@ WORKDIR /var/workspace
 RUN git clone https://github.com/ARMmbed/example-mbedos-blinky.git
 RUN hg clone https://developer.mbed.org/teams/smdiotkitch/code/AnalogIn/
 RUN hg clone https://developer.mbed.org/teams/smdiotkitch/code/DigitalOut/
+COPY makefile.codebox /var/workspace/Makefile
 
 COPY bash_history ${JENKINS_HOME}/.bash_history
 

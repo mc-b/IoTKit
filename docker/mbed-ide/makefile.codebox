@@ -1,0 +1,15 @@
+#
+#	Globaler Makefile fuer alle Projekt in der CodeBox IDE
+#
+
+PROJECTS=AnalogIn DigitalOut
+
+all: 
+	for dir in $(PROJECTS); do \
+    	$(MAKE) -C $$dir all; \
+	done
+	
+clean: 
+	for dir in $(PROJECTS); do \
+    	$(MAKE) -C $$dir clean; \
+	done
