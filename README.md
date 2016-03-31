@@ -5,6 +5,7 @@ Internet der Dinge Kit
 - [Anwendungsbeispiele](https://developer.mbed.org/users/marcel1691/notebook/internet-of-things-kit-anwendungen-iotkit-smd-shie/) (im Aufbau)
 
 ###Referate: 
+* 30.03.16: [Spielerisch ins Internet der Dinge](https://github.com/mc-b/IoTKit/blob/master/Talks/2016-03-30-Lernstick/Spielerisch%20ins%20Internet%20der%20Dinge%20-%20USB%20Lernstick-Community-Treffen%20vom%2030.pdf)
 * 04.03.16: [Internet der Dinge (IoT) Orchestrierung](https://github.com/mc-b/IoTKit/tree/master/Talks/2016-03-04-IoT_Orchestrierung)
 * 04.02.16: [ Infrastructure as Code (Docker, Vagrant und Co. im Einsatz)](http://www.ch-open.ch/fileadmin/user_upload/OBL_ZH_04.02.2016_-_Folien.pdf)
 * 02.02.16: [Internet der Dinge (IoT) für Integratoren](http://news.digicomp.ch/de/2016/02/03/opentuesday-slides-internet-der-dinge-iot-fur-integratoren/)
