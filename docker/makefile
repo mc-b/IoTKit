@@ -74,10 +74,10 @@ install.docker:
 # Docker auf Raspberry Pi installieren
 install.docker.rpi:
 	sudo wget https://downloads.hypriot.com/docker-hypriot_1.10.3-1_armhf.deb
-	sudo dpkg -i https://downloads.hypriot.com/docker-hypriot_1.10.3-1_armhf.deb
+	sudo dpkg -i docker-hypriot_1.10.3-1_armhf.deb
 	sudo usermod -a -G docker pi
 	sudo sudo systemctl enable docker
-	sudo rm https://downloads.hypriot.com/docker-hypriot_1.10.3-1_armhf.deb
+	sudo rm docker-hypriot_1.10.3-1_armhf.deb
 	sudo shutdown -r now
 
 # Installiert die benoetige Host Software (docker muss installiert sein)	
