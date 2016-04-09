@@ -35,8 +35,7 @@ build:
 build.rpi:
 	docker pull resin/armv7hf-debian
 	docker tag -f resin/armv7hf-debian ubuntu:latest
-	for dir in $(SUBDIRS_RPI); 
-	do \
+	for dir in $(SUBDIRS_RPI); do \
 		docker pull marcel1691/$$dir.raspberrypi; \
 		docker tag -f marcel1691/$$dir.raspberrypi marcel1691/$$dir; \
 	done
@@ -77,7 +76,8 @@ install.docker.rpi:
 	sudo wget http://downloads.hypriot.com/docker-hypriot_1.9.1-1_armhf.deb
 	sudo dpkg -i docker-hypriot_1.9.1-1_armhf.deb
 	sudo usermod -a -G docker pi
-	sudo update-rc.d docker defaults
+	sudo sudo systemctl enable docker
+	sudo shutdown -r now
 
 # Installiert die benoetige Host Software (docker muss installiert sein)	
 install:
