@@ -7,6 +7,21 @@ echo "Content-type: text/plain"
 echo ""
  
 #
+### GET
+#
+if [ "$REQUEST_METHOD" = "GET" ]
+then
+    export SQL="SELECT * FROM data;"
+ 
+    echo "$SQL"
+    echo ""
+    mysql -uwww-data -pmbed sensoren <<EOF
+    ${SQL}
+EOF
+ 
+fi
+ 
+#
 ### POST
 #
 if [ "$REQUEST_METHOD" = "POST" ]
