@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Marcel Bernet, Zuerich">
+<title>IoTKit Robot-App</title>
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+</head>
+<body>
+    <form>
+        <div data-role="page" id="page-index" data-title="mbed App">
+ 
+            <div data-role="header" class="ui-header ui-bar-c">
+                <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+                <h1>IoTKit Robot-App</h1>
+                <img src="./img/logo.png" width="30" class="ui-btn-right" />
+            </div>
+ 
+            <div data-role="content">
+ 
+                 <div class="ui-field-contain">
+                    <label for="addr">IP-Adresse</label> 
+                    <input type="text" name="addr" id="addr" value="http://192.168.178.26/rpc/"></input>
+                </div>
+ 
+                <div class="ui-field-contain">
+                    <label>Greifer</label> 
+                    <select name="pincer" id="pincer" data-role="slider">
+                        <option>close</option>
+                        <option>open</option>
+                    </select>
+                </div>
+                <div class="ui-field-contain">
+                    <label>Arm (oben)</label> 
+                    <select name="arm" id="arm" data-role="slider">
+                        <option>up</option>
+                        <option>down</option>
+                    </select>
+                </div>   
+                <div class="ui-field-contain">
+                    <label>Arm (unten)</label> 
+                    <select name="base" id="base" data-role="slider">
+                        <option>up</option>
+                        <option>down</option>
+                    </select>
+                </div> 
+                <div class="ui-field-contain">
+                    <label>Basisstation</label> 
+                    <select name="foot" id="foot" data-role="slider">
+                        <option>left</option>
+                        <option>right</option>
+                    </select>
+                </div> 
+            </div>
+        </div>
+        <script type="text/javascript">
+$('select#pincer').change(function() 
+{
+    var server = document.getElementById("addr").value;
+    var myswitch = $(this);
+    var name     = myswitch[0].name;
+    var url      = myswitch[0].selectedIndex == 1 ? server + name + '/min' : server + name + '/max';
+    $.get( url );
+}); 
+$('select#arm').change(function() 
+{
+    var server = document.getElementById("addr").value;
+    var myswitch = $(this);
+    var name     = myswitch[0].name;
+    var url      = myswitch[0].selectedIndex == 1 ? server + name + '/max' : server + name + '/min';
+    $.get( url );
+}); 
+$('select#base').change(function() 
+{
+    var server = document.getElementById("addr").value;
+    var myswitch = $(this);
+    var name     = myswitch[0].name;
+    var url      = myswitch[0].selectedIndex == 1 ? server + name + '/max' : server + name + '/min';
+    $.get( url );
+}); 
+$('select#foot').change(function() 
+{
+    var server = document.getElementById("addr").value;
+    var myswitch = $(this);
+    var name     = myswitch[0].name;
+    var url      = myswitch[0].selectedIndex == 1 ? server + name + '/max' : server + name + '/min';
+    $.get( url );
+}); 
+        </script>
+    </form>
+</body>
+</html>
