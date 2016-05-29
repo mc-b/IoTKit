@@ -61,6 +61,10 @@ RUN mkdir -p $JENKINS_HOME/jobs/IoTKitAPP
 RUN mkdir -p $JENKINS_HOME/workspace/IoTKitAPP
 COPY IoTKitAPP.xml $JENKINS_HOME/jobs/IoTKitAPP/config.xml
 
+RUN mkdir -p $JENKINS_HOME/jobs/IoTKitRobotAPP
+RUN mkdir -p $JENKINS_HOME/workspace/IoTKitRobotAPP
+COPY IoTKitRobotAPP.xml $JENKINS_HOME/jobs/IoTKitRobotAPP/config.xml
+
 # Arbeitsverzeichnis
 USER root
 VOLUME [ "/var/www/html/download" ]
