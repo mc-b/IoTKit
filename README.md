@@ -7,8 +7,8 @@ Internet der Dinge Kit
 ###Referate: 
 * 04.06.16: [Das Internet der Dinge erlebt die Welt](https://informatiktage.ch/veranstaltungen/workshop-iot-sensoren/)
 * 04.06.16: [Das Internet der Dinge bewegt Roboter](https://informatiktage.ch/veranstaltungen/iot-roboter/)
-* 03.06.16: [Internet of Things – was es ist & wie es Leben rettet](https://www.digicomp.ch/events/informatiktage-2016/produktivitaetstage-2016-bei-digicomp-freitag-3-juni)
-* 03.06.16: [Internet of Things – Anwendung im Alltag am Beispiel Smart Kitchen](https://www.digicomp.ch/events/informatiktage-2016/produktivitaetstage-2016-bei-digicomp-freitag-3-juni)
+* 03.06.16: [Internet of Things – was es ist & wie es Leben rettet](https://github.com/mc-b/IoTKit/blob/master/Talks/2016-06-03-IoTLebenRetten/Informatiktage_IoTLebenRetten.pdf)
+* 03.06.16: [Internet of Things – Anwendung im Alltag am Beispiel Smart Kitchen](https://github.com/mc-b/IoTKit/blob/master/Talks/2016-06-3-IoTKitchenHelper/Informatiktage_IoTKitchenHelper.pdf)
 * 30.03.16: [Spielerisch ins Internet der Dinge](https://github.com/mc-b/IoTKit/blob/master/Talks/2016-03-30-Lernstick/Spielerisch%20ins%20Internet%20der%20Dinge%20-%20USB%20Lernstick-Community-Treffen%20vom%2030.pdf)
 * 04.03.16: [Internet der Dinge (IoT) Orchestrierung](https://github.com/mc-b/IoTKit/tree/master/Talks/2016-03-04-IoT_Orchestrierung)
 * 04.02.16: [ Infrastructure as Code (Docker, Vagrant und Co. im Einsatz)](http://www.ch-open.ch/fileadmin/user_upload/OBL_ZH_04.02.2016_-_Folien.pdf)
