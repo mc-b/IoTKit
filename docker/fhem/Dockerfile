@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:14.04
 MAINTAINER Marcel mc-b Bernet <marcel.bernet@ch-open.ch>
 
 ENV DEBIAN_FRONTEND noninteractive

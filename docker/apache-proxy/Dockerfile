@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:14.04
 MAINTAINER Marcel mc-b Bernet <marcel.bernet@ch-open.ch>
 
 RUN apt-get update && apt-get -y install apache2 apache2-threaded-dev libapache2-mod-proxy-html libxml2-dev

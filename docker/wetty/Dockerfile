@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:14.04
 
 ENV NODE_VERSION 0.10.40
 ENV NPM_VERSION 2.14.1
