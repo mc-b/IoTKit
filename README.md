@@ -5,6 +5,7 @@ Internet der Dinge Kit
 - [Anwendungsbeispiele](https://developer.mbed.org/users/marcel1691/notebook/internet-of-things-kit-anwendungen-iotkit-smd-shie/) (im Aufbau)
 
 ###Referate: 
+* 29.08.16: [Industrie 4.0: Wie kommunizieren die Systeme?](https://github.com/mc-b/IoTKit/blob/master/Talks/2016-08-29-NormenStandard/2016-08-29-NormenStandards.pdf)
 * 04.06.16: [Das Internet der Dinge erlebt die Welt](https://informatiktage.ch/veranstaltungen/workshop-iot-sensoren/)
 * 04.06.16: [Das Internet der Dinge bewegt Roboter](https://informatiktage.ch/veranstaltungen/iot-roboter/)
 * 03.06.16: [Internet of Things – was es ist & wie es Leben rettet](https://github.com/mc-b/IoTKit/blob/master/Talks/2016-06-03-IoTLebenRetten/Informatiktage_IoTLebenRetten.pdf)
