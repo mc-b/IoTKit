@@ -39,5 +39,6 @@ Kursreihe: "Internet der Dinge" für Implementierer
 Während den Kursen ist der [IoTKit Bag](https://developer.mbed.org/users/marcel1691/notebook/internet-of-things-kit-bag-iotkit-beutel/) mit zusätzlichen Sensoren und Aktoren erhältlich.
 
 ###Workshops:
+- 15.09.2016: [CH Open Workshop - Internet der Dinge](http://www.ch-open.ch/wstage0/workshop-tage/2016/ws-16-internet-der-dinge/)
 - 02.09.2015: [/ch/open Workshop](https://developer.mbed.org/teams/ch-open-wstage2015/)
 - 28.03.2015: [OSS an Schulen](https://developer.mbed.org/users/marcel1691/notebook/oss-an-schulen/)
