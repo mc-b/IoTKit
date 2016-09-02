@@ -6,8 +6,6 @@ Internet der Dinge Kit
 
 ###Referate: 
 * 29.08.16: [Industrie 4.0: Wie kommunizieren die Systeme?](https://github.com/mc-b/IoTKit/blob/master/Talks/2016-08-29-NormenStandard/2016-08-29-NormenStandards.pdf)
-* 04.06.16: [Das Internet der Dinge erlebt die Welt](https://informatiktage.ch/veranstaltungen/workshop-iot-sensoren/)
-* 04.06.16: [Das Internet der Dinge bewegt Roboter](https://informatiktage.ch/veranstaltungen/iot-roboter/)
 * 03.06.16: [Internet of Things – was es ist & wie es Leben rettet](https://github.com/mc-b/IoTKit/blob/master/Talks/2016-06-03-IoTLebenRetten/Informatiktage_IoTLebenRetten.pdf)
 * 03.06.16: [Internet of Things – Anwendung im Alltag am Beispiel Smart Kitchen](https://github.com/mc-b/IoTKit/blob/master/Talks/2016-06-3-IoTKitchenHelper/Informatiktage_IoTKitchenHelper.pdf)
 * 30.03.16: [Spielerisch ins Internet der Dinge](https://github.com/mc-b/IoTKit/blob/master/Talks/2016-03-30-Lernstick/Spielerisch%20ins%20Internet%20der%20Dinge%20-%20USB%20Lernstick-Community-Treffen%20vom%2030.pdf)
@@ -39,6 +37,10 @@ Kursreihe: "Internet der Dinge" für Implementierer
 Während den Kursen ist der [IoTKit Bag](https://developer.mbed.org/users/marcel1691/notebook/internet-of-things-kit-bag-iotkit-beutel/) mit zusätzlichen Sensoren und Aktoren erhältlich.
 
 ###Workshops:
+- 18.09.2016: [Das Internet der Dinge erlebt die Welt](http://dynamo.ch/kurs/das-internet-der-dinge-erfährt-die-welt) (Zürich Mini Maker Faire)
+- 17.09.2016: [Das Internet der Dinge bewegt Roboter](http://dynamo.ch/kurs/das-internet-der-dinge-bewegt-roboter) (Zürich Mini Maker Faire)
 - 15.09.2016: [CH Open Workshop - Internet der Dinge](http://www.ch-open.ch/wstage0/workshop-tage/2016/ws-16-internet-der-dinge/)
+- 04.06.2016: [Das Internet der Dinge erlebt die Welt](https://informatiktage.ch/veranstaltungen/workshop-iot-sensoren/) (Informatiktage 2016)
+- 04.06.2016: [Das Internet der Dinge bewegt Roboter](https://informatiktage.ch/veranstaltungen/iot-roboter/) (Informatiktage 2016)
 - 02.09.2015: [/ch/open Workshop](https://developer.mbed.org/teams/ch-open-wstage2015/)
 - 28.03.2015: [OSS an Schulen](https://developer.mbed.org/users/marcel1691/notebook/oss-an-schulen/)
