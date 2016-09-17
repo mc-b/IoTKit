@@ -5,6 +5,8 @@ Internet der Dinge Kit
 - [Anwendungsbeispiele](https://developer.mbed.org/users/marcel1691/notebook/internet-of-things-kit-anwendungen-iotkit-smd-shie/) (im Aufbau)
 
 ###Referate: 
+* 18.09.16: [Internet of Things – was es ist & wie es Leben rettet](https://github.com/mc-b/IoTKit/blob/master/Talks/2016-09-18-MakerFaire-IoTLebenRetten/MakerFaire_IoTLebenRetten.pdf)
+* 18.09.16: [Internet of Things – Anwendung im Alltag am Beispiel Smart Kitchen](https://github.com/mc-b/IoTKit/blob/master/Talks/2016-09-18-MakerFaire-IoTKitchenHelper/MakerFaire_IoTKitchenHelper.pdf)
 * 29.08.16: [Industrie 4.0: Wie kommunizieren die Systeme?](https://github.com/mc-b/IoTKit/blob/master/Talks/2016-08-29-NormenStandard/2016-08-29-NormenStandards.pdf)
 * 03.06.16: [Internet of Things – was es ist & wie es Leben rettet](https://github.com/mc-b/IoTKit/blob/master/Talks/2016-06-03-IoTLebenRetten/Informatiktage_IoTLebenRetten.pdf)
 * 03.06.16: [Internet of Things – Anwendung im Alltag am Beispiel Smart Kitchen](https://github.com/mc-b/IoTKit/blob/master/Talks/2016-06-3-IoTKitchenHelper/Informatiktage_IoTKitchenHelper.pdf)
