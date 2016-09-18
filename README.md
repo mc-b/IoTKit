@@ -4,6 +4,25 @@ Internet der Dinge Kit
 - [Beschreibung der Funktionen und Testprogramme](https://developer.mbed.org/users/marcel1691/notebook/internet-of-things-kit-iotkit-smd-shield/)
 - [Anwendungsbeispiele](https://developer.mbed.org/users/marcel1691/notebook/internet-of-things-kit-anwendungen-iotkit-smd-shie/) (im Aufbau)
 
+###Kurse:
+
+Kursreihe: "Internet der Dinge" für Implementierer
+* [Grundlagen](http://kurs.eb-zuerich.ch/is95)
+* [Aufbau 1 – Komplexe Anwendungen](http://kurs.eb-zuerich.ch/is96)
+* [Aufbau 2 - «Dinge» und die Cloud](http://kurs.eb-zuerich.ch/is97)
+* [Aufbau 3 – Raspberry Pi und Co. als Server](http://kurs.eb-zuerich.ch/is98)
+
+Internet of Things (IoT) für Informatiker
+* [Übersicht und Fallbeispiele](https://www.digicomp.ch/trends/internet-of-things-iot-trainings/internet-of-things-iot-uebersicht-und-fallbeispiele)
+* [Für IT- und Software-Architekten](https://www.digicomp.ch/trends/internet-of-things-iot-trainings/internet-of-things-iot-fuer-it-und-software-architekten)
+
+Während den Kursen ist der [IoTKit Bag](https://developer.mbed.org/users/marcel1691/notebook/internet-of-things-kit-bag-iotkit-beutel/) mit zusätzlichen Sensoren und Aktoren erhältlich.
+
+Weitere Kurse
+* [Digitale Transformation](http://eb-zuerich.ch/kursprogramm/angebot-nach-thema/selbstorganisation-gesellschaft/gesellschaft/digitale-transformation.html)
+* [Infrastructure as Code](http://eb-zuerich.ch/kursprogramm/angebot-nach-thema/softwareentwicklung-it-infrastruktur/betriebssysteme-netzwerke/infrastructure-as-code.html) und [Docker](http://eb-zuerich.ch/kursprogramm/angebot-nach-thema/softwareentwicklung-it-infrastruktur/betriebssysteme-netzwerke/docker.html)
+* [Big Data – Überblick](http://eb-zuerich.ch/kursprogramm/angebot-nach-thema/softwareentwicklung-it-infrastruktur/datenbanken/big-data-ueberblick.html)
+
 ###Referate: 
 * 18.09.16: [Internet of Things – was es ist & wie es Leben rettet](https://github.com/mc-b/IoTKit/blob/master/Talks/2016-09-18-MakerFaire-IoTLebenRetten/MakerFaire_IoTLebenRetten.pdf)
 * 18.09.16: [Internet of Things – Anwendung im Alltag am Beispiel Smart Kitchen](https://github.com/mc-b/IoTKit/blob/master/Talks/2016-09-18-MakerFaire-IoTKitchenHelper/MakerFaire_IoTKitchenHelper.pdf)
@@ -23,20 +42,6 @@ Internet der Dinge Kit
 * 02.05.13: [Internet of Things](http://www.ch-open.ch/fileadmin/user_upload/events/obl/2013/130502_Internet_of_Things.pdf)
 * 07.02.13: [FabLab Zürich - Open Software meets Open Hardware](http://www.ch-open.ch/fileadmin/user_upload/events/obl/2013/130207_FabLab_Zuerich_OBL.pdf)
 * 03.11.11: [MakerBot as an example of Open Source Hardware](http://www.ch-open.ch/events/obl/obl-2011/)
-
-###Kurse:
-
-Internet of Things (IoT) 
-* [Übersicht und Fallbeispiele](https://www.digicomp.ch/trends/internet-of-things-iot-trainings/internet-of-things-iot-uebersicht-und-fallbeispiele)
-* [Für IT- und Software-Architekten](https://www.digicomp.ch/trends/internet-of-things-iot-trainings/internet-of-things-iot-fuer-it-und-software-architekten)
-
-Kursreihe: "Internet der Dinge" für Implementierer
-* [Grundlagen](http://kurs.eb-zuerich.ch/is95)
-* [Aufbau 1 – Komplexe Anwendungen](http://kurs.eb-zuerich.ch/is96)
-* [Aufbau 2 - «Dinge» und die Cloud](http://kurs.eb-zuerich.ch/is97)
-* [Aufbau 3 – Raspberry Pi und Co. als Server](http://kurs.eb-zuerich.ch/is98)
-
-Während den Kursen ist der [IoTKit Bag](https://developer.mbed.org/users/marcel1691/notebook/internet-of-things-kit-bag-iotkit-beutel/) mit zusätzlichen Sensoren und Aktoren erhältlich.
 
 ###Workshops:
 - 18.09.2016: [Das Internet der Dinge erlebt die Welt](http://dynamo.ch/kurs/das-internet-der-dinge-erfährt-die-welt) (Zürich Mini Maker Faire)
