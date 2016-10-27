@@ -6,7 +6,7 @@ PROJECTS=AnalogIn DigitalOut LichtSensor PIRSensor Polling PwmOut PwmOutPeriod R
 
 all: 
 	for dir in $(PROJECTS); do \
-    	$(MAKE) -C $$dir all; \
+    	cd $$dir && mbed compile && cd ..; \
 	done
 	echo "*.bin Dateien aus Verzeichnis/MCU_K64F mittels rechter Maustaste auf Board downloaden"
 	

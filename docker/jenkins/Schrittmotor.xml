@@ -15,11 +15,12 @@
 	<builders>
 		<hudson.tasks.Shell>
 			<command><![CDATA[
-[ ! -d Schrittmotor ] && { hg clone https://developer.mbed.org/teams/smdiotkit1ch/code/Schrittmotor/; }			
+[ ! -d Schrittmotor ] && { mbed import https://developer.mbed.org/teams/smdiotkit1ch/code/Schrittmotor/; }			
 cd Schrittmotor
-hg pull
-make
-cp MCU_K64F/*.bin ..
+mbed update
+mbed compile
+cppcheck --xml *.cpp 2>cppcheck-result.xml
+cp ./BUILD/K64F/GCC_ARM/*.bin ..
 ]]>
 			</command>
 		</hudson.tasks.Shell>

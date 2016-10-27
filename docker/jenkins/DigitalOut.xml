@@ -14,12 +14,12 @@
   <builders>
     <hudson.tasks.Shell>
       <command>
-[ ! -d DigitalOut ] &amp;&amp; { hg clone https://developer.mbed.org/teams/smdiotkitch/code/DigitalOut/; }			
+[ ! -d DigitalOut ] &amp;&amp; { mbed import https://developer.mbed.org/teams/smdiotkitch/code/DigitalOut/; }			
 cd DigitalOut
-hg pull
-make
-cppcheck --xml *.cpp 2&gt;cppcheck-result.xml
-cp MCU_K64F/*.bin ..
+mbed update
+mbed compile
+cppcheck --xml *.cpp 2>cppcheck-result.xml
+cp ./BUILD/K64F/GCC_ARM/*.bin ..
 
 			</command>
     </hudson.tasks.Shell>

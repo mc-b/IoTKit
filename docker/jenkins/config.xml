@@ -104,7 +104,7 @@
     </listView> 
     <listView>
       <owner class="hudson" reference="../../.."/>
-      <name>mbed OS V3</name>
+      <name>mbed OS V5</name>
       <filterExecutors>false</filterExecutors>
       <filterQueue>false</filterQueue>
       <properties class="hudson.model.View$PropertyList"/>

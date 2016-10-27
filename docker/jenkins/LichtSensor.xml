@@ -15,11 +15,12 @@
 	<builders>
 		<hudson.tasks.Shell>
 			<command><![CDATA[
-[ ! -d LichtSensor ] && { hg clone https://developer.mbed.org/teams/smdiotkitch/code/LichtSensor/; }			
+[ ! -d LichtSensor ] && { mbed import https://developer.mbed.org/teams/smdiotkitch/code/LichtSensor/; }			
 cd LichtSensor
-hg pull
-make
-cp MCU_K64F/*.bin ..
+mbed update
+mbed compile
+cppcheck --xml *.cpp 2>cppcheck-result.xml
+cp ./BUILD/K64F/GCC_ARM/*.bin ..
 ]]>
 			</command>
 		</hudson.tasks.Shell>

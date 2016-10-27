@@ -15,12 +15,12 @@
 	<builders>
 		<hudson.tasks.Shell>
 			<command><![CDATA[
-[ ! -d Polling ] && { hg clone https://developer.mbed.org/teams/smdiotkit1ch/code/Polling/; }			
+[ ! -d Polling ] && { mbed import https://developer.mbed.org/teams/smdiotkit1ch/code/Polling/; }			
 cd Polling
-hg pull
-make
+mbed update
+mbed compile
 cppcheck --xml *.cpp 2>cppcheck-result.xml
-cp MCU_K64F/*.bin ..
+cp ./BUILD/K64F/GCC_ARM/*.bin ..
 ]]>
 			</command>
 		</hudson.tasks.Shell>

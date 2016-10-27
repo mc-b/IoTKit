@@ -15,11 +15,12 @@
 	<builders>
 		<hudson.tasks.Shell>
 			<command><![CDATA[
-[ ! -d example-mbedos-blinky ] && { git clone https://github.com/ARMmbed/example-mbedos-blinky.git; }			
-cd example-mbedos-blinky
-git pull
-yotta target frdm-k64f-gcc
-yotta build
+[ ! -d mbed-os-example-blinky ] && { mbed import https://github.com/ARMmbed/mbed-os-example-blinky; }			
+cd mbed-os-example-blinky
+mbed update
+mbed compile
+cppcheck --xml *.cpp 2>cppcheck-result.xml
+cp ./BUILD/K64F/GCC_ARM/*.bin ..
 ]]>
 			</command>
 		</hudson.tasks.Shell>

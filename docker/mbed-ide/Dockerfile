@@ -18,20 +18,20 @@ RUN chmod 755 /start.sh
 # Projekt in workspace
 USER jenkins
 WORKDIR /var/workspace
-RUN git clone https://github.com/ARMmbed/example-mbedos-blinky.git
-RUN hg clone https://developer.mbed.org/teams/smdiotkitch/code/AnalogIn/ && \
-	hg clone https://developer.mbed.org/teams/smdiotkitch/code/DigitalOut/ && \
-	hg clone https://developer.mbed.org/teams/smdiotkitch/code/LichtSensor/ && \
-	hg clone https://developer.mbed.org/teams/smdiotkitch/code/PIRSensor/ && \
-	hg clone https://developer.mbed.org/teams/smdiotkit1ch/code/Polling/ && \
-	hg clone https://developer.mbed.org/teams/smdiotkitch/code/PwmOut/ && \
-	hg clone https://developer.mbed.org/teams/smdiotkitch/code/PwmOutPeriod/ && \
-	hg clone https://developer.mbed.org/teams/smdiotkit1ch/code/RGBLEDStrip/ && \
-	hg clone https://developer.mbed.org/teams/smdiotkit1ch/code/RGBLEDStripSPI/ && \
-	hg clone https://developer.mbed.org/teams/smdiotkit1ch/code/Schrittmotor/ && \
-	hg clone https://developer.mbed.org/teams/smdiotkit1ch/code/SDCardFS/ && \
-	hg clone https://developer.mbed.org/teams/smdiotkit1ch/code/SDCardIO/ && \
-	hg clone https://developer.mbed.org/teams/smdiotkitch/code/Ethernet/
+RUN mbed import https://github.com/ARMmbed/mbed-os-example-blinky
+RUN mbed import https://developer.mbed.org/teams/smdiotkitch/code/AnalogIn/ && \
+	mbed import https://developer.mbed.org/teams/smdiotkitch/code/DigitalOut/ && \
+	mbed import https://developer.mbed.org/teams/smdiotkitch/code/LichtSensor/ && \
+	mbed import https://developer.mbed.org/teams/smdiotkitch/code/PIRSensor/ && \
+	mbed import https://developer.mbed.org/teams/smdiotkit1ch/code/Polling/ && \
+	mbed import https://developer.mbed.org/teams/smdiotkitch/code/PwmOut/ && \
+	mbed import https://developer.mbed.org/teams/smdiotkitch/code/PwmOutPeriod/ && \
+	mbed import https://developer.mbed.org/teams/smdiotkit1ch/code/RGBLEDStrip/ && \
+	mbed import https://developer.mbed.org/teams/smdiotkit1ch/code/RGBLEDStripSPI/ && \
+	mbed import https://developer.mbed.org/teams/smdiotkit1ch/code/Schrittmotor/ && \
+	mbed import https://developer.mbed.org/teams/smdiotkit1ch/code/SDCardFS/ && \
+	mbed import https://developer.mbed.org/teams/smdiotkit1ch/code/SDCardIO/ && \
+	mbed import https://developer.mbed.org/teams/smdiotkitch/code/Ethernet/
 COPY makefile.codebox /var/workspace/Makefile
 
 COPY bash_history ${JENKINS_HOME}/.bash_history

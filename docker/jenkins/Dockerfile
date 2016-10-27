@@ -1,8 +1,8 @@
-FROM mbed/yotta
+FROM ubuntu:14.04
 MAINTAINER Marcel mc-b Bernet <marcel.bernet@ch-open.ch>
 
 RUN apt-get update
-RUN apt-get install -y openjdk-7-jre-headless wget mercurial git cppcheck unzip
+RUN apt-get install -y openjdk-7-jre-headless wget mercurial git cppcheck unzip curl
 
 # Jenkins is run with user `jenkins`, uid = 1000
 ENV JENKINS_HOME /var/jenkins
@@ -14,14 +14,17 @@ USER jenkins
 RUN mkdir /opt/jenkins
 RUN wget http://mirrors.jenkins-ci.org/war/latest/jenkins.war -O /opt/jenkins/jenkins.war
 
-# GCC4mbed
-WORKDIR /opt
-RUN git clone https://github.com/adamgreen/gcc4mbed.git
-ENV GCC4MBED_DIR=/opt/gcc4mbed
-ENV GCC4MBED_TOOLPATH=/usr/bin
-ENV DEVICES=MCU_K64F 
-ADD MCU_K64F-device.mk ${GCC4MBED_DIR}/build
-#RUN cd ${GCC4MBED_DIR} && make
+# mbed cli
+USER root
+RUN apt-get -y install python python-pip lib32z1 lib32ncurses5 lib32bz2-1.0 lib32ncurses5 build-essential \
+			   software-properties-common python3-software-properties python-software-properties
+RUN add-apt-repository ppa:team-gcc-arm-embedded/ppa
+RUN apt-get update
+RUN apt-get -y install gcc-arm-embedded
+RUN pip install mbed-cli
+USER jenkins
+RUN mbed config --global TARGET K64F
+RUN mbed config --global TOOLCHAIN GCC_ARM
 
 # Jenkins Jobs (smd.iotkit.ch)
 RUN mkdir -p $JENKINS_HOME/jobs/example-mbedos-blinky $JENKINS_HOME/workspace/example-mbedos-blinky

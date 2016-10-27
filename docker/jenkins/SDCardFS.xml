@@ -15,11 +15,12 @@
 	<builders>
 		<hudson.tasks.Shell>
 			<command><![CDATA[
-[ ! -d SDCardFS ] && { hg clone https://developer.mbed.org/teams/smdiotkit1ch/code/SDCardFS/; }			
+[ ! -d SDCardFS ] && { mbed import https://developer.mbed.org/teams/smdiotkit1ch/code/SDCardFS/; }			
 cd SDCardFS
-hg pull
-make
-cp MCU_K64F/*.bin ..
+mbed update
+mbed compile
+cppcheck --xml *.cpp 2>cppcheck-result.xml
+cp ./BUILD/K64F/GCC_ARM/*.bin ..
 ]]>
 			</command>
 		</hudson.tasks.Shell>
