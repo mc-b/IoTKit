@@ -9,8 +9,7 @@ Internet der Dinge Kit
 Kursreihe: "Internet der Dinge" für Implementierer
 * [Grundlagen](http://kurs.eb-zuerich.ch/is95)
 * [Aufbau 1 – Komplexe Anwendungen](http://kurs.eb-zuerich.ch/is96)
-* [Aufbau 2 - «Dinge» und die Cloud](http://kurs.eb-zuerich.ch/is97)
-* [Aufbau 3 – Raspberry Pi und Co. als Server](http://kurs.eb-zuerich.ch/is98)
+* [Aufbau 2 – Raspberry Pi und Co. als Server](http://kurs.eb-zuerich.ch/is98)
 
 Internet of Things (IoT) für Informatiker
 * [Übersicht und Fallbeispiele](https://www.digicomp.ch/trends/internet-of-things-iot-trainings/internet-of-things-iot-uebersicht-und-fallbeispiele)
