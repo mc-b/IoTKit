@@ -1,8 +1,11 @@
 Internet der Dinge Kit
 ----------------------
 
-- [Beschreibung der Funktionen und Testprogramme](https://developer.mbed.org/users/marcel1691/notebook/internet-of-things-kit-iotkit-smd-shield/)
-- [Anwendungsbeispiele](https://developer.mbed.org/users/marcel1691/notebook/internet-of-things-kit-anwendungen-iotkit-smd-shie/) (im Aufbau)
+| IoTKit V1   | IoTKit V2  |
+|  :-------:  | :-------:  |
+!![](IoTKitShield/V1.0/IoTKitV1.png)|![](IoTKitShield/V2.0/IoTKitV2.png)|
+|[Beschreibung](https://developer.mbed.org/users/marcel1691/notebook/internet-of-things-kit-iotkit-smd-shield/)|[Beschreibung](https://github.com/mc-b/IoTKitV2#grundlagen)|
+|[Anwendungsbeispiele](https://developer.mbed.org/users/marcel1691/notebook/internet-of-things-kit-anwendungen-iotkit-smd-shie/)|[Anwendungsbeispiele](https://github.com/mc-b/IoTKitV2#anwendungen)|
 
 ### Kurse:
 
@@ -19,10 +22,18 @@ Während den Kursen ist der [IoTKit Bag](https://developer.mbed.org/users/marcel
 
 Weitere Kurse
 * [Digitale Transformation](http://eb-zuerich.ch/kursprogramm/angebot-nach-thema/selbstorganisation-gesellschaft/gesellschaft/digitale-transformation.html)
-* [Infrastructure as Code](http://eb-zuerich.ch/kursprogramm/angebot-nach-thema/softwareentwicklung-it-infrastruktur/betriebssysteme-netzwerke/infrastructure-as-code.html) und [Docker](http://eb-zuerich.ch/kursprogramm/angebot-nach-thema/softwareentwicklung-it-infrastruktur/betriebssysteme-netzwerke/docker.html)
+* [DevOps in der Praxis](https://www.eb-zuerich.ch/angebot/devops-in-der-praxis.html) 
+* [Docker - Container Umgebung aufbauen und betreiben](https://www.eb-zuerich.ch/angebot/docker.html)
 * [Big Data – Überblick](http://eb-zuerich.ch/kursprogramm/angebot-nach-thema/softwareentwicklung-it-infrastruktur/datenbanken/big-data-ueberblick.html)
 
 ### Referate: 
+
+* 17.05.17: [IT Infrastruktur "on demand"](https://github.com/mc-b/IoTKit/blob/master/Talks/2017-05-17-IT-Architektur_on_demand.pdf)
+* 04.05.17: [Big Data mit Open Source](https://github.com/mc-b/IoTKit/blob/master/Talks/2017-05-04-BigData.pdf)
+* 03.05.17: [Vom Umgang mit Containern](https://github.com/mc-b/IoTKit/blob/master/Talks/2017-05-03-VomUmgangmitContainern.pdf)
+* 05.04.17: [Internet der Dinge](https://github.com/mc-b/IoTKit/blob/master/Talks/2017-04-05-InternetDerDinge.pdf) 
+* 15.03.17: [Big Data und KI](https://github.com/mc-b/IoTKit/blob/master/Talks/2017-03-15-BigDataUndKI.pdf) 
+* 01.03.17: [Digital Transformation](https://github.com/mc-b/IoTKit/blob/master/Talks/2017-03-01-DigitaleTransformation.pdf)
 * 18.09.16: [Internet of Things – was es ist & wie es Leben rettet](https://github.com/mc-b/IoTKit/blob/master/Talks/2016-09-18-MakerFaire-IoTLebenRetten/MakerFaire_IoTLebenRetten.pdf)
 * 18.09.16: [Internet of Things – Anwendung im Alltag am Beispiel Smart Kitchen](https://github.com/mc-b/IoTKit/blob/master/Talks/2016-09-18-MakerFaire-IoTKitchenHelper/MakerFaire_IoTKitchenHelper.pdf)
 * 29.08.16: [Industrie 4.0: Wie kommunizieren die Systeme?](https://github.com/mc-b/IoTKit/blob/master/Talks/2016-08-29-NormenStandard/2016-08-29-NormenStandards.pdf)
