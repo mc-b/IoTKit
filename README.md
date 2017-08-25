@@ -7,10 +7,10 @@ Internet der Dinge Kit
 |[Beschreibung](https://developer.mbed.org/users/marcel1691/notebook/internet-of-things-kit-iotkit-smd-shield/)|[Beschreibung](https://github.com/mc-b/IoTKitV2#grundlagen)|
 |[Anwendungsbeispiele](https://developer.mbed.org/users/marcel1691/notebook/internet-of-things-kit-anwendungen-iotkit-smd-shie/)|[Anwendungsbeispiele](https://github.com/mc-b/IoTKitV2#anwendungen)|
 
-### IoTKit an der [Maker Faire Zürich](https://www.makerfairezurich.ch/de/)
+### IoTKit an der [Zürich Mini Maker Faire ](https://www.makerfairezurich.ch/de/)
 
-* [Das Internet der Dinge (IoT) erfährt die Welt](http://www.dynamo.ch/kurs/das-internet-der-dinge-erf%C3%A4hrt-die-welt-0)
-* [Das Internet der Dinge (IoT) bewegt Roboter](http://www.dynamo.ch/kurs/das-internet-der-dinge-bewegt-roboter-0)
+* [Das Internet der Dinge (IoT) erfährt die Welt](http://www.dynamo.ch/kurs/das-internet-der-dinge-erf%C3%A4hrt-die-welt-0), Samstag, 9. September
+* [Das Internet der Dinge (IoT) bewegt Roboter](http://www.dynamo.ch/kurs/das-internet-der-dinge-bewegt-roboter-0), Sonntag, 10. September
 
 ### Kurse:
 
