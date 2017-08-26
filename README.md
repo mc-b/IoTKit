@@ -4,8 +4,7 @@ Internet der Dinge Kit
 | IoTKit V1   | IoTKit V2  |
 |  :-------:  | :-------:  |
 |![](IoTKitShield/V1.0/IoTKitV1.png)|![](IoTKitShield/V2.0/IoTKitV2.png)|
-|[Beschreibung](https://developer.mbed.org/users/marcel1691/notebook/internet-of-things-kit-iotkit-smd-shield/)|[Beschreibung](https://github.com/mc-b/IoTKitV2#grundlagen)|
-|[Anwendungsbeispiele](https://developer.mbed.org/users/marcel1691/notebook/internet-of-things-kit-anwendungen-iotkit-smd-shie/)|[Anwendungsbeispiele](https://github.com/mc-b/IoTKitV2#anwendungen)|
+|[Dokumentation](https://github.com/mc-b/IoTKitV1)|[Dokumentation](https://github.com/mc-b/IoTKitV2)|
 
 ### IoTKit an der [Zürich Mini Maker Faire ](https://www.makerfairezurich.ch/de/)
 
