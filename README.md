@@ -4,8 +4,7 @@ Internet der Dinge Kit
 | IoTKit V1   | IoTKit V2  | IoTKit V3  |
 |  :-------:  | :-------:  | :-------:  |
 |![](IoTKitShield/V1.0/IoTKitV1.png)|![](IoTKitShield/V2.0/IoTKitV2.png)|![](IoTKitShield/V3.0/IoTKitV3.png)|
-|[Dokumentation](https://github.com/mc-b/IoTKitV1)|[Dokumentation](https://github.com/mc-b/IoTKitV2)|
-|[Dokumentation](https://github.com/mc-b/IoTKitV1)|[Dokumentation](https://github.com/mc-b/IoTKitV3)|
+|[Dokumentation](https://github.com/mc-b/IoTKitV1)|[Dokumentation](https://github.com/mc-b/IoTKitV2)|[Dokumentation](https://github.com/mc-b/IoTKitV3)|
 
 ### Kurse:
 
