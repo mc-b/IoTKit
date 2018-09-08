@@ -7,29 +7,15 @@ Internet der Dinge Kit
 |[Dokumentation](https://github.com/mc-b/IoTKitV1)|[Dokumentation](https://github.com/mc-b/IoTKitV2)|
 |[Dokumentation](https://github.com/mc-b/IoTKitV1)|[Dokumentation](https://github.com/mc-b/IoTKitV3)|
 
-### IoTKit an der [Zürich Mini Maker Faire ](https://www.makerfairezurich.ch/de/)
-
-* [Das Internet der Dinge (IoT) erfährt die Welt](http://www.dynamo.ch/kurs/das-internet-der-dinge-erf%C3%A4hrt-die-welt-0), Samstag, 9. September
-* [Das Internet der Dinge (IoT) bewegt Roboter](http://www.dynamo.ch/kurs/das-internet-der-dinge-bewegt-roboter-0), Sonntag, 10. September
-
 ### Kurse:
 
 Kursreihe: "Internet der Dinge" für Implementierer
-* [Grundlagen](http://kurs.eb-zuerich.ch/is95)
-* [Aufbau 1 – Komplexe Anwendungen](http://kurs.eb-zuerich.ch/is96)
-* [Aufbau 2 – Raspberry Pi und Co. als Server](http://kurs.eb-zuerich.ch/is98)
+* [Grundlagen](https://www.eb-zuerich.ch/angebot/internet-der-dinge-grundlagen.html)
+* [Aufbau 1 – Komplexe Anwendungen](https://www.eb-zuerich.ch/angebot/internet-der-dinge-aufbau.html)
 
 Internet of Things (IoT) für Informatiker
-* [Übersicht und Fallbeispiele](https://www.digicomp.ch/trends/internet-of-things-iot-trainings/internet-of-things-iot-uebersicht-und-fallbeispiele)
-* [Für IT- und Software-Architekten](https://www.digicomp.ch/trends/internet-of-things-iot-trainings/internet-of-things-iot-fuer-it-und-software-architekten)
-
-Während den Kursen ist der [IoTKit Bag](https://developer.mbed.org/users/marcel1691/notebook/internet-of-things-kit-bag-iotkit-beutel/) mit zusätzlichen Sensoren und Aktoren erhältlich.
-
-Weitere Kurse
-* [Digitale Transformation](http://eb-zuerich.ch/kursprogramm/angebot-nach-thema/selbstorganisation-gesellschaft/gesellschaft/digitale-transformation.html)
-* [DevOps in der Praxis](https://www.eb-zuerich.ch/angebot/devops-in-der-praxis.html) 
-* [Docker - Container Umgebung aufbauen und betreiben](https://www.eb-zuerich.ch/angebot/docker.html)
-* [Big Data – Überblick](http://eb-zuerich.ch/kursprogramm/angebot-nach-thema/softwareentwicklung-it-infrastruktur/datenbanken/big-data-ueberblick.html)
+* [Internet of Things (IoT) im Einsatz](https://www.digicomp.ch/weiterbildung/trainings-zu-platforms-services/platform-as-a-service-paas/internet-of-things-iot/internet-of-things-iot-im-einsatz)
+* [Für IT- und Software-Architekten](https://www.digicomp.ch/mastering-digital-change/7-kompetenzfelder-fuer-den-digitalen-wandel/handlungsfeld-it/neue-technologien/internet-of-things-iot-fuer-it-und-softwarearchitekten)
 
 ### Referate: 
 
