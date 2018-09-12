@@ -8,16 +8,29 @@ Internet der Dinge Kit
 
 ### Kurse:
 
-Kursreihe: "Internet der Dinge" für Implementierer
-* [Grundlagen](https://www.eb-zuerich.ch/angebot/internet-der-dinge-grundlagen.html)
-* [Aufbau 1 – Komplexe Anwendungen](https://www.eb-zuerich.ch/angebot/internet-der-dinge-aufbau.html)
-
-Internet of Things (IoT) für Informatiker
+Internet of Things (IoT) 
+* [CAS IoT Manager Smarte Lösungen mit Internet of Things (IoT)](https://www.hslu.ch/de-ch/informatik/weiterbildung/networking-and-innovative-technologies/cas-iot/) 
 * [Internet of Things (IoT) im Einsatz](https://www.digicomp.ch/weiterbildung/trainings-zu-platforms-services/platform-as-a-service-paas/internet-of-things-iot/internet-of-things-iot-im-einsatz)
 * [Für IT- und Software-Architekten](https://www.digicomp.ch/mastering-digital-change/7-kompetenzfelder-fuer-den-digitalen-wandel/handlungsfeld-it/neue-technologien/internet-of-things-iot-fuer-it-und-softwarearchitekten)
 
+Kursreihe: "Internet der Dinge" (low-level)
+* [Grundlagen](https://www.eb-zuerich.ch/angebot/internet-der-dinge-grundlagen.html)
+* [Aufbau 1 – Komplexe Anwendungen](https://www.eb-zuerich.ch/angebot/internet-der-dinge-aufbau.html)
+
+Kurse: Technologien und Infrastruktur
+
+* [IoT, Microservices, Machine Learning und DevOps – Moderne Architektur-relevante Methoden und Technologien («MODTEC»)](https://www.digicomp.ch/trends/devops-trainings/iot-microservices-machine-learning-und-devops-moderne-architektur-relevante-methoden-und-technologien)
+* [Microservices-Grundlagen («MISEGR»)](https://www.digicomp.ch/weiterbildung/development/software-engineering-trainings/it-architektur/softwarearchitektur/design-organisation/microservices-grundlagen)
+* [Docker und Kubernetes – Übersicht und Einsatz («DUK»)](https://www.digicomp.ch/trends/docker-trainings/docker-und-kubernetes-uebersicht-und-einsatz)
+* [Machine Learning Grundlagen («MLG»)](https://www.digicomp.ch/weiterbildung/development/iot--ai--vr--machine-learning-training/artificial-intelligence/machine-learning-grundlagen)
+* [Software mit agilen Methoden (Scrum) entwickeln](https://www.eb-zuerich.ch/angebot/software-mit-agilen-methoden-scrum-entwickeln.html)
+* [Mit Business Process Model and Notation (BPMN) arbeiten](https://www.eb-zuerich.ch/angebot/mit-business-process-model-and-notation-bpmn-arbeiten.html)
+
+
 ### Referate: 
 
+* 12.12.18: [Microservices – Einblick, Umsetzung und zukünftige Entwicklungen («MICREF»)](https://www.digicomp.ch/events/development-events/microservices-einblick-umsetzung-und-zukuenftige-entwicklungen)
+* 01.06.18: [Internet of Things trifft Machine Learning, implementiert mittels Microservices](https://informatiktage.ch/veranstaltungen/internet-of-things-trifft-machine-learning/)
 * 17.05.17: [IT Infrastruktur "on demand"](https://github.com/mc-b/IoTKit/blob/master/Talks/2017-05-17-IT-Architektur_on_demand.pdf)
 * 04.05.17: [Big Data mit Open Source](https://github.com/mc-b/IoTKit/blob/master/Talks/2017-05-04-BigData.pdf)
 * 03.05.17: [Vom Umgang mit Containern](https://github.com/mc-b/IoTKit/blob/master/Talks/2017-05-03-VomUmgangmitContainern.pdf)
