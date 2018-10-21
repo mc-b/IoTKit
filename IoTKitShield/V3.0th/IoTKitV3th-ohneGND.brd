@@ -1957,18 +1957,6 @@ design rules under a new name.</description>
 <wire x1="76.2" y1="25.2984" x2="86.2584" y2="15.24" width="0.1524" layer="16"/>
 <wire x1="76.2" y1="25.2984" x2="76.2" y2="25.4" width="0.1524" layer="16"/>
 <via x="27.8892" y="1.9812" extent="1-16" drill="0.35"/>
-<polygon width="0.1524" layer="1">
-<vertex x="0" y="58.42"/>
-<vertex x="0" y="0"/>
-<vertex x="97.79" y="0"/>
-<vertex x="97.79" y="58.42"/>
-</polygon>
-<polygon width="0.1524" layer="16">
-<vertex x="0" y="58.42"/>
-<vertex x="0" y="0"/>
-<vertex x="97.79" y="0"/>
-<vertex x="97.79" y="58.42"/>
-</polygon>
 </signal>
 <signal name="+3V3">
 <contactref element="NFC/RFID" pad="8"/>
