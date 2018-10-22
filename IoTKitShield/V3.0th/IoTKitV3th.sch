@@ -5871,7 +5871,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="A4" library="pinhead" deviceset="PINHD-2X3" device=""/>
 <part name="A2" library="pinhead" deviceset="PINHD-2X3" device=""/>
 <part name="A0" library="pinhead" deviceset="PINHD-2X3" device=""/>
-<part name="SPI(V,G,SS,MO,MI,SLK)" library="pinhead" deviceset="PINHD-1X6" device=""/>
+<part name="SPI(V,G,D9,MO,MI,SLK)" library="pinhead" deviceset="PINHD-1X6" device=""/>
 <part name="NFC/RFID" library="pinhead" deviceset="PINHD-1X8" device=""/>
 <part name="HALL-SENSOR" library="pinhead" deviceset="PINHD-1X3" device=""/>
 <part name="R1" library="resistor-power" deviceset="R" device="CA0001" value="10k7"/>
@@ -5972,7 +5972,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <attribute name="NAME" x="146.05" y="98.425" size="1.778" layer="95"/>
 <attribute name="VALUE" x="146.05" y="85.09" size="1.778" layer="96"/>
 </instance>
-<instance part="SPI(V,G,SS,MO,MI,SLK)" gate="A" x="11.43" y="127" rot="R90">
+<instance part="SPI(V,G,D9,MO,MI,SLK)" gate="A" x="11.43" y="127" rot="R90">
 <attribute name="NAME" x="0.635" y="120.65" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="21.59" y="120.65" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -6253,7 +6253,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="J1" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="SPI(V,G,SS,MO,MI,SLK)" gate="A" pin="3"/>
+<pinref part="SPI(V,G,D9,MO,MI,SLK)" gate="A" pin="3"/>
 <wire x1="8.89" y1="124.46" x2="8.89" y2="114.3" width="0.1524" layer="91"/>
 <label x="8.89" y="114.3" size="1.778" layer="95" rot="R90"/>
 </segment>
@@ -6539,7 +6539,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="10.16" y1="124.46" x2="11.43" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="11.43" y1="124.46" x2="11.43" y2="114.3" width="0.1524" layer="91"/>
 <label x="11.43" y="114.3" size="1.778" layer="95" rot="R90"/>
-<pinref part="SPI(V,G,SS,MO,MI,SLK)" gate="A" pin="4"/>
+<pinref part="SPI(V,G,D9,MO,MI,SLK)" gate="A" pin="4"/>
 <junction x="11.43" y="124.46"/>
 </segment>
 <segment>
@@ -6555,7 +6555,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="38.1" y="60.96" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="SPI(V,G,SS,MO,MI,SLK)" gate="A" pin="5"/>
+<pinref part="SPI(V,G,D9,MO,MI,SLK)" gate="A" pin="5"/>
 <wire x1="13.97" y1="124.46" x2="13.97" y2="114.3" width="0.1524" layer="91"/>
 <label x="13.97" y="114.3" size="1.778" layer="95" rot="R90"/>
 </segment>
@@ -6572,7 +6572,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="40.64" y="60.96" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="SPI(V,G,SS,MO,MI,SLK)" gate="A" pin="6"/>
+<pinref part="SPI(V,G,D9,MO,MI,SLK)" gate="A" pin="6"/>
 <wire x1="16.51" y1="124.46" x2="16.51" y2="114.3" width="0.1524" layer="91"/>
 <label x="16.51" y="114.3" size="1.778" layer="95" rot="R90"/>
 </segment>
@@ -6750,7 +6750,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <junction x="8.89" y="100.33"/>
 </segment>
 <segment>
-<pinref part="SPI(V,G,SS,MO,MI,SLK)" gate="A" pin="2"/>
+<pinref part="SPI(V,G,D9,MO,MI,SLK)" gate="A" pin="2"/>
 <pinref part="SUPPLY9" gate="+5V" pin="+5V"/>
 <wire x1="6.35" y1="124.46" x2="6.35" y2="118.364" width="0.1524" layer="91"/>
 <wire x1="6.35" y1="118.364" x2="5.08" y2="118.364" width="0.1524" layer="91"/>
@@ -6893,7 +6893,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="J1" gate="G$1" pin="4"/>
 </segment>
 <segment>
-<pinref part="SPI(V,G,SS,MO,MI,SLK)" gate="A" pin="1"/>
+<pinref part="SPI(V,G,D9,MO,MI,SLK)" gate="A" pin="1"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 <wire x1="3.81" y1="124.46" x2="3.81" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="3.81" y1="116.84" x2="0" y2="116.84" width="0.1524" layer="91"/>
