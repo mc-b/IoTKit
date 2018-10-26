@@ -256,7 +256,7 @@ D7</text>
 <wire x1="8.89" y1="1.27" x2="7.62" y2="2.54" width="0.1524" layer="25"/>
 <wire x1="7.62" y1="2.54" x2="7.62" y2="3.81" width="0.1524" layer="25"/>
 <text x="19.685" y="4.445" size="1.6764" layer="25" rot="R90">SCL
-SCA
+SDA
 +5V
 GND</text>
 <text x="10.16" y="13.335" size="1.6764" layer="25">I2C</text>
@@ -284,6 +284,7 @@ GND</text>
 https://github.com/mc-b/iotkitv3_disco
 
 Designed to work with mbed</text>
+<text x="26.67" y="54.61" size="1.778" layer="25">IoTKit V3 Shield</text>
 </plain>
 <libraries>
 <library name="SparkFun-Boards">
@@ -1170,7 +1171,7 @@ design rules under a new name.</description>
 <element name="A0" library="pinhead" package="2X03" value="" x="87.63" y="36.83" rot="R180">
 <attribute name="VALUE" x="91.44" y="41.275" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="SPI(V,G,D9,MO,MI,SLK)" library="pinhead" package="1X06" value="" x="5.08" y="41.91" rot="R90">
+<element name="SPI(G,V,D9,MO,MI,SLK)" library="pinhead" package="1X06" value="" x="5.08" y="41.91" rot="R90">
 <attribute name="NAME" x="3.2512" y="29.1338" size="1.6764" layer="25" ratio="10" rot="R90"/>
 <attribute name="VALUE" x="8.255" y="34.29" size="1.27" layer="27" rot="R90"/>
 </element>
@@ -1363,7 +1364,7 @@ design rules under a new name.</description>
 <signal name="D9">
 <contactref element="B1" pad="D9"/>
 <contactref element="STEPPER" pad="4"/>
-<contactref element="SPI(V,G,D9,MO,MI,SLK)" pad="3"/>
+<contactref element="SPI(G,V,D9,MO,MI,SLK)" pad="3"/>
 <contactref element="D6" pad="5"/>
 <wire x1="35.5092" y1="34.8996" x2="35.5092" y2="35.5092" width="0.1524" layer="16"/>
 <wire x1="29.1084" y1="28.4988" x2="35.5092" y2="34.8996" width="0.1524" layer="16"/>
@@ -1593,7 +1594,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="D11">
 <contactref element="B1" pad="D11"/>
-<contactref element="SPI(V,G,D9,MO,MI,SLK)" pad="4"/>
+<contactref element="SPI(G,V,D9,MO,MI,SLK)" pad="4"/>
 <contactref element="NFC/RFID" pad="4"/>
 <wire x1="5.0292" y1="15.5448" x2="5.0292" y2="15.24" width="0.1524" layer="1"/>
 <wire x1="2.8956" y1="17.6784" x2="5.0292" y2="15.5448" width="0.1524" layer="1"/>
@@ -1613,7 +1614,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="D12">
 <contactref element="B1" pad="D12"/>
-<contactref element="SPI(V,G,D9,MO,MI,SLK)" pad="5"/>
+<contactref element="SPI(G,V,D9,MO,MI,SLK)" pad="5"/>
 <contactref element="NFC/RFID" pad="3"/>
 <wire x1="5.0292" y1="13.1064" x2="5.0292" y2="12.8016" width="0.1524" layer="16"/>
 <wire x1="2.8956" y1="15.24" x2="5.0292" y2="13.1064" width="0.1524" layer="16"/>
@@ -1633,7 +1634,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="D13">
 <contactref element="B1" pad="D13"/>
-<contactref element="SPI(V,G,D9,MO,MI,SLK)" pad="6"/>
+<contactref element="SPI(G,V,D9,MO,MI,SLK)" pad="6"/>
 <contactref element="NFC/RFID" pad="2"/>
 <wire x1="5.0292" y1="9.7536" x2="5.0292" y2="10.0584" width="0.1524" layer="1"/>
 <wire x1="3.2004" y1="7.9248" x2="5.0292" y2="9.7536" width="0.1524" layer="1"/>
@@ -1725,7 +1726,7 @@ design rules under a new name.</description>
 <contactref element="STEPPER" pad="10"/>
 <contactref element="H-BRIDGE" pad="16"/>
 <contactref element="H-BRIDGE" pad="8"/>
-<contactref element="SPI(V,G,D9,MO,MI,SLK)" pad="2"/>
+<contactref element="SPI(G,V,D9,MO,MI,SLK)" pad="2"/>
 <contactref element="R3" pad="1"/>
 <contactref element="R2" pad="1"/>
 <contactref element="OLED(0X78)" pad="2"/>
@@ -1840,7 +1841,7 @@ design rules under a new name.</description>
 <contactref element="STEPPER" pad="9"/>
 <contactref element="UART(D0/D1)" pad="4"/>
 <contactref element="J4" pad="4"/>
-<contactref element="SPI(V,G,D9,MO,MI,SLK)" pad="1"/>
+<contactref element="SPI(G,V,D9,MO,MI,SLK)" pad="1"/>
 <contactref element="OLED(0X78)" pad="1"/>
 <contactref element="NFC/RFID" pad="6"/>
 <contactref element="HALL-SENSOR" pad="2"/>
