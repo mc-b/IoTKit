@@ -5871,7 +5871,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="A4" library="pinhead" deviceset="PINHD-2X3" device=""/>
 <part name="A2" library="pinhead" deviceset="PINHD-2X3" device=""/>
 <part name="A0" library="pinhead" deviceset="PINHD-2X3" device=""/>
-<part name="SPI(G,V,D9,MO,MI,SLK)" library="pinhead" deviceset="PINHD-1X6" device=""/>
+<part name="SPI" library="pinhead" deviceset="PINHD-1X6" device=""/>
 <part name="NFC/RFID" library="pinhead" deviceset="PINHD-1X8" device=""/>
 <part name="HALL-SENSOR" library="pinhead" deviceset="PINHD-1X3" device=""/>
 <part name="R1" library="resistor-power" deviceset="R" device="CA0001" value="10k7"/>
@@ -5953,11 +5953,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <attribute name="VALUE" x="114.3" y="27.94" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="D3" gate="A" x="69.85" y="92.71">
-<attribute name="NAME" x="63.5" y="98.425" size="1.778" layer="95"/>
 <attribute name="VALUE" x="63.5" y="85.09" size="1.778" layer="96"/>
 </instance>
 <instance part="D6" gate="A" x="92.71" y="92.71">
-<attribute name="NAME" x="86.36" y="98.425" size="1.778" layer="95"/>
 <attribute name="VALUE" x="86.36" y="85.09" size="1.778" layer="96"/>
 </instance>
 <instance part="A4" gate="A" x="119.38" y="92.71">
@@ -5972,7 +5970,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <attribute name="NAME" x="146.05" y="98.425" size="1.778" layer="95"/>
 <attribute name="VALUE" x="146.05" y="85.09" size="1.778" layer="96"/>
 </instance>
-<instance part="SPI(G,V,D9,MO,MI,SLK)" gate="A" x="11.43" y="127" rot="R90">
+<instance part="SPI" gate="A" x="11.43" y="127" rot="R90">
 <attribute name="NAME" x="0.635" y="120.65" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="21.59" y="120.65" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -6131,11 +6129,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="127" y="17.78" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="D3" gate="A" pin="6"/>
-<wire x1="74.93" y1="90.17" x2="74.93" y2="78.74" width="0.1524" layer="91"/>
-<label x="73.66" y="78.74" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
 <pinref part="D3~" gate="G$1" pin="1"/>
 <wire x1="81.28" y1="111.76" x2="81.28" y2="119.38" width="0.1524" layer="91"/>
 <label x="81.28" y="116.84" size="1.778" layer="95"/>
@@ -6174,11 +6167,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="162.56" y1="55.88" x2="162.56" y2="66.04" width="0.1524" layer="91"/>
 <label x="162.56" y="63.5" size="1.778" layer="95" rot="R90"/>
 </segment>
-<segment>
-<pinref part="D3" gate="A" pin="5"/>
-<wire x1="67.31" y1="90.17" x2="67.31" y2="78.74" width="0.1524" layer="91"/>
-<label x="66.04" y="78.74" size="1.778" layer="95" rot="R90"/>
-</segment>
 </net>
 <net name="D6" class="0">
 <segment>
@@ -6197,9 +6185,10 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="157.48" y="63.5" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="D6" gate="A" pin="6"/>
-<wire x1="97.79" y1="90.17" x2="97.79" y2="78.74" width="0.1524" layer="91"/>
-<label x="96.52" y="78.74" size="1.778" layer="95" rot="R90"/>
+<pinref part="D3" gate="A" pin="6"/>
+<wire x1="74.93" y1="90.17" x2="76.2" y2="90.17" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="90.17" x2="76.2" y2="81.28" width="0.1524" layer="91"/>
+<label x="76.2" y="81.28" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="D7" class="0">
@@ -6253,14 +6242,15 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="J1" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="SPI(G,V,D9,MO,MI,SLK)" gate="A" pin="3"/>
+<pinref part="SPI" gate="A" pin="3"/>
 <wire x1="8.89" y1="124.46" x2="8.89" y2="114.3" width="0.1524" layer="91"/>
 <label x="8.89" y="114.3" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="D6" gate="A" pin="5"/>
-<wire x1="90.17" y1="90.17" x2="90.17" y2="78.74" width="0.1524" layer="91"/>
-<label x="88.9" y="78.74" size="1.778" layer="95" rot="R90"/>
+<pinref part="D3" gate="A" pin="5"/>
+<wire x1="67.31" y1="90.17" x2="66.04" y2="90.17" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="90.17" x2="66.04" y2="81.28" width="0.1524" layer="91"/>
+<label x="66.04" y="81.28" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="N$30" class="0">
@@ -6427,13 +6417,13 @@ In this library the device names are the same as the pin names of the symbols, t
 </segment>
 <segment>
 <pinref part="HALL-SENSOR" gate="A" pin="1"/>
-<wire x1="106.68" y1="124.46" x2="106.68" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="124.46" x2="106.68" y2="114.3" width="0.1524" layer="91"/>
 <label x="106.68" y="114.3" size="1.778" layer="95" rot="R90"/>
-<pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="106.68" y1="116.84" x2="106.68" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="109.22" x2="114.3" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="116.84" x2="106.68" y2="116.84" width="0.1524" layer="91"/>
-<junction x="106.68" y="116.84"/>
+<wire x1="106.68" y1="124.46" x2="99.06" y2="124.46" width="0.1524" layer="91"/>
+<junction x="106.68" y="124.46"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="99.06" y1="124.46" x2="99.06" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="109.22" x2="104.14" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="A4" class="0">
@@ -6528,6 +6518,12 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="40.64" y1="124.46" x2="40.64" y2="113.03" width="0.1524" layer="91"/>
 <label x="40.64" y="111.76" size="1.778" layer="95" rot="R90"/>
 </segment>
+<segment>
+<pinref part="D6" gate="A" pin="6"/>
+<wire x1="97.79" y1="90.17" x2="99.06" y2="90.17" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="90.17" x2="99.06" y2="81.28" width="0.1524" layer="91"/>
+<label x="99.06" y="81.28" size="1.778" layer="95" rot="R90"/>
+</segment>
 </net>
 <net name="D11" class="0">
 <segment>
@@ -6539,13 +6535,19 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="10.16" y1="124.46" x2="11.43" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="11.43" y1="124.46" x2="11.43" y2="114.3" width="0.1524" layer="91"/>
 <label x="11.43" y="114.3" size="1.778" layer="95" rot="R90"/>
-<pinref part="SPI(G,V,D9,MO,MI,SLK)" gate="A" pin="4"/>
+<pinref part="SPI" gate="A" pin="4"/>
 <junction x="11.43" y="124.46"/>
 </segment>
 <segment>
-<pinref part="NFC/RFID" gate="A" pin="4"/>
-<wire x1="48.26" y1="124.46" x2="48.26" y2="113.03" width="0.1524" layer="91"/>
-<label x="48.26" y="111.76" size="1.778" layer="95" rot="R90"/>
+<pinref part="NFC/RFID" gate="A" pin="3"/>
+<wire x1="45.72" y1="124.46" x2="45.72" y2="111.76" width="0.1524" layer="91"/>
+<label x="45.72" y="111.76" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="D6" gate="A" pin="5"/>
+<wire x1="90.17" y1="90.17" x2="88.9" y2="90.17" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="90.17" x2="88.9" y2="81.28" width="0.1524" layer="91"/>
+<label x="88.9" y="81.28" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="D12" class="0">
@@ -6555,14 +6557,14 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="38.1" y="60.96" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="SPI(G,V,D9,MO,MI,SLK)" gate="A" pin="5"/>
+<pinref part="SPI" gate="A" pin="5"/>
 <wire x1="13.97" y1="124.46" x2="13.97" y2="114.3" width="0.1524" layer="91"/>
 <label x="13.97" y="114.3" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="NFC/RFID" gate="A" pin="3"/>
-<wire x1="45.72" y1="124.46" x2="45.72" y2="113.03" width="0.1524" layer="91"/>
-<label x="45.72" y="111.76" size="1.778" layer="95" rot="R90"/>
+<pinref part="NFC/RFID" gate="A" pin="4"/>
+<wire x1="48.26" y1="124.46" x2="48.26" y2="111.76" width="0.1524" layer="91"/>
+<label x="48.26" y="111.76" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="D13" class="0">
@@ -6572,7 +6574,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="40.64" y="60.96" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="SPI(G,V,D9,MO,MI,SLK)" gate="A" pin="6"/>
+<pinref part="SPI" gate="A" pin="6"/>
 <wire x1="16.51" y1="124.46" x2="16.51" y2="114.3" width="0.1524" layer="91"/>
 <label x="16.51" y="114.3" size="1.778" layer="95" rot="R90"/>
 </segment>
@@ -6634,16 +6636,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="147.32" y1="124.46" x2="147.32" y2="114.3" width="0.1524" layer="91"/>
 <junction x="147.32" y="124.46"/>
 <label x="147.32" y="114.3" size="1.778" layer="95" rot="R90"/>
-</segment>
-</net>
-<net name="N$13" class="0">
-<segment>
-<pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="104.14" y1="109.22" x2="96.52" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="109.22" x2="96.52" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="132.08" x2="111.76" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="HALL-SENSOR" gate="A" pin="3"/>
-<wire x1="111.76" y1="132.08" x2="111.76" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -6750,7 +6742,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <junction x="8.89" y="100.33"/>
 </segment>
 <segment>
-<pinref part="SPI(G,V,D9,MO,MI,SLK)" gate="A" pin="2"/>
+<pinref part="SPI" gate="A" pin="2"/>
 <pinref part="SUPPLY9" gate="+5V" pin="+5V"/>
 <wire x1="6.35" y1="124.46" x2="6.35" y2="118.364" width="0.1524" layer="91"/>
 <wire x1="6.35" y1="118.364" x2="5.08" y2="118.364" width="0.1524" layer="91"/>
@@ -6893,7 +6885,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="J1" gate="G$1" pin="4"/>
 </segment>
 <segment>
-<pinref part="SPI(G,V,D9,MO,MI,SLK)" gate="A" pin="1"/>
+<pinref part="SPI" gate="A" pin="1"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 <wire x1="3.81" y1="124.46" x2="3.81" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="3.81" y1="116.84" x2="0" y2="116.84" width="0.1524" layer="91"/>
@@ -6924,6 +6916,17 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="NFC/RFID" gate="A" pin="8"/>
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
 <wire x1="58.42" y1="124.46" x2="58.42" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="124.46" x2="58.42" y2="142.24" width="0.1524" layer="91"/>
+<junction x="58.42" y="124.46"/>
+<wire x1="58.42" y1="142.24" x2="121.92" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="142.24" x2="121.92" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="121.92" y1="109.22" x2="114.3" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="109.22" x2="119.38" y2="109.22" width="0.1524" layer="91"/>
+<junction x="114.3" y="109.22"/>
+<pinref part="HALL-SENSOR" gate="A" pin="3"/>
+<wire x1="119.38" y1="109.22" x2="119.38" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="124.46" x2="111.76" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="B1" gate="G$1" pin="AREF"/>
@@ -6953,12 +6956,12 @@ In this library the device names are the same as the pin names of the symbols, t
 <approved hash="113,1,144.554,68.8171,M02,,,,,"/>
 <approved hash="113,1,147.546,12.4629,M01,,,,,"/>
 <approved hash="113,1,87.3023,39.37,STEPPER,,,,,"/>
-<approved hash="113,1,71.0777,94.2061,D3,,,,,"/>
-<approved hash="113,1,93.9377,94.2061,D6,,,,,"/>
+<approved hash="113,1,71.12,92.71,D3,,,,,"/>
+<approved hash="113,1,93.98,92.71,D6,,,,,"/>
 <approved hash="113,1,120.608,94.2061,A4,,,,,"/>
 <approved hash="113,1,137.118,94.2061,A2,,,,,"/>
 <approved hash="113,1,153.628,94.2061,A0,,,,,"/>
-<approved hash="113,1,8.66394,134.597,SPI(V\,G\,SS\,MO\,MI\,SLK),,,,,"/>
+<approved hash="113,1,8.66394,124.697,SPI,,,,,"/>
 <approved hash="113,1,48.0339,126.586,NFC/RFID,,,,,"/>
 <approved hash="113,1,107.724,129.625,HALL-SENSOR,,,,,"/>
 <approved hash="113,1,144.554,127.929,OLED(0X78),,,,,"/>
