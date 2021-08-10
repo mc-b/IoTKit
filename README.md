@@ -13,10 +13,6 @@ Internet of Things (IoT)
 * [Internet of Things (IoT) im Einsatz](https://www.digicomp.ch/weiterbildung/trainings-zu-platforms-services/platform-as-a-service-paas/internet-of-things-iot/internet-of-things-iot-im-einsatz)
 * [Für IT- und Software-Architekten](https://www.digicomp.ch/mastering-digital-change/7-kompetenzfelder-fuer-den-digitalen-wandel/handlungsfeld-it/neue-technologien/internet-of-things-iot-fuer-it-und-softwarearchitekten)
 
-Kursreihe: "Internet der Dinge" (low-level)
-* [Grundlagen](https://www.eb-zuerich.ch/angebot/internet-der-dinge-grundlagen.html)
-* [Aufbau 1 – Komplexe Anwendungen](https://www.eb-zuerich.ch/angebot/internet-der-dinge-aufbau.html)
-
 Kurse: Technologien und Infrastruktur
 
 * [IoT, Microservices, Machine Learning und DevOps – Moderne Architektur-relevante Methoden und Technologien («MODTEC»)](https://www.digicomp.ch/trends/devops-trainings/iot-microservices-machine-learning-und-devops-moderne-architektur-relevante-methoden-und-technologien)
