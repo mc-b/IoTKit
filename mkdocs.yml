@@ -1,0 +1,4 @@
+site_name: IoTKit
+docs_dir: .
+nav:
+- README: README.md

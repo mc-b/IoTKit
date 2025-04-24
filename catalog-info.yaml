@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: IoTKit
+  namespace: mc-b
+  description: Internet der Dinge Kit
+  tags:
+  - iot
+  - iotkit
+  links:
+  - url: https://github.com/mc-b/IoTKit
+    title: Repository
+    icon: github
+  annotations:
+    github.com/project-slug: mc-b/IoTKit
+    backstage.io/source-location: url:https://github.com/mc-b/IoTKit
+    # backstage.io/techdocs-ref: url:https://github.com/mc-b/IoTKit
+spec:
+  type: other
+  lifecycle: production
+  owner: group:mc-b/mc-b
