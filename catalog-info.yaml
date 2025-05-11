@@ -9,6 +9,7 @@ metadata:
   - iotkit
   - digicomp
   - eb
+  - education
   links:
   - url: https://github.com/mc-b/IoTKit
     title: Repository
@@ -18,6 +19,6 @@ metadata:
     backstage.io/source-location: url:https://github.com/mc-b/IoTKit
     # backstage.io/techdocs-ref: url:https://github.com/mc-b/IoTKit
 spec:
-  type: education
+  type: website
   lifecycle: deprecated
   owner: group:mc-b/mc-b
